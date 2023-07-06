@@ -12,6 +12,35 @@
                                                             owl:imports cbo: .
 
 #################################################################
+#    Object Properties
+#################################################################
+
+###  https://github.com/asperan/comic-book-extension-ontology#tieIn
+:tieIn rdf:type owl:ObjectProperty ;
+       owl:inverseOf :tieInOf ;
+       rdf:type owl:AsymmetricProperty ,
+                owl:TransitiveProperty ,
+                owl:IrreflexiveProperty ;
+       rdfs:domain cbo:Issue ;
+       rdfs:range cbo:Issue ;
+       rdfs:comment "Indicate that the domain Issue has the range Issue as a tie-in." ;
+       rdfs:label "tieIn" ;
+       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#tieInOf
+:tieInOf rdf:type owl:ObjectProperty ,
+                  owl:AsymmetricProperty ,
+                  owl:TransitiveProperty ,
+                  owl:IrreflexiveProperty ;
+         rdfs:domain cbo:Issue ;
+         rdfs:range cbo:Issue ;
+         rdfs:comment "Indicate that the domain issue story insert itself in the story of the range issue." ;
+         rdfs:label "tieInOf" ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+#################################################################
 #    Data properties
 #################################################################
 
