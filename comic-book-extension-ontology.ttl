@@ -47,9 +47,9 @@
                 owl:IrreflexiveProperty ;
        rdfs:domain cbo:Issue ;
        rdfs:range cbo:Issue ;
-       rdfs:comment "Indicate that the domain Issue has the range Issue as a tie-in." ;
-       rdfs:label "tieIn" ;
-       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+       rdfs:comment "Indicate that the domain Issue has the range Issue as a tie-in."@en ;
+       rdfs:label "tieIn"@en ;
+       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
 
 
 ###  https://github.com/asperan/comic-book-extension-ontology#tieInOf
@@ -59,9 +59,9 @@
                   owl:IrreflexiveProperty ;
          rdfs:domain cbo:Issue ;
          rdfs:range cbo:Issue ;
-         rdfs:comment "Indicate that the domain issue story insert itself in the story of the range issue." ;
-         rdfs:label "tieInOf" ;
-         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+         rdfs:comment "Indicate that the domain issue story insert itself in the story of the range issue."@en ;
+         rdfs:label "tieInOf"@en ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
 
 
 #################################################################
@@ -73,8 +73,8 @@
                      owl:FunctionalProperty ;
             rdfs:domain cbo:Issue ;
             rdfs:range xsd:unsignedLong ;
-            <http://purl.org/dc/elements/1.1/description> "Used to indicate the number of sold copy of an issue." ;
-            rdfs:comment "A non-negative Long value, i.e. a value between 0 and 2^64 - 1." ;
+            <http://purl.org/dc/elements/1.1/description> "Used to indicate the number of sold copy of an issue."@en ;
+            rdfs:comment "A non-negative Long value, i.e. a value between 0 and 2^64 - 1."@en ;
             rdfs:isDefinedBy "https://github.com/asperan/comic-book-extension-ontology" .
 
 
