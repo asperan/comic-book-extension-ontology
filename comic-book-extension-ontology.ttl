@@ -102,6 +102,12 @@
 #    Individuals
 #################################################################
 
+###  https://github.com/asperan/comic-book-extension-ontology#Aurelio_Galleppini
+:Aurelio_Galleppini rdf:type owl:NamedIndividual ,
+                             cbo:Contributor ;
+                    cbo:role <http://comicmeta.org/vocab/Illustrator> .
+
+
 ###  https://github.com/asperan/comic-book-extension-ontology#Crossover
 :Crossover rdf:type owl:NamedIndividual ,
                     :Comic_Series_Story_Type ;
@@ -112,6 +118,42 @@
 :Filler rdf:type owl:NamedIndividual ,
                  :Issue_Story_Type ;
         rdfs:isDefinedBy "https://github.com/asperan/comic-book-extension-ontology" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_totem_misterioso
+:Il_totem_misterioso rdf:type owl:NamedIndividual ,
+                              cbo:Issue ;
+                     cbo:story :Storia_Il_totem_misterioso ;
+                     :issueStoryType :Mainline ;
+                     cbo:issueNumber 1 ;
+                     cbo:publicationDate "1948-09-30"@en .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_freccia_della_morte
+:La_freccia_della_morte rdf:type owl:NamedIndividual ,
+                                 cbo:Issue ;
+                        cbo:story :Storia_La_mano_rossa ;
+                        :issueStoryType :Mainline ;
+                        cbo:issueNumber 5 ;
+                        cbo:publicationDate "1948-10-28"^^xsd:dateTime .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_mano_rossa
+:La_mano_rossa rdf:type owl:NamedIndividual ,
+                        cbo:Issue ;
+               cbo:story :Storia_La_mano_rossa ;
+               :issueStoryType :Mainline ;
+               cbo:issueNumber 4 ;
+               cbo:publicationDate "1948-10-21"^^xsd:dateTime .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_roccia_parlante
+:La_roccia_parlante rdf:type owl:NamedIndividual ,
+                             cbo:Issue ;
+                    cbo:story :Storia_Il_totem_misterioso ;
+                    :issueStoryType :Mainline ;
+                    cbo:issueNumber 2 ;
+                    cbo:publicationDate "1948-10-07"^^xsd:dateTime .
 
 
 ###  https://github.com/asperan/comic-book-extension-ontology#Mainline
@@ -126,10 +168,79 @@
          rdfs:isDefinedBy "https://github.com/asperan/comic-book-extension-ontology" .
 
 
+###  https://github.com/asperan/comic-book-extension-ontology#Sergio_Bonelli_Editore
+:Sergio_Bonelli_Editore rdf:type owl:NamedIndividual ,
+                                 cbo:Publisher ;
+                        :issueStoryType :Mainline ;
+                        cbo:cca "" ;
+                        cbo:issueNumber "1"@en ;
+                        cbo:publicationDate "1948-09-30"@en ;
+                        cbo:publisherName "Sergio Bonelli Editore"@en ;
+                        rdfs:seeAlso "https://it.wikipedia.org/wiki/Sergio_Bonelli_Editore"@en ,
+                                     "https://www.wikidata.org/wiki/Q12103"@en .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Serie_prima
+:Serie_prima rdf:type owl:NamedIndividual ,
+                      cbo:Series ;
+             cbo:publicationFrequency <http://comicmeta.org/vocab/Weekly> ;
+             cbo:publisher :Sergio_Bonelli_Editore ;
+             cbo:seriesTitle "Serie prima"@it ;
+             cbo:seriesYear 1948 .
+
+
 ###  https://github.com/asperan/comic-book-extension-ontology#SpinOff
 :SpinOff rdf:type owl:NamedIndividual ,
                   :Comic_Series_Story_Type ;
          rdfs:isDefinedBy "https://github.com/asperan/comic-book-extension-ontology" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_El_diablo
+:Storia_El_diablo rdf:type owl:NamedIndividual ,
+                           cbo:Story ;
+                  cbo:storyTitle "El Diablo"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_Il_totem_misterioso
+:Storia_Il_totem_misterioso rdf:type owl:NamedIndividual ,
+                                     cbo:Story ;
+                            cbo:storyTitle "Il totem misterioso"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_La_mano_rossa
+:Storia_La_mano_rossa rdf:type owl:NamedIndividual ,
+                               cbo:Story ;
+                      cbo:storyTitle "La Mano Rossa"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_Uno_contro_venti
+:Storia_Uno_contro_venti rdf:type owl:NamedIndividual ,
+                                  cbo:Story ;
+                         cbo:storyTitle "Uno contro venti"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Terrore_a_Culver_City
+:Terrore_a_Culver_City rdf:type owl:NamedIndividual ,
+                                cbo:Issue ;
+                       cbo:story :Storia_Il_totem_misterioso ;
+                       :issueStoryType :Mainline ;
+                       cbo:issueNumber 3 ;
+                       cbo:publicationDate "1948-10-14"^^xsd:dateTime .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Tex
+:Tex rdf:type owl:NamedIndividual ,
+              cbo:Comic ;
+     cbo:penciller :Aurelio_Galleppini ;
+     cbo:publisher :Sergio_Bonelli_Editore ;
+     cbo:startDate "1958"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Tex ;
+   owl:annotatedProperty cbo:penciller ;
+   owl:annotatedTarget :Aurelio_Galleppini ;
+   rdfs:comment "From 30th September 1948 to February 1994"
+ ] .
 
 
 ###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
