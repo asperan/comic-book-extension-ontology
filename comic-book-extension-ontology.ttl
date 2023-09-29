@@ -1840,6 +1840,7 @@
                      cbo:seriesOf :Tex ;
                      cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
                      cbo:pageCount 160 ;
+                     cbo:publicationDate "1959-09-01"^^xsd:dateTime ;
                      cbo:volumeNumber 6 ;
                      <http://purl.org/dc/terms/title> "Doppio gioco"@it .
 
@@ -1869,6 +1870,7 @@
                          cbo:seriesOf :Tex ;
                          cbo:story :Storia_La_banda_dei_Dalton ;
                          cbo:pageCount 161 ;
+                         cbo:publicationDate "1960-03-01"^^xsd:dateTime ;
                          cbo:volumeNumber 8 ;
                          <http://purl.org/dc/terms/title> "Due contro cento"@it .
 
@@ -1901,6 +1903,7 @@
                    cbo:seriesOf :Tex ;
                    cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
                    cbo:pageCount 161 ;
+                   cbo:publicationDate "1959-02-01"^^xsd:dateTime ;
                    cbo:volumeNumber 3 ;
                    <http://purl.org/dc/terms/title> "Fuorilegge"@it .
 
@@ -1947,6 +1950,7 @@
                          cbo:seriesOf :Tex ;
                          cbo:story :Storia_Il_figlio_di_Tex ;
                          cbo:pageCount 160 ;
+                         cbo:publicationDate "1960-11-01"^^xsd:dateTime ;
                          cbo:volumeNumber 12 ;
                          <http://purl.org/dc/terms/title> "Il figlio di Tex"@it .
 
@@ -1977,6 +1981,7 @@
                            cbo:seriesOf :Tex ;
                            cbo:story :Storia_Il_patto_di_sangue ;
                            cbo:pageCount 160 ;
+                           cbo:publicationDate "1960-01-01"^^xsd:dateTime ;
                            cbo:volumeNumber 7 ;
                            <http://purl.org/dc/terms/title> "Il patto di sangue"@it .
 
@@ -2020,6 +2025,7 @@
                          cbo:seriesOf :Tex ;
                          cbo:story :Storia_La_Banda_degli_Orsi ;
                          cbo:pageCount 160 ;
+                         cbo:publicationDate "1960-09-01"^^xsd:dateTime ;
                          cbo:volumeNumber 11 ;
                          <http://purl.org/dc/terms/title> "Il segno indiano"@it .
 
@@ -2051,6 +2057,7 @@
                     cbo:seriesOf :Tex ;
                     cbo:story :Storia_Il_tranello ;
                     cbo:pageCount 160 ;
+                    cbo:publicationDate "1960-07-01"^^xsd:dateTime ;
                     cbo:volumeNumber 10 ;
                     <http://purl.org/dc/terms/title> "Il tranello" .
 
@@ -2082,6 +2089,7 @@
                                 :Storia_Il_totem_misterioso ,
                                 :Storia_La_Mano_Rossa ;
                       cbo:pageCount 160 ;
+                      cbo:publicationDate "1958-10-01"^^xsd:dateTime ;
                       cbo:volumeNumber 1 ;
                       <http://purl.org/dc/terms/title> "La Mano Rossa"@it .
 
@@ -2125,6 +2133,7 @@
                                    :Storia_Uno_contro_venti ,
                                    <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
                          cbo:pageCount 161 ;
+                         cbo:publicationDate "1958-12-01"^^xsd:dateTime ;
                          cbo:volumeNumber 2 ;
                          <http://purl.org/dc/terms/title> "Uno contro venti"@it .
 
@@ -2769,6 +2778,7 @@
                                                                                      cbo:story :Storia_La_banda_del_Rosso ,
                                                                                                <https://github.com/asperan/comic-book-extension-ontology#Storia_L'eroe_del_Messico> ;
                                                                                      cbo:pageCount 152 ;
+                                                                                     cbo:publicationDate "1959-04-01"^^xsd:dateTime ;
                                                                                      cbo:volumeNumber 4 ;
                                                                                      <http://purl.org/dc/terms/title> "L'eroe del Messico"@it .
 
@@ -2798,6 +2808,8 @@
                                                                                      cbo:seriesOf :Tex ;
                                                                                      cbo:story :Storia_Avventura_sul_Rio_Grande ,
                                                                                                :Storia_Il_dio_Puma ;
+                                                                                     cbo:pageCount 161 ;
+                                                                                     cbo:publicationDate "1960-05-01"^^xsd:dateTime ;
                                                                                      cbo:volumeNumber 9 ;
                                                                                      <http://purl.org/dc/terms/title> "L'ultima battaglia"@it .
 
@@ -2844,6 +2856,7 @@
                                                                            cbo:story :Storia_Satania ,
                                                                                      <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
                                                                            cbo:pageCount 162 ;
+                                                                           cbo:publicationDate "1959-06-01"^^xsd:dateTime ;
                                                                            cbo:volumeNumber 5 ;
                                                                            <http://purl.org/dc/terms/title> "Satania!"@it .
 
