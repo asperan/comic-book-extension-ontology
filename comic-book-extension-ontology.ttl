@@ -1,4 +1,5 @@
 @prefix : <https://github.com/asperan/comic-book-extension-ontology#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 @prefix cbo: <http://comicmeta.org/cbo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -101,6 +102,16 @@
 #################################################################
 #    Individuals
 #################################################################
+
+###  http://www.wikidata.org/entity/Q12092
+wd:Q12092 rdf:type owl:NamedIndividual ,
+                   cbo:Contributor ;
+          cbo:role <http://comicmeta.org/vocab/Illustrator> .
+
+
+###  http://www.wikidata.org/entity/Q12103
+wd:Q12103 rdf:type owl:NamedIndividual .
+
 
 ###  https://github.com/asperan/comic-book-extension-ontology#A_carte_scoperte
 :A_carte_scoperte rdf:type owl:NamedIndividual ,
@@ -221,12 +232,6 @@
                      cbo:issueNumber 16 ;
                      cbo:publicationDate "1950-03-24"^^xsd:dateTime ;
                      <http://purl.org/dc/terms/title> "Attacco nella notte" .
-
-
-###  https://github.com/asperan/comic-book-extension-ontology#Aurelio_Galleppini
-:Aurelio_Galleppini rdf:type owl:NamedIndividual ,
-                             cbo:Contributor ;
-                    cbo:role <http://comicmeta.org/vocab/Illustrator> .
 
 
 ###  https://github.com/asperan/comic-book-extension-ontology#Avventura_a_Piedras_Negras
@@ -1394,23 +1399,11 @@
               <http://purl.org/dc/terms/title> "Senza scampo" .
 
 
-###  https://github.com/asperan/comic-book-extension-ontology#Sergio_Bonelli_Editore
-:Sergio_Bonelli_Editore rdf:type owl:NamedIndividual ,
-                                 cbo:Publisher ;
-                        :issueStoryType :Mainline ;
-                        cbo:cca "" ;
-                        cbo:issueNumber "1"@en ;
-                        cbo:publicationDate "1948-09-30"@en ;
-                        cbo:publisherName "Sergio Bonelli Editore"@en ;
-                        rdfs:seeAlso "https://it.wikipedia.org/wiki/Sergio_Bonelli_Editore"@en ,
-                                     "https://www.wikidata.org/wiki/Q12103"@en .
-
-
 ###  https://github.com/asperan/comic-book-extension-ontology#Serie_prima
 :Serie_prima rdf:type owl:NamedIndividual ,
                       cbo:Series ;
              cbo:publicationFrequency <http://comicmeta.org/vocab/Weekly> ;
-             cbo:publisher :Sergio_Bonelli_Editore ;
+             cbo:publisher wd:Q12103 ;
              cbo:endDate 1949 ;
              cbo:itemNumber 1 ;
              cbo:seriesTitle "Serie prima"@it ;
@@ -1421,7 +1414,7 @@
 :Serie_quarta rdf:type owl:NamedIndividual ,
                        cbo:Series ;
               cbo:publicationFrequency <http://comicmeta.org/vocab/Weekly> ;
-              cbo:publisher :Sergio_Bonelli_Editore ;
+              cbo:publisher wd:Q12103 ;
               cbo:endDate 1952 ;
               cbo:itemNumber 4 ;
               cbo:seriesTitle "Serie quarta"@it ;
@@ -1432,7 +1425,7 @@
 :Serie_seconda rdf:type owl:NamedIndividual ,
                         cbo:Series ;
                cbo:publicationFrequency <http://comicmeta.org/vocab/Weekly> ;
-               cbo:publisher :Sergio_Bonelli_Editore ;
+               cbo:publisher wd:Q12103 ;
                cbo:endDate 1951 ;
                cbo:itemNumber 2 ;
                cbo:seriesTitle "Serie seconda"@it ;
@@ -1443,7 +1436,7 @@
 :Serie_terza rdf:type owl:NamedIndividual ,
                       cbo:Series ;
              cbo:publicationFrequency <http://comicmeta.org/vocab/Weekly> ;
-             cbo:publisher :Sergio_Bonelli_Editore ;
+             cbo:publisher wd:Q12103 ;
              cbo:endDate 1952 ;
              cbo:itemNumber 3 ;
              cbo:seriesTitle "Serie terza"@it ;
@@ -1646,14 +1639,14 @@
 ###  https://github.com/asperan/comic-book-extension-ontology#Tex
 :Tex rdf:type owl:NamedIndividual ,
               cbo:Comic ;
-     cbo:penciller :Aurelio_Galleppini ;
-     cbo:publisher :Sergio_Bonelli_Editore ;
+     cbo:penciller wd:Q12092 ;
+     cbo:publisher wd:Q12103 ;
      cbo:startDate "1958"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :Tex ;
    owl:annotatedProperty cbo:penciller ;
-   owl:annotatedTarget :Aurelio_Galleppini ;
+   owl:annotatedTarget wd:Q12092 ;
    rdfs:comment "From 30th September 1948 to February 1994"
  ] .
 
