@@ -1412,6 +1412,7 @@
              cbo:publicationFrequency <http://comicmeta.org/vocab/Weekly> ;
              cbo:publisher :Sergio_Bonelli_Editore ;
              cbo:endDate 1949 ;
+             cbo:itemNumber 1 ;
              cbo:seriesTitle "Serie prima"@it ;
              cbo:seriesYear 1948 .
 
@@ -1422,6 +1423,7 @@
               cbo:publicationFrequency <http://comicmeta.org/vocab/Weekly> ;
               cbo:publisher :Sergio_Bonelli_Editore ;
               cbo:endDate 1952 ;
+              cbo:itemNumber 4 ;
               cbo:seriesTitle "Serie quarta"@it ;
               cbo:seriesYear 1952 .
 
@@ -1432,6 +1434,7 @@
                cbo:publicationFrequency <http://comicmeta.org/vocab/Weekly> ;
                cbo:publisher :Sergio_Bonelli_Editore ;
                cbo:endDate 1951 ;
+               cbo:itemNumber 2 ;
                cbo:seriesTitle "Serie seconda"@it ;
                cbo:seriesYear 1949 .
 
@@ -1442,6 +1445,7 @@
              cbo:publicationFrequency <http://comicmeta.org/vocab/Weekly> ;
              cbo:publisher :Sergio_Bonelli_Editore ;
              cbo:endDate 1952 ;
+             cbo:itemNumber 3 ;
              cbo:seriesTitle "Serie terza"@it ;
              cbo:seriesYear 1951 .
 
@@ -1811,8 +1815,31 @@
 ###  https://github.com/asperan/comic-book-extension-ontology#Volume_Doppio_gioco
 :Volume_Doppio_gioco rdf:type owl:NamedIndividual ,
                               cbo:Volume ;
+                     cbo:issue :Ai_ferri_corti ,
+                               :Attacco_nella_notte ,
+                               :Avventura_a_Piedras_Negras ,
+                               :Battaglia_sul_tempio ,
+                               :Doppio_gioco ,
+                               :Il_covo_sulla_Sierra ,
+                               :Il_guado_dei_Piute ,
+                               :Il_tradimento_di_El_Fierro ,
+                               :La_corsa_infernale ,
+                               :La_valle_degli_spettri ,
+                               :Lotta_senza_quartiere ,
+                               :Nelle_mani_degli_Outlaws ,
+                               :Situazione_pericolosa ,
+                               :Tex_alla_riscossa ,
+                               :Un_turpe_mercato ,
+                               :Una_fuga_rocambolesca ,
+                               <https://github.com/asperan/comic-book-extension-ontology#Ken_Logan,_il_duellista> ,
+                               <https://github.com/asperan/comic-book-extension-ontology#L'agguato_sul_Rio_Mayo> ,
+                               <https://github.com/asperan/comic-book-extension-ontology#L'ultima_carta_dei_fratelli_Benton> ,
+                               <https://github.com/asperan/comic-book-extension-ontology#Lo_sceriffo_di_Devil's_Hole> ,
+                               <https://github.com/asperan/comic-book-extension-ontology#Lupe,_la_messicana> ,
+                               <https://github.com/asperan/comic-book-extension-ontology#Missione_a_Devil's_Hole> ;
                      cbo:seriesOf :Tex ;
                      cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
+                     cbo:pageCount 160 ;
                      cbo:volumeNumber 6 ;
                      <http://purl.org/dc/terms/title> "Doppio gioco"@it .
 
@@ -1820,8 +1847,28 @@
 ###  https://github.com/asperan/comic-book-extension-ontology#Volume_Due_contro_cento
 :Volume_Due_contro_cento rdf:type owl:NamedIndividual ,
                                   cbo:Volume ;
+                         cbo:issue :Due_contro_cento ,
+                                   :Duello_sul_treno ,
+                                   :Il_colpo_di_Fulton_Creek ,
+                                   :Il_deserto_di_Gila ,
+                                   :Il_rapimento_di_Lilyth ,
+                                   :Il_terrore_sul_Durango ,
+                                   :La_banda_dei_Dalton ,
+                                   :La_battaglia_di_Testa_di_Pietra ,
+                                   :La_legge_del_coltello ,
+                                   :La_legge_del_giudice_Colt ,
+                                   :La_tragica_corsa ,
+                                   :La_vendetta_dei_Dalton ,
+                                   :Nel_covo_dei_Dalton ,
+                                   :Sangue_su_Danville ,
+                                   :Sul_sentiero_di_guerra ,
+                                   :Tex_non_perde_tempo ,
+                                   :Traccia_di_sangue ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'agguato_di_Volpe_Rossa> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Un'orribile_fine> ;
                          cbo:seriesOf :Tex ;
                          cbo:story :Storia_La_banda_dei_Dalton ;
+                         cbo:pageCount 161 ;
                          cbo:volumeNumber 8 ;
                          <http://purl.org/dc/terms/title> "Due contro cento"@it .
 
@@ -1829,8 +1876,31 @@
 ###  https://github.com/asperan/comic-book-extension-ontology#Volume_Fuorilegge
 :Volume_Fuorilegge rdf:type owl:NamedIndividual ,
                             cbo:Volume ;
+                   cbo:issue :Attacco_a_Santa_Fe ,
+                             :Condanna_a_morte ,
+                             :Gioco_pericoloso ,
+                             :Il_fantasma_di_Villa-Rica ,
+                             :Il_rapimento_di_Tesah ,
+                             :Il_tempio_tragico ,
+                             :La_Mesa_del_Diablo ,
+                             :La_barriera_di_fuoco ,
+                             :La_fine_di_Mefisto ,
+                             :Sangue_sulla_frontiera ,
+                             :Showdown_a_El_Paso ,
+                             :Una_trama_infernale ,
+                             <https://github.com/asperan/comic-book-extension-ontology#Fuorilegge!> ,
+                             <https://github.com/asperan/comic-book-extension-ontology#Il_mistero_dell'idolo_d'oro> ,
+                             <https://github.com/asperan/comic-book-extension-ontology#Il_segreto_dell'idolo> ,
+                             <https://github.com/asperan/comic-book-extension-ontology#L'Estrella_del_Rio> ,
+                             <https://github.com/asperan/comic-book-extension-ontology#L'assedio_di_Forte_Wellington> ,
+                             <https://github.com/asperan/comic-book-extension-ontology#L'impresa_di_Hermadina> ,
+                             <https://github.com/asperan/comic-book-extension-ontology#La_morte_nell'ombra> ,
+                             <https://github.com/asperan/comic-book-extension-ontology#Mefisto,_la_spia> ,
+                             <https://github.com/asperan/comic-book-extension-ontology#Montales,_el_desperado> ,
+                             <https://github.com/asperan/comic-book-extension-ontology#Tex,_l'uomo-ciclone> ;
                    cbo:seriesOf :Tex ;
                    cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
+                   cbo:pageCount 161 ;
                    cbo:volumeNumber 3 ;
                    <http://purl.org/dc/terms/title> "Fuorilegge"@it .
 
@@ -1838,8 +1908,45 @@
 ###  https://github.com/asperan/comic-book-extension-ontology#Volume_Il_figlio_di_Tex
 :Volume_Il_figlio_di_Tex rdf:type owl:NamedIndividual ,
                                   cbo:Volume ;
+                         cbo:issue :Ala_di_Morte ,
+                                   :Fra_due_fuochi ,
+                                   :Fuoco_ad_Angel_City ,
+                                   :Il_battesimo_del_fuoco_di_Kit_Willer ,
+                                   :Il_campo_dei_desperados ,
+                                   :Il_campo_della_morte ,
+                                   :Il_figlio_di_Tex ,
+                                   :Il_ranch_abbandonato ,
+                                   :Il_rogo ,
+                                   :Intrighi_nella_notte ,
+                                   :Kit_Willer_si_fa_onore ,
+                                   :Kit_segue_una_traccia ,
+                                   :La_Banda_degli_Orsi ,
+                                   :La_banda_degli_incappucciati ,
+                                   :La_battaglia_di_Holbrok ,
+                                   :La_capanna_sul_fiume ,
+                                   :La_cattura_di_Gros-Jean ,
+                                   :La_mano_del_morto ,
+                                   :La_tragica_notte ,
+                                   :Sangue_sulla_neve ,
+                                   :Senza_scampo ,
+                                   :Tragedia_sul_mare ,
+                                   :Tragico_assedio ,
+                                   :Troppo_tardi ,
+                                   :Un_colpo_da_maestro ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Apaches!> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'agguato_nella_boscaglia> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'attacco_di_Eldorado> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'impronta_misteriosa> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'ultima_impresa_di_Brad> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'ultimo_colpo_di_Black_Sam> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'uomo_dagli_speroni_d'argento> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#La_fine_dell'Eldorado> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Sulle_soglie_dell'inferno> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Tex,_l'intrepido> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Un'impresa_disperata> ;
                          cbo:seriesOf :Tex ;
                          cbo:story :Storia_Il_figlio_di_Tex ;
+                         cbo:pageCount 160 ;
                          cbo:volumeNumber 12 ;
                          <http://purl.org/dc/terms/title> "Il figlio di Tex"@it .
 
@@ -1847,8 +1954,29 @@
 ###  https://github.com/asperan/comic-book-extension-ontology#Volume_Il_patto_di_sangue
 :Volume_Il_patto_di_sangue rdf:type owl:NamedIndividual ,
                                     cbo:Volume ;
+                           cbo:issue :A_carte_scoperte ,
+                                     :Agguato_al_passo_di_Tula ,
+                                     :Battaglia_sul_tempio ,
+                                     :Il_cavaliere_nero ,
+                                     :Il_covo_sulla_Sierra ,
+                                     :Il_guado_dei_Piute ,
+                                     :Il_patto_di_sangue ,
+                                     :Il_salto_del_diavolo ,
+                                     :Il_tradimento_di_El_Fierro ,
+                                     :La_corsa_infernale ,
+                                     :La_legge_del_taglione ,
+                                     :La_morte_in_agguato ,
+                                     :Tex_alla_riscossa ,
+                                     :Un_turpe_mercato ,
+                                     :Una_fuga_rocambolesca ,
+                                     :Una_notte_movimentata ,
+                                     <https://github.com/asperan/comic-book-extension-ontology#Ken_Logan,_il_duellista> ,
+                                     <https://github.com/asperan/comic-book-extension-ontology#L'agguato_sul_Rio_Mayo> ,
+                                     <https://github.com/asperan/comic-book-extension-ontology#L'aquila_della_notte> ,
+                                     <https://github.com/asperan/comic-book-extension-ontology#Lupe,_la_messicana> ;
                            cbo:seriesOf :Tex ;
                            cbo:story :Storia_Il_patto_di_sangue ;
+                           cbo:pageCount 160 ;
                            cbo:volumeNumber 7 ;
                            <http://purl.org/dc/terms/title> "Il patto di sangue"@it .
 
@@ -1856,8 +1984,42 @@
 ###  https://github.com/asperan/comic-book-extension-ontology#Volume_Il_segno_indiano
 :Volume_Il_segno_indiano rdf:type owl:NamedIndividual ,
                                   cbo:Volume ;
+                         cbo:issue :Agguato_nella_palude ,
+                                   :Al_palo_della_tortura ,
+                                   :Ala_di_Morte ,
+                                   :Cerchio_di_morte ,
+                                   :Dinamite ,
+                                   :Duello_nella_foresta ,
+                                   :Fra_due_fuochi ,
+                                   :Gli_eroi_di_Forte_Kinder ,
+                                   :Il_sacrificio_di_Jim ,
+                                   :Il_segno_indiano ,
+                                   :Il_tranello ,
+                                   :Il_villaggio_fantasma ,
+                                   :Intrighi_nella_notte ,
+                                   :La_Banda_degli_Orsi ,
+                                   :La_capanna_sul_fiume ,
+                                   :La_cattura_di_Gros-Jean ,
+                                   :La_droga_indiana ,
+                                   :La_mano_scarlatta ,
+                                   :La_spia ,
+                                   :La_vendetta_di_Gros-Jean ,
+                                   :Sangue_sugli_spalti ,
+                                   :Sangue_sulla_neve ,
+                                   :Tragedia_sul_mare ,
+                                   :Troppo_tardi ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Gros-Jean,_il_meticcio> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'impronta_misteriosa> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'orma_della_paura> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'orrenda_notte> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'orribile_ricatto> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'ultima_carta_di_Tex> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'ultima_impresa_di_Brad> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'ultimatum> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#La_fine_dell'Eldorado> ;
                          cbo:seriesOf :Tex ;
                          cbo:story :Storia_La_Banda_degli_Orsi ;
+                         cbo:pageCount 160 ;
                          cbo:volumeNumber 11 ;
                          <http://purl.org/dc/terms/title> "Il segno indiano"@it .
 
@@ -1865,8 +2027,30 @@
 ###  https://github.com/asperan/comic-book-extension-ontology#Volume_Il_tranello
 :Volume_Il_tranello rdf:type owl:NamedIndividual ,
                              cbo:Volume ;
+                    cbo:issue :Agguato_nella_palude ,
+                              :Al_palo_della_tortura ,
+                              :Cerchio_di_morte ,
+                              :Dinamite ,
+                              :Duello_nella_foresta ,
+                              :Gli_eroi_di_Forte_Kinder ,
+                              :Il_sacrificio_di_Jim ,
+                              :Il_segno_indiano ,
+                              :Il_tranello ,
+                              :Il_villaggio_fantasma ,
+                              :La_droga_indiana ,
+                              :La_mano_scarlatta ,
+                              :La_spia ,
+                              :La_vendetta_di_Gros-Jean ,
+                              :Sangue_sugli_spalti ,
+                              <https://github.com/asperan/comic-book-extension-ontology#Gros-Jean,_il_meticcio> ,
+                              <https://github.com/asperan/comic-book-extension-ontology#L'orma_della_paura> ,
+                              <https://github.com/asperan/comic-book-extension-ontology#L'orrenda_notte> ,
+                              <https://github.com/asperan/comic-book-extension-ontology#L'orribile_ricatto> ,
+                              <https://github.com/asperan/comic-book-extension-ontology#L'ultima_carta_di_Tex> ,
+                              <https://github.com/asperan/comic-book-extension-ontology#L'ultimatum> ;
                     cbo:seriesOf :Tex ;
                     cbo:story :Storia_Il_tranello ;
+                    cbo:pageCount 160 ;
                     cbo:volumeNumber 10 ;
                     <http://purl.org/dc/terms/title> "Il tranello" .
 
@@ -1874,10 +2058,30 @@
 ###  https://github.com/asperan/comic-book-extension-ontology#Volume_La_Mano_Rossa
 :Volume_La_Mano_Rossa rdf:type owl:NamedIndividual ,
                                cbo:Volume ;
+                      cbo:issue :El_Diablo ,
+                                :Fuoco_nella_notte ,
+                                :Il_totem_misterioso ,
+                                :La_Mano_Rossa ,
+                                :La_figlia_del_desperado ,
+                                :La_freccia_della_morte ,
+                                :La_mano_fantasma ,
+                                :La_roccia_parlante ,
+                                :Nel_covo_di_El_Diablo ,
+                                :Pista_insanguinata ,
+                                :Sul_sentiero_della_morte ,
+                                :Terrore_a_Culver_City ,
+                                :Terrore_a_El_Paso ,
+                                :Uno_contro_cinque ,
+                                :Uno_contro_venti ,
+                                <https://github.com/asperan/comic-book-extension-ontology#Bill_Mohican,_il_rapitore_di_fanciulle> ,
+                                <https://github.com/asperan/comic-book-extension-ontology#Caccia_all'uomo> ,
+                                <https://github.com/asperan/comic-book-extension-ontology#Il_capitano_della_River's_Queen> ,
+                                <https://github.com/asperan/comic-book-extension-ontology#Sull'orlo_dell'abisso> ;
                       cbo:seriesOf :Tex ;
                       cbo:story :Storia_El_Diablo ,
                                 :Storia_Il_totem_misterioso ,
                                 :Storia_La_Mano_Rossa ;
+                      cbo:pageCount 160 ;
                       cbo:volumeNumber 1 ;
                       <http://purl.org/dc/terms/title> "La Mano Rossa"@it .
 
@@ -1885,10 +2089,42 @@
 ###  https://github.com/asperan/comic-book-extension-ontology#Volume_Uno_contro_venti
 :Volume_Uno_contro_venti rdf:type owl:NamedIndividual ,
                                   cbo:Volume ;
+                         cbo:issue :Attacco_a_Santa_Fe ,
+                                   :El_Diablo ,
+                                   :Fuoco_nella_notte ,
+                                   :Il_rapimento_di_Tesah ,
+                                   :Il_tempio_tragico ,
+                                   :La_Mano_Rossa ,
+                                   :La_banda_di_Kid_Billy ,
+                                   :La_barriera_di_fuoco ,
+                                   :La_figlia_del_desperado ,
+                                   :La_freccia_della_morte ,
+                                   :La_mano_fantasma ,
+                                   :Nel_covo_di_El_Diablo ,
+                                   :Pista_insanguinata ,
+                                   :Sangue_sulla_frontiera ,
+                                   :Sfida_al_pericolo ,
+                                   :Sul_sentiero_della_morte ,
+                                   :Sul_sentiero_di_guerra ,
+                                   :Terrore_a_El_Paso ,
+                                   :Uno_contro_cinque ,
+                                   :Uno_contro_venti ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Bill_Mohican,_il_rapitore_di_fanciulle> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Caccia_all'uomo> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Il_capitano_della_River's_Queen> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Il_mistero_dell'idolo_d'oro> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Il_segreto_dell'idolo> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'Estrella_del_Rio> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'agguato_nel_canyon> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'assedio_di_Forte_Wellington> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'audace_impresa> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#La_morte_nell'ombra> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Sull'orlo_dell'abisso> ;
                          cbo:seriesOf :Tex ;
                          cbo:story :Storia_La_banda_di_Kid_Billy ,
                                    :Storia_Uno_contro_venti ,
                                    <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
+                         cbo:pageCount 161 ;
                          cbo:volumeNumber 2 ;
                          <http://purl.org/dc/terms/title> "Uno contro venti"@it .
 
@@ -2498,9 +2734,41 @@
 ###  https://github.com/asperan/comic-book-extension-ontology#Volume_L'eroe_del_Messico
 <https://github.com/asperan/comic-book-extension-ontology#Volume_L'eroe_del_Messico> rdf:type owl:NamedIndividual ,
                                                                                               cbo:Volume ;
+                                                                                     cbo:issue :Allarme_a_Buenavista ,
+                                                                                               :Condanna_a_morte ,
+                                                                                               :Duello_a_Lineville ,
+                                                                                               :Gioco_pericoloso ,
+                                                                                               :I_sicari_del_Drago ,
+                                                                                               :Il_fantasma_di_Villa-Rica ,
+                                                                                               :Il_traditore ,
+                                                                                               :La_Mesa_del_Diablo ,
+                                                                                               :La_banda_del_Rosso ,
+                                                                                               :La_bisca_di_Hackett ,
+                                                                                               :La_cattura_di_Montales ,
+                                                                                               :La_fine_di_Mefisto ,
+                                                                                               :La_morte_nel_pugno ,
+                                                                                               :La_tragica_notte ,
+                                                                                               :La_trappola ,
+                                                                                               :Nelle_mani_del_carnefice ,
+                                                                                               :Notte_di_sangue ,
+                                                                                               :Showdown_a_El_Paso ,
+                                                                                               :Sulle_soglie_della_morte ,
+                                                                                               :Un_turpe_contratto ,
+                                                                                               :Una_trama_infernale ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#Complotti_nell'ombra> ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#Fuorilegge!> ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#Il_sindacato_dell'oppio> ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#Il_volo_nell'abisso> ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#L'eroe_del_Messico> ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#L'impresa_di_Hermadina> ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#L'infernale_battaglia> ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#Mefisto,_la_spia> ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#Montales,_el_desperado> ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#Tex,_l'uomo-ciclone> ;
                                                                                      cbo:seriesOf :Tex ;
                                                                                      cbo:story :Storia_La_banda_del_Rosso ,
                                                                                                <https://github.com/asperan/comic-book-extension-ontology#Storia_L'eroe_del_Messico> ;
+                                                                                     cbo:pageCount 152 ;
                                                                                      cbo:volumeNumber 4 ;
                                                                                      <http://purl.org/dc/terms/title> "L'eroe del Messico"@it .
 
@@ -2508,6 +2776,25 @@
 ###  https://github.com/asperan/comic-book-extension-ontology#Volume_L'ultima_battaglia
 <https://github.com/asperan/comic-book-extension-ontology#Volume_L'ultima_battaglia> rdf:type owl:NamedIndividual ,
                                                                                               cbo:Volume ;
+                                                                                     cbo:issue :Avventura_sul_Rio_Grande ,
+                                                                                               :Il_colpo_di_Fulton_Creek ,
+                                                                                               :Il_deserto_di_Gila ,
+                                                                                               :Il_dio_Puma ,
+                                                                                               :Il_re_dei_tiratori ,
+                                                                                               :Il_sepolcro_indiano ,
+                                                                                               :La_banda_dei_Dalton ,
+                                                                                               :La_freccia_della_morte ,
+                                                                                               :La_legge_del_giudice_Colt ,
+                                                                                               :La_montagna_tragica ,
+                                                                                               :La_morte_nel_villaggio ,
+                                                                                               :La_rivincita_di_Toba ,
+                                                                                               :La_vendetta_dei_Dalton ,
+                                                                                               :Nel_covo_dei_Dalton ,
+                                                                                               :Sangue_su_Danville ,
+                                                                                               :Solo_contro_tutti ,
+                                                                                               :Sul_sentiero_di_guerra ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#L'ultima_battaglia> ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#Tiger_Jack_all'opera> ;
                                                                                      cbo:seriesOf :Tex ;
                                                                                      cbo:story :Storia_Avventura_sul_Rio_Grande ,
                                                                                                :Storia_Il_dio_Puma ;
@@ -2518,9 +2805,45 @@
 ###  https://github.com/asperan/comic-book-extension-ontology#Volume_Satania!
 <https://github.com/asperan/comic-book-extension-ontology#Volume_Satania!> rdf:type owl:NamedIndividual ,
                                                                                     cbo:Volume ;
+                                                                           cbo:issue :Agguato_a_Yuma ,
+                                                                                     :Ai_ferri_corti ,
+                                                                                     :Attacco_alla_miniera ,
+                                                                                     :Attacco_nella_notte ,
+                                                                                     :Avventura_a_Piedras_Negras ,
+                                                                                     :Doppio_gioco ,
+                                                                                     :Duello_a_Lineville ,
+                                                                                     :I_sicari_del_Drago ,
+                                                                                     :Il_mostro_di_Satania ,
+                                                                                     :La_banda_del_Rosso ,
+                                                                                     :La_bisca_di_Hackett ,
+                                                                                     :La_fine_di_Satania ,
+                                                                                     :La_morte_nel_pugno ,
+                                                                                     :La_tragica_notte ,
+                                                                                     :La_trappola ,
+                                                                                     :La_valle_degli_spettri ,
+                                                                                     :Lotta_senza_quartiere ,
+                                                                                     :Nel_covo_di_Satania ,
+                                                                                     :Nelle_mani_degli_Outlaws ,
+                                                                                     :Nelle_mani_del_carnefice ,
+                                                                                     :Notte_di_sangue ,
+                                                                                     :Satania ,
+                                                                                     :Situazione_pericolosa ,
+                                                                                     :Sulle_soglie_della_morte ,
+                                                                                     :Un_turpe_contratto ,
+                                                                                     <https://github.com/asperan/comic-book-extension-ontology#Al_Corno_d'Oro> ,
+                                                                                     <https://github.com/asperan/comic-book-extension-ontology#Complotti_nell'ombra> ,
+                                                                                     <https://github.com/asperan/comic-book-extension-ontology#Il_sindacato_dell'oppio> ,
+                                                                                     <https://github.com/asperan/comic-book-extension-ontology#Il_volo_nell'abisso> ,
+                                                                                     <https://github.com/asperan/comic-book-extension-ontology#L'agguato> ,
+                                                                                     <https://github.com/asperan/comic-book-extension-ontology#L'infernale_battaglia> ,
+                                                                                     <https://github.com/asperan/comic-book-extension-ontology#L'ultima_carta_dei_fratelli_Benton> ,
+                                                                                     <https://github.com/asperan/comic-book-extension-ontology#Lo_sceriffo_di_Devil's_Hole> ,
+                                                                                     <https://github.com/asperan/comic-book-extension-ontology#Missione_a_Devil's_Hole> ,
+                                                                                     <https://github.com/asperan/comic-book-extension-ontology#Notte_d'orrore> ;
                                                                            cbo:seriesOf :Tex ;
                                                                            cbo:story :Storia_Satania ,
                                                                                      <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
+                                                                           cbo:pageCount 162 ;
                                                                            cbo:volumeNumber 5 ;
                                                                            <http://purl.org/dc/terms/title> "Satania!"@it .
 
