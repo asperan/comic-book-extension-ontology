@@ -636,6 +636,7 @@
                      cbo:publicationDate "2021-10-21"^^xsd:dateTime ;
                      cbo:writer "Jean-Yves Ferri" ;
                      cbo:inker "Didier Conrad" ;
+                     :soldCopies 1547000 ;
                      <http://purl.org/dc/terms/title> "Asterix e il Grifone"@it ;
                      <http://purl.org/dc/terms/title> "Asterix et le griffon"@fr .
 
@@ -643,9 +644,12 @@
 
 ###  https://github.com/asperan/comic-book-extension-ontology#Asterix
 :Asterix rdf:type owl:NamedIndividual ,
-                  cbo:ComicSeries ;
+                  cbo:Volume ;
          cbo:comicSeriesStoryType :Primary ;
+         cbo:country :France ;
          cbo:publicationDate "1959-10"^^xsd:dateTime ;
+         cbo:issueCount 39 ;
+         cbo:volumeNumber 1 ;
          cbo:issue :Asterix_il_gallico , :Asterix_e_il_falcetto_doro , :Asterix_e_i_goti ,
                    :Asterix_gladiatore , :Asterix_e_il_giro_di_gallia , :Asterix_e_cleopatra ,
                    :Asterix_e_il_duello_dei_capi , :Asterix_e_i_britanni , :Asterix_e_i_normanni ,
