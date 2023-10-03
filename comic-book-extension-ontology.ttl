@@ -13,6 +13,22 @@
                                                             owl:imports cbo: .
 
 #################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
 #    Object Properties
 #################################################################
 
@@ -121,7 +137,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                   cbo:story :Storia_Il_patto_di_sangue ;
                   :issueStoryType :Mainline ;
                   cbo:issueNumber 40 ;
-                  cbo:publicationDate "1950-09-08"^^xsd:dateTime ;
+                  cbo:publicationDate "1950-09-08"^^xsd:date ;
                   <http://purl.org/dc/terms/title> "A carte scoperte" .
 
 
@@ -132,7 +148,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                 cbo:story :Storia_Satania ;
                 :issueStoryType :Mainline ;
                 cbo:issueNumber 11 ;
-                cbo:publicationDate "1950-02-16"^^xsd:dateTime ;
+                cbo:publicationDate "1950-02-16"^^xsd:date ;
                 <http://purl.org/dc/terms/title> "Agguato a Yuma" .
 
 
@@ -143,7 +159,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                           cbo:story :Storia_Il_patto_di_sangue ;
                           :issueStoryType :Mainline ;
                           cbo:issueNumber 39 ;
-                          cbo:publicationDate "1950-09-01"^^xsd:dateTime ;
+                          cbo:publicationDate "1950-09-01"^^xsd:date ;
                           <http://purl.org/dc/terms/title> "Agguato al passo di Tula" .
 
 
@@ -154,7 +170,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                       cbo:story :Storia_Il_tranello ;
                       :issueStoryType :Mainline ;
                       cbo:issueNumber 16 ;
-                      cbo:publicationDate "1951-09-04"^^xsd:dateTime ;
+                      cbo:publicationDate "1951-09-04"^^xsd:date ;
                       <http://purl.org/dc/terms/title> "Agguato nella palude" .
 
 
@@ -165,7 +181,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                 cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
                 :issueStoryType :Mainline ;
                 cbo:issueNumber 24 ;
-                cbo:publicationDate "1950-05-19"^^xsd:dateTime ;
+                cbo:publicationDate "1950-05-19"^^xsd:date ;
                 <http://purl.org/dc/terms/title> "Ai ferri corti" .
 
 
@@ -176,7 +192,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                        cbo:story :Storia_Il_tranello ;
                        :issueStoryType :Mainline ;
                        cbo:issueNumber 17 ;
-                       cbo:publicationDate "1951-09-11"^^xsd:dateTime ;
+                       cbo:publicationDate "1951-09-11"^^xsd:date ;
                        <http://purl.org/dc/terms/title> "Al palo della tortura" .
 
 
@@ -187,7 +203,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
               cbo:story :Storia_La_Banda_degli_Orsi ;
               :issueStoryType :Mainline ;
               cbo:issueNumber 28 ;
-              cbo:publicationDate "1951-11-27"^^xsd:dateTime ;
+              cbo:publicationDate "1951-11-27"^^xsd:date ;
               <http://purl.org/dc/terms/title> "Ala di Morte" .
 
 
@@ -198,7 +214,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                       cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_L'eroe_del_Messico> ;
                       :issueStoryType :Mainline ;
                       cbo:issueNumber 48 ;
-                      cbo:publicationDate "1949-09-08"^^xsd:dateTime ;
+                      cbo:publicationDate "1949-09-08"^^xsd:date ;
                       <http://purl.org/dc/terms/title> "Allarme a Buenavista" .
 
 
@@ -209,7 +225,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                     cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
                     :issueStoryType :Mainline ;
                     cbo:issueNumber 31 ;
-                    cbo:publicationDate "1949-04-28"^^xsd:dateTime ;
+                    cbo:publicationDate "1949-04-28"^^xsd:date ;
                     <http://purl.org/dc/terms/title> "Attacco a Santa Fe" .
 
 
@@ -220,7 +236,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                       cbo:story :Storia_Satania ;
                       :issueStoryType :Mainline ;
                       cbo:issueNumber 10 ;
-                      cbo:publicationDate "1950-02-09"^^xsd:dateTime ;
+                      cbo:publicationDate "1950-02-09"^^xsd:date ;
                       <http://purl.org/dc/terms/title> "Attacco alla miniera" .
 
 
@@ -231,7 +247,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                      cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 16 ;
-                     cbo:publicationDate "1950-03-24"^^xsd:dateTime ;
+                     cbo:publicationDate "1950-03-24"^^xsd:date ;
                      <http://purl.org/dc/terms/title> "Attacco nella notte" .
 
 
@@ -242,7 +258,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                             cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
                             :issueStoryType :Mainline ;
                             cbo:issueNumber 23 ;
-                            cbo:publicationDate "1950-05-12"^^xsd:dateTime ;
+                            cbo:publicationDate "1950-05-12"^^xsd:date ;
                             <http://purl.org/dc/terms/title> "Avventura a Piedras Negras" .
 
 
@@ -253,7 +269,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                           cbo:story :Storia_Avventura_sul_Rio_Grande ;
                           :issueStoryType :Mainline ;
                           cbo:issueNumber 70 ;
-                          cbo:publicationDate "1951-04-10"^^xsd:dateTime ;
+                          cbo:publicationDate "1951-04-10"^^xsd:date ;
                           <http://purl.org/dc/terms/title> "Avventura sul Rio Grande" .
 
 
@@ -264,7 +280,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                       cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
                       :issueStoryType :Mainline ;
                       cbo:issueNumber 35 ;
-                      cbo:publicationDate "1950-08-04"^^xsd:dateTime ;
+                      cbo:publicationDate "1950-08-04"^^xsd:date ;
                       <http://purl.org/dc/terms/title> "Battaglia sul tempio" .
 
 
@@ -275,7 +291,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                   cbo:story :Storia_Il_tranello ;
                   :issueStoryType :Mainline ;
                   cbo:issueNumber 6 ;
-                  cbo:publicationDate "1951-06-26"^^xsd:dateTime ;
+                  cbo:publicationDate "1951-06-26"^^xsd:date ;
                   <http://purl.org/dc/terms/title> "Cerchio di morte" .
 
 
@@ -286,7 +302,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                   cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
                   :issueStoryType :Mainline ;
                   cbo:issueNumber 39 ;
-                  cbo:publicationDate "1949-06-23"^^xsd:dateTime ;
+                  cbo:publicationDate "1949-06-23"^^xsd:date ;
                   <http://purl.org/dc/terms/title> "Condanna a morte" .
 
 
@@ -303,7 +319,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
           cbo:story :Storia_Il_tranello ;
           :issueStoryType :Mainline ;
           cbo:issueNumber 7 ;
-          cbo:publicationDate "1951-07-03"^^xsd:dateTime ;
+          cbo:publicationDate "1951-07-03"^^xsd:date ;
           <http://purl.org/dc/terms/title> "Dinamite" .
 
 
@@ -314,7 +330,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
               cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
               :issueStoryType :Mainline ;
               cbo:issueNumber 22 ;
-              cbo:publicationDate "1950-05-05"^^xsd:dateTime ;
+              cbo:publicationDate "1950-05-05"^^xsd:date ;
               <http://purl.org/dc/terms/title> "Doppio gioco" .
 
 
@@ -325,7 +341,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                   cbo:story :Storia_Il_patto_di_sangue ;
                   :issueStoryType :Mainline ;
                   cbo:issueNumber 53 ;
-                  cbo:publicationDate "1950-12-12"^^xsd:dateTime ;
+                  cbo:publicationDate "1950-12-12"^^xsd:date ;
                   <http://purl.org/dc/terms/title> "Due contro cento" .
 
 
@@ -336,7 +352,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                     cbo:story :Storia_La_banda_del_Rosso ;
                     :issueStoryType :Mainline ;
                     cbo:issueNumber 52 ;
-                    cbo:publicationDate "1949-10-06"^^xsd:dateTime ;
+                    cbo:publicationDate "1949-10-06"^^xsd:date ;
                     <http://purl.org/dc/terms/title> "Duello a Lineville" .
 
 
@@ -347,7 +363,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                       cbo:story :Storia_Il_tranello ;
                       :issueStoryType :Mainline ;
                       cbo:issueNumber 5 ;
-                      cbo:publicationDate "1951-06-19"^^xsd:dateTime ;
+                      cbo:publicationDate "1951-06-19"^^xsd:date ;
                       <http://purl.org/dc/terms/title> "Duello nella foresta" .
 
 
@@ -358,7 +374,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                   cbo:story :Storia_Il_patto_di_sangue ;
                   :issueStoryType :Mainline ;
                   cbo:issueNumber 52 ;
-                  cbo:publicationDate "1950-12-05"^^xsd:dateTime ;
+                  cbo:publicationDate "1950-12-05"^^xsd:date ;
                   <http://purl.org/dc/terms/title> "Duello sul treno" .
 
 
@@ -369,7 +385,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
            cbo:story :Storia_La_Mano_Rossa ;
            :issueStoryType :Mainline ;
            cbo:issueNumber 8 ;
-           cbo:publicationDate "1948-11-18"^^xsd:dateTime ;
+           cbo:publicationDate "1948-11-18"^^xsd:date ;
            <http://purl.org/dc/terms/title> "El Diablo" .
 
 
@@ -386,7 +402,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                 cbo:story :Storia_La_Banda_degli_Orsi ;
                 :issueStoryType :Mainline ;
                 cbo:issueNumber 30 ;
-                cbo:publicationDate "1951-12-11"^^xsd:dateTime ;
+                cbo:publicationDate "1951-12-11"^^xsd:date ;
                 <http://purl.org/dc/terms/title> "Fra due fuochi" .
 
 
@@ -397,7 +413,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                      cbo:story :Storia_Il_figlio_di_Tex ;
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 5 ;
-                     cbo:publicationDate "1952-02-05"^^xsd:dateTime ;
+                     cbo:publicationDate "1952-02-05"^^xsd:date ;
                      <http://purl.org/dc/terms/title> "Fuoco ad Angel City" .
 
 
@@ -408,7 +424,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                    cbo:story :Storia_Uno_contro_venti ;
                    :issueStoryType :Mainline ;
                    cbo:issueNumber 17 ;
-                   cbo:publicationDate "1949-01-20"^^xsd:dateTime ;
+                   cbo:publicationDate "1949-01-20"^^xsd:date ;
                    <http://purl.org/dc/terms/title> "Fuoco nella notte" .
 
 
@@ -419,7 +435,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                   cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
                   :issueStoryType :Mainline ;
                   cbo:issueNumber 37 ;
-                  cbo:publicationDate "1949-06-09"^^xsd:dateTime ;
+                  cbo:publicationDate "1949-06-09"^^xsd:date ;
                   <http://purl.org/dc/terms/title> "Gioco pericoloso" .
 
 
@@ -430,7 +446,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                           cbo:story :Storia_Il_tranello ;
                           :issueStoryType :Mainline ;
                           cbo:issueNumber 8 ;
-                          cbo:publicationDate "1951-07-10"^^xsd:dateTime ;
+                          cbo:publicationDate "1951-07-10"^^xsd:date ;
                           <http://purl.org/dc/terms/title> "Gli eroi di Forte Kinder" .
 
 
@@ -441,7 +457,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                     cbo:story :Storia_La_banda_del_Rosso ;
                     :issueStoryType :Mainline ;
                     cbo:issueNumber 60 ;
-                    cbo:publicationDate "1949-12-01"^^xsd:dateTime ;
+                    cbo:publicationDate "1949-12-01"^^xsd:date ;
                     <http://purl.org/dc/terms/title> "I sicari del Drago" .
 
 
@@ -452,7 +468,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                       cbo:story :Storia_Il_figlio_di_Tex ;
                                       :issueStoryType :Mainline ;
                                       cbo:issueNumber 3 ;
-                                      cbo:publicationDate "1952-01-22"^^xsd:dateTime ;
+                                      cbo:publicationDate "1952-01-22"^^xsd:date ;
                                       <http://purl.org/dc/terms/title> "Il battesimo del fuoco di Kit Willer" .
 
 
@@ -463,7 +479,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                          cbo:story :Storia_Il_figlio_di_Tex ;
                          :issueStoryType :Mainline ;
                          cbo:issueNumber 17 ;
-                         cbo:publicationDate "1952-04-29"^^xsd:dateTime ;
+                         cbo:publicationDate "1952-04-29"^^xsd:date ;
                          <http://purl.org/dc/terms/title> "Il campo dei desperados" .
 
 
@@ -474,7 +490,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                       cbo:story :Storia_Il_figlio_di_Tex ;
                       :issueStoryType :Mainline ;
                       cbo:issueNumber 6 ;
-                      cbo:publicationDate "1952-02-12"^^xsd:dateTime ;
+                      cbo:publicationDate "1952-02-12"^^xsd:date ;
                       <http://purl.org/dc/terms/title> "Il campo della morte" .
 
 
@@ -485,7 +501,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                    cbo:story :Storia_Il_patto_di_sangue ;
                    :issueStoryType :Mainline ;
                    cbo:issueNumber 43 ;
-                   cbo:publicationDate "1950-09-29"^^xsd:dateTime ;
+                   cbo:publicationDate "1950-09-29"^^xsd:date ;
                    <http://purl.org/dc/terms/title> "Il cavaliere nero" .
 
 
@@ -496,7 +512,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                           cbo:story :Storia_La_banda_dei_Dalton ;
                           :issueStoryType :Mainline ;
                           cbo:issueNumber 61 ;
-                          cbo:publicationDate "1951-02-06"^^xsd:dateTime ;
+                          cbo:publicationDate "1951-02-06"^^xsd:date ;
                           <http://purl.org/dc/terms/title> "Il colpo di Fulton Creek" .
 
 
@@ -507,7 +523,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                       cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
                       :issueStoryType :Mainline ;
                       cbo:issueNumber 30 ;
-                      cbo:publicationDate "1950-06-30"^^xsd:dateTime ;
+                      cbo:publicationDate "1950-06-30"^^xsd:date ;
                       <http://purl.org/dc/terms/title> "Il covo sulla Sierra" .
 
 
@@ -518,7 +534,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                     cbo:story :Storia_La_banda_dei_Dalton ;
                     :issueStoryType :Mainline ;
                     cbo:issueNumber 62 ;
-                    cbo:publicationDate "1951-02-13"^^xsd:dateTime ;
+                    cbo:publicationDate "1951-02-13"^^xsd:date ;
                     <http://purl.org/dc/terms/title> "Il deserto di Gila" .
 
 
@@ -529,7 +545,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
              cbo:story :Storia_Il_dio_Puma ;
              :issueStoryType :Mainline ;
              cbo:issueNumber 65 ;
-             cbo:publicationDate "1951-03-06"^^xsd:dateTime ;
+             cbo:publicationDate "1951-03-06"^^xsd:date ;
              <http://purl.org/dc/terms/title> "Il dio Puma" .
 
 
@@ -540,7 +556,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                            cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
                            :issueStoryType :Mainline ;
                            cbo:issueNumber 45 ;
-                           cbo:publicationDate "1949-08-04"^^xsd:dateTime ;
+                           cbo:publicationDate "1949-08-04"^^xsd:date ;
                            <http://purl.org/dc/terms/title> "Il fantasma di Villa-Rica" .
 
 
@@ -551,7 +567,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                   cbo:story :Storia_Il_figlio_di_Tex ;
                   :issueStoryType :Mainline ;
                   cbo:issueNumber 1 ;
-                  cbo:publicationDate "1952-01-08"^^xsd:dateTime ;
+                  cbo:publicationDate "1952-01-08"^^xsd:date ;
                   <http://purl.org/dc/terms/title> "Il figlio di Tex" .
 
 
@@ -562,7 +578,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                     cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
                     :issueStoryType :Mainline ;
                     cbo:issueNumber 27 ;
-                    cbo:publicationDate "1950-06-09"^^xsd:dateTime ;
+                    cbo:publicationDate "1950-06-09"^^xsd:date ;
                     <http://purl.org/dc/terms/title> "Il guado dei Piute" .
 
 
@@ -573,7 +589,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                       cbo:story :Storia_Satania ;
                       :issueStoryType :Mainline ;
                       cbo:issueNumber 12 ;
-                      cbo:publicationDate "1950-02-23"^^xsd:dateTime ;
+                      cbo:publicationDate "1950-02-23"^^xsd:date ;
                       <http://purl.org/dc/terms/title> "Il mostro di Satania" .
 
 
@@ -584,7 +600,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                     cbo:story :Storia_Il_patto_di_sangue ;
                     :issueStoryType :Mainline ;
                     cbo:issueNumber 38 ;
-                    cbo:publicationDate "1950-08-25"^^xsd:dateTime ;
+                    cbo:publicationDate "1950-08-25"^^xsd:date ;
                     <http://purl.org/dc/terms/title> "Il patto di sangue" .
 
 
@@ -595,7 +611,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                       cbo:story :Storia_Il_figlio_di_Tex ;
                       :issueStoryType :Mainline ;
                       cbo:issueNumber 23 ;
-                      cbo:publicationDate "1952-06-10"^^xsd:dateTime ;
+                      cbo:publicationDate "1952-06-10"^^xsd:date ;
                       <http://purl.org/dc/terms/title> "Il ranch abbandonato" .
 
 
@@ -606,7 +622,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                         cbo:story :Storia_Il_patto_di_sangue ;
                         :issueStoryType :Mainline ;
                         cbo:issueNumber 46 ;
-                        cbo:publicationDate "1950-10-20"^^xsd:dateTime ;
+                        cbo:publicationDate "1950-10-20"^^xsd:date ;
                         <http://purl.org/dc/terms/title> "Il rapimento di Lilyth" .
 
 
@@ -617,7 +633,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                        cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
                        :issueStoryType :Mainline ;
                        cbo:issueNumber 27 ;
-                       cbo:publicationDate "1949-03-31"^^xsd:dateTime ;
+                       cbo:publicationDate "1949-03-31"^^xsd:date ;
                        <http://purl.org/dc/terms/title> "Il rapimento di Tesah" .
 
 
@@ -628,7 +644,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                     cbo:story :Storia_Avventura_sul_Rio_Grande ;
                     :issueStoryType :Mainline ;
                     cbo:issueNumber 71 ;
-                    cbo:publicationDate "1951-04-17"^^xsd:dateTime ;
+                    cbo:publicationDate "1951-04-17"^^xsd:date ;
                     <http://purl.org/dc/terms/title> "Il re dei tiratori" .
 
 
@@ -639,7 +655,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
          cbo:story :Storia_Il_figlio_di_Tex ;
          :issueStoryType :Mainline ;
          cbo:issueNumber 15 ;
-         cbo:publicationDate "1952-04-15"^^xsd:dateTime ;
+         cbo:publicationDate "1952-04-15"^^xsd:date ;
          <http://purl.org/dc/terms/title> "Il rogo" .
 
 
@@ -650,7 +666,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                       cbo:story :Storia_Il_tranello ;
                       :issueStoryType :Mainline ;
                       cbo:issueNumber 21 ;
-                      cbo:publicationDate "1951-10-09"^^xsd:dateTime ;
+                      cbo:publicationDate "1951-10-09"^^xsd:date ;
                       <http://purl.org/dc/terms/title> "Il sacrificio di Jim" .
 
 
@@ -661,7 +677,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                       cbo:story :Storia_Il_patto_di_sangue ;
                       :issueStoryType :Mainline ;
                       cbo:issueNumber 37 ;
-                      cbo:publicationDate "1950-08-18"^^xsd:dateTime ;
+                      cbo:publicationDate "1950-08-18"^^xsd:date ;
                       <http://purl.org/dc/terms/title> "Il salto del diavolo" .
 
 
@@ -672,7 +688,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                   cbo:story :Storia_Il_tranello ;
                   :issueStoryType :Mainline ;
                   cbo:issueNumber 20 ;
-                  cbo:publicationDate "1951-10-02"^^xsd:dateTime ;
+                  cbo:publicationDate "1951-10-02"^^xsd:date ;
                   <http://purl.org/dc/terms/title> "Il segno indiano" .
 
 
@@ -683,7 +699,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                      cbo:story :Storia_Avventura_sul_Rio_Grande ;
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 73 ;
-                     cbo:publicationDate "1951-05-01"^^xsd:dateTime ;
+                     cbo:publicationDate "1951-05-01"^^xsd:date ;
                      <http://purl.org/dc/terms/title> "Il sepolcro indiano" .
 
 
@@ -694,7 +710,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                    cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
                    :issueStoryType :Mainline ;
                    cbo:issueNumber 30 ;
-                   cbo:publicationDate "1949-04-21"^^xsd:dateTime ;
+                   cbo:publicationDate "1949-04-21"^^xsd:date ;
                    <http://purl.org/dc/terms/title> "Il tempio tragico" .
 
 
@@ -705,7 +721,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                         cbo:story :Storia_Il_patto_di_sangue ;
                         :issueStoryType :Mainline ;
                         cbo:issueNumber 54 ;
-                        cbo:publicationDate "1950-12-19"^^xsd:dateTime ;
+                        cbo:publicationDate "1950-12-19"^^xsd:date ;
                         <http://purl.org/dc/terms/title> "Il terrore sul Durango" .
 
 
@@ -716,7 +732,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                      cbo:story :Storia_Il_totem_misterioso ;
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 1 ;
-                     cbo:publicationDate "1948-09-30"^^xsd:dateTime ;
+                     cbo:publicationDate "1948-09-30"^^xsd:date ;
                      <http://purl.org/dc/terms/title> "Il totem misterioso" .
 
 
@@ -727,7 +743,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                             cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
                             :issueStoryType :Mainline ;
                             cbo:issueNumber 29 ;
-                            cbo:publicationDate "1950-06-23"^^xsd:dateTime ;
+                            cbo:publicationDate "1950-06-23"^^xsd:date ;
                             <http://purl.org/dc/terms/title> "Il tradimento di El Fierro" .
 
 
@@ -738,7 +754,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
               cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_L'eroe_del_Messico> ;
               :issueStoryType :Mainline ;
               cbo:issueNumber 49 ;
-              cbo:publicationDate "1949-09-15"^^xsd:dateTime ;
+              cbo:publicationDate "1949-09-15"^^xsd:date ;
               <http://purl.org/dc/terms/title> "Il traditore" .
 
 
@@ -749,7 +765,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
              cbo:story :Storia_Il_tranello ;
              :issueStoryType :Mainline ;
              cbo:issueNumber 3 ;
-             cbo:publicationDate "1951-06-05"^^xsd:dateTime ;
+             cbo:publicationDate "1951-06-05"^^xsd:date ;
              <http://purl.org/dc/terms/title> "Il tranello" .
 
 
@@ -760,7 +776,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                        cbo:story :Storia_Il_tranello ;
                        :issueStoryType :Mainline ;
                        cbo:issueNumber 19 ;
-                       cbo:publicationDate "1951-09-25"^^xsd:dateTime ;
+                       cbo:publicationDate "1951-09-25"^^xsd:date ;
                        <http://purl.org/dc/terms/title> "Il villaggio fantasma" .
 
 
@@ -771,7 +787,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                       cbo:story :Storia_La_Banda_degli_Orsi ;
                       :issueStoryType :Mainline ;
                       cbo:issueNumber 25 ;
-                      cbo:publicationDate "1951-11-06"^^xsd:dateTime ;
+                      cbo:publicationDate "1951-11-06"^^xsd:date ;
                       <http://purl.org/dc/terms/title> "Intrighi nella notte" .
 
 
@@ -782,7 +798,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                         cbo:story :Storia_Il_figlio_di_Tex ;
                         :issueStoryType :Mainline ;
                         cbo:issueNumber 9 ;
-                        cbo:publicationDate "1952-03-04"^^xsd:dateTime ;
+                        cbo:publicationDate "1952-03-04"^^xsd:date ;
                         <http://purl.org/dc/terms/title> "Kit Willer si fa onore" .
 
 
@@ -793,7 +809,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                        cbo:story :Storia_Il_figlio_di_Tex ;
                        :issueStoryType :Mainline ;
                        cbo:issueNumber 16 ;
-                       cbo:publicationDate "1952-04-22"^^xsd:dateTime ;
+                       cbo:publicationDate "1952-04-22"^^xsd:date ;
                        <http://purl.org/dc/terms/title> "Kit segue una traccia" .
 
 
@@ -804,7 +820,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                      cbo:story :Storia_La_Banda_degli_Orsi ;
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 24 ;
-                     cbo:publicationDate "1951-10-30"^^xsd:dateTime ;
+                     cbo:publicationDate "1951-10-30"^^xsd:date ;
                      <http://purl.org/dc/terms/title> "La Banda degli Orsi" .
 
 
@@ -815,7 +831,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                cbo:story :Storia_La_Mano_Rossa ;
                :issueStoryType :Mainline ;
                cbo:issueNumber 4 ;
-               cbo:publicationDate "1948-10-21"^^xsd:dateTime ;
+               cbo:publicationDate "1948-10-21"^^xsd:date ;
                <http://purl.org/dc/terms/title> "La Mano Rossa" .
 
 
@@ -826,7 +842,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                     cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
                     :issueStoryType :Mainline ;
                     cbo:issueNumber 36 ;
-                    cbo:publicationDate "1949-06-02"^^xsd:dateTime ;
+                    cbo:publicationDate "1949-06-02"^^xsd:date ;
                     <http://purl.org/dc/terms/title> "La Mesa del Diablo" .
 
 
@@ -837,7 +853,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                               cbo:story :Storia_Il_figlio_di_Tex ;
                               :issueStoryType :Mainline ;
                               cbo:issueNumber 4 ;
-                              cbo:publicationDate "1952-01-29"^^xsd:dateTime ;
+                              cbo:publicationDate "1952-01-29"^^xsd:date ;
                               <http://purl.org/dc/terms/title> "La banda degli incappucciati" .
 
 
@@ -848,7 +864,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                      cbo:story :Storia_La_banda_dei_Dalton ;
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 57 ;
-                     cbo:publicationDate "1951-01-09"^^xsd:dateTime ;
+                     cbo:publicationDate "1951-01-09"^^xsd:date ;
                      <http://purl.org/dc/terms/title> "La banda dei Dalton" .
 
 
@@ -859,7 +875,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                     cbo:story :Storia_La_banda_del_Rosso ;
                     :issueStoryType :Mainline ;
                     cbo:issueNumber 51 ;
-                    cbo:publicationDate "1949-09-29"^^xsd:dateTime ;
+                    cbo:publicationDate "1949-09-29"^^xsd:date ;
                     <http://purl.org/dc/terms/title> "La banda del Rosso" .
 
 
@@ -870,7 +886,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                        cbo:story :Storia_La_banda_di_Kid_Billy ;
                        :issueStoryType :Mainline ;
                        cbo:issueNumber 20 ;
-                       cbo:publicationDate "1949-02-10"^^xsd:dateTime ;
+                       cbo:publicationDate "1949-02-10"^^xsd:date ;
                        <http://purl.org/dc/terms/title> "La banda di Kid Billy" .
 
 
@@ -881,7 +897,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                       cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
                       :issueStoryType :Mainline ;
                       cbo:issueNumber 34 ;
-                      cbo:publicationDate "1949-05-19"^^xsd:dateTime ;
+                      cbo:publicationDate "1949-05-19"^^xsd:date ;
                       <http://purl.org/dc/terms/title> "La barriera di fuoco" .
 
 
@@ -892,7 +908,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                          cbo:story :Storia_Il_figlio_di_Tex ;
                          :issueStoryType :Mainline ;
                          cbo:issueNumber 20 ;
-                         cbo:publicationDate "1952-05-20"^^xsd:dateTime ;
+                         cbo:publicationDate "1952-05-20"^^xsd:date ;
                          <http://purl.org/dc/terms/title> "La battaglia di Holbrok" .
 
 
@@ -903,7 +919,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                  cbo:story :Storia_Il_patto_di_sangue ;
                                  :issueStoryType :Mainline ;
                                  cbo:issueNumber 50 ;
-                                 cbo:publicationDate "1950-11-17"^^xsd:dateTime ;
+                                 cbo:publicationDate "1950-11-17"^^xsd:date ;
                                  <http://purl.org/dc/terms/title> "La battaglia di Testa di Pietra" .
 
 
@@ -914,7 +930,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                      cbo:story :Storia_La_banda_del_Rosso ;
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 1 ;
-                     cbo:publicationDate "1949-12-08"^^xsd:dateTime ;
+                     cbo:publicationDate "1949-12-08"^^xsd:date ;
                      <http://purl.org/dc/terms/title> "La bisca di Hackett" .
 
 
@@ -925,7 +941,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                       cbo:story :Storia_La_Banda_degli_Orsi ;
                       :issueStoryType :Mainline ;
                       cbo:issueNumber 27 ;
-                      cbo:publicationDate "1951-11-20"^^xsd:dateTime ;
+                      cbo:publicationDate "1951-11-20"^^xsd:date ;
                       <http://purl.org/dc/terms/title> "La capanna sul fiume" .
 
 
@@ -936,7 +952,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                          cbo:story :Storia_La_Banda_degli_Orsi ;
                          :issueStoryType :Mainline ;
                          cbo:issueNumber 26 ;
-                         cbo:publicationDate "1951-11-13"^^xsd:dateTime ;
+                         cbo:publicationDate "1951-11-13"^^xsd:date ;
                          <http://purl.org/dc/terms/title> "La cattura di Gros-Jean" .
 
 
@@ -947,7 +963,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                         cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_L'eroe_del_Messico> ;
                         :issueStoryType :Mainline ;
                         cbo:issueNumber 47 ;
-                        cbo:publicationDate "1949-09-01"^^xsd:dateTime ;
+                        cbo:publicationDate "1949-09-01"^^xsd:date ;
                         <http://purl.org/dc/terms/title> "La cattura di Montales" .
 
 
@@ -958,7 +974,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                     cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
                     :issueStoryType :Mainline ;
                     cbo:issueNumber 33 ;
-                    cbo:publicationDate "1950-07-21"^^xsd:dateTime ;
+                    cbo:publicationDate "1950-07-21"^^xsd:date ;
                     <http://purl.org/dc/terms/title> "La corsa infernale" .
 
 
@@ -969,7 +985,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                   cbo:story :Storia_Il_tranello ;
                   :issueStoryType :Mainline ;
                   cbo:issueNumber 14 ;
-                  cbo:publicationDate "1951-08-21"^^xsd:dateTime ;
+                  cbo:publicationDate "1951-08-21"^^xsd:date ;
                   <http://purl.org/dc/terms/title> "La droga indiana" .
 
 
@@ -980,7 +996,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                          cbo:story :Storia_El_Diablo ;
                          :issueStoryType :Mainline ;
                          cbo:issueNumber 12 ;
-                         cbo:publicationDate "1948-12-16"^^xsd:dateTime ;
+                         cbo:publicationDate "1948-12-16"^^xsd:date ;
                          <http://purl.org/dc/terms/title> "La figlia del desperado" .
 
 
@@ -991,7 +1007,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                     cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
                     :issueStoryType :Mainline ;
                     cbo:issueNumber 46 ;
-                    cbo:publicationDate "1949-08-25"^^xsd:dateTime ;
+                    cbo:publicationDate "1949-08-25"^^xsd:date ;
                     <http://purl.org/dc/terms/title> "La fine di Mefisto" .
 
 
@@ -1002,7 +1018,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                     cbo:story :Storia_Satania ;
                     :issueStoryType :Mainline ;
                     cbo:issueNumber 14 ;
-                    cbo:publicationDate "1950-03-10"^^xsd:dateTime ;
+                    cbo:publicationDate "1950-03-10"^^xsd:date ;
                     <http://purl.org/dc/terms/title> "La fine di Satania" .
 
 
@@ -1016,8 +1032,8 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                         :issueStoryType :Mainline ;
                         cbo:issueNumber 5 ,
                                         66 ;
-                        cbo:publicationDate "1948-10-28"^^xsd:dateTime ,
-                                            "1951-03-13"^^xsd:dateTime ;
+                        cbo:publicationDate "1948-10-28"^^xsd:date ,
+                                            "1951-03-13"^^xsd:date ;
                         <http://purl.org/dc/terms/title> "La freccia della morte" .
 
 
@@ -1028,7 +1044,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                        cbo:story :Storia_Il_patto_di_sangue ;
                        :issueStoryType :Mainline ;
                        cbo:issueNumber 49 ;
-                       cbo:publicationDate "1950-11-10"^^xsd:dateTime ;
+                       cbo:publicationDate "1950-11-10"^^xsd:date ;
                        <http://purl.org/dc/terms/title> "La legge del coltello" .
 
 
@@ -1039,7 +1055,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                            cbo:story :Storia_La_banda_dei_Dalton ;
                            :issueStoryType :Mainline ;
                            cbo:issueNumber 64 ;
-                           cbo:publicationDate "1951-02-27"^^xsd:dateTime ;
+                           cbo:publicationDate "1951-02-27"^^xsd:date ;
                            <http://purl.org/dc/terms/title> "La legge del giudice Colt" .
 
 
@@ -1050,7 +1066,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                        cbo:story :Storia_Il_patto_di_sangue ;
                        :issueStoryType :Mainline ;
                        cbo:issueNumber 42 ;
-                       cbo:publicationDate "1950-09-22"^^xsd:dateTime ;
+                       cbo:publicationDate "1950-09-22"^^xsd:date ;
                        <http://purl.org/dc/terms/title> "La legge del taglione" .
 
 
@@ -1061,7 +1077,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                    cbo:story :Storia_Il_figlio_di_Tex ;
                    :issueStoryType :Mainline ;
                    cbo:issueNumber 10 ;
-                   cbo:publicationDate "1952-03-11"^^xsd:dateTime ;
+                   cbo:publicationDate "1952-03-11"^^xsd:date ;
                    <http://purl.org/dc/terms/title> "La mano del morto" .
 
 
@@ -1072,7 +1088,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                   cbo:story :Storia_La_Mano_Rossa ;
                   :issueStoryType :Mainline ;
                   cbo:issueNumber 7 ;
-                  cbo:publicationDate "1948-11-11"^^xsd:dateTime ;
+                  cbo:publicationDate "1948-11-11"^^xsd:date ;
                   <http://purl.org/dc/terms/title> "La mano fantasma" .
 
 
@@ -1083,7 +1099,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                    cbo:story :Storia_Il_tranello ;
                    :issueStoryType :Mainline ;
                    cbo:issueNumber 2 ;
-                   cbo:publicationDate "1951-05-29"^^xsd:dateTime ;
+                   cbo:publicationDate "1951-05-29"^^xsd:date ;
                    <http://purl.org/dc/terms/title> "La mano scarlatta" .
 
 
@@ -1094,7 +1110,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                      cbo:story :Storia_Il_dio_Puma ;
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 69 ;
-                     cbo:publicationDate "1951-04-03"^^xsd:dateTime ;
+                     cbo:publicationDate "1951-04-03"^^xsd:date ;
                      <http://purl.org/dc/terms/title> "La montagna tragica" .
 
 
@@ -1105,7 +1121,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                      cbo:story :Storia_Il_patto_di_sangue ;
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 41 ;
-                     cbo:publicationDate "1950-09-15"^^xsd:dateTime ;
+                     cbo:publicationDate "1950-09-15"^^xsd:date ;
                      <http://purl.org/dc/terms/title> "La morte in agguato" .
 
 
@@ -1116,7 +1132,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                     cbo:story :Storia_La_banda_del_Rosso ;
                     :issueStoryType :Mainline ;
                     cbo:issueNumber 57 ;
-                    cbo:publicationDate "1949-11-10"^^xsd:dateTime ;
+                    cbo:publicationDate "1949-11-10"^^xsd:date ;
                     <http://purl.org/dc/terms/title> "La morte nel pugno" .
 
 
@@ -1127,7 +1143,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                         cbo:story :Storia_Il_dio_Puma ;
                         :issueStoryType :Mainline ;
                         cbo:issueNumber 67 ;
-                        cbo:publicationDate "1951-03-20"^^xsd:dateTime ;
+                        cbo:publicationDate "1951-03-20"^^xsd:date ;
                         <http://purl.org/dc/terms/title> "La morte nel villaggio" .
 
 
@@ -1138,7 +1154,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                       cbo:story :Storia_Il_dio_Puma ;
                       :issueStoryType :Mainline ;
                       cbo:issueNumber 68 ;
-                      cbo:publicationDate "1951-03-27"^^xsd:dateTime ;
+                      cbo:publicationDate "1951-03-27"^^xsd:date ;
                       <http://purl.org/dc/terms/title> "La rivincita di Toba" .
 
 
@@ -1149,7 +1165,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                     cbo:story :Storia_Il_totem_misterioso ;
                     :issueStoryType :Mainline ;
                     cbo:issueNumber 2 ;
-                    cbo:publicationDate "1948-10-07"^^xsd:dateTime ;
+                    cbo:publicationDate "1948-10-07"^^xsd:date ;
                     <http://purl.org/dc/terms/title> "La roccia parlante" .
 
 
@@ -1160,7 +1176,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
          cbo:story :Storia_Il_tranello ;
          :issueStoryType :Mainline ;
          cbo:issueNumber 13 ;
-         cbo:publicationDate "1951-08-14"^^xsd:dateTime ;
+         cbo:publicationDate "1951-08-14"^^xsd:date ;
          <http://purl.org/dc/terms/title> "La spia" .
 
 
@@ -1171,7 +1187,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                   cbo:story :Storia_Il_patto_di_sangue ;
                   :issueStoryType :Mainline ;
                   cbo:issueNumber 51 ;
-                  cbo:publicationDate "1950-11-24"^^xsd:dateTime ;
+                  cbo:publicationDate "1950-11-24"^^xsd:date ;
                   <http://purl.org/dc/terms/title> "La tragica corsa" .
 
 
@@ -1185,8 +1201,8 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                   :issueStoryType :Mainline ;
                   cbo:issueNumber 14 ,
                                   58 ;
-                  cbo:publicationDate "1949-11-17"^^xsd:dateTime ,
-                                      "1952-04-08"^^xsd:dateTime ;
+                  cbo:publicationDate "1949-11-17"^^xsd:date ,
+                                      "1952-04-08"^^xsd:date ;
                   <http://purl.org/dc/terms/title> "La tragica notte" .
 
 
@@ -1197,7 +1213,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
              cbo:story :Storia_La_banda_del_Rosso ;
              :issueStoryType :Mainline ;
              cbo:issueNumber 3 ;
-             cbo:publicationDate "1949-12-22"^^xsd:dateTime ;
+             cbo:publicationDate "1949-12-22"^^xsd:date ;
              <http://purl.org/dc/terms/title> "La trappola" .
 
 
@@ -1208,7 +1224,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                         cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
                         :issueStoryType :Mainline ;
                         cbo:issueNumber 19 ;
-                        cbo:publicationDate "1950-04-14"^^xsd:dateTime ;
+                        cbo:publicationDate "1950-04-14"^^xsd:date ;
                         <http://purl.org/dc/terms/title> "La valle degli spettri" .
 
 
@@ -1219,7 +1235,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                         cbo:story :Storia_La_banda_dei_Dalton ;
                         :issueStoryType :Mainline ;
                         cbo:issueNumber 63 ;
-                        cbo:publicationDate "1951-02-20"^^xsd:dateTime ;
+                        cbo:publicationDate "1951-02-20"^^xsd:date ;
                         <http://purl.org/dc/terms/title> "La vendetta dei Dalton" .
 
 
@@ -1230,7 +1246,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                           cbo:story :Storia_Il_tranello ;
                           :issueStoryType :Mainline ;
                           cbo:issueNumber 15 ;
-                          cbo:publicationDate "1951-08-28"^^xsd:dateTime ;
+                          cbo:publicationDate "1951-08-28"^^xsd:date ;
                           <http://purl.org/dc/terms/title> "La vendetta di Gros-Jean" .
 
 
@@ -1241,7 +1257,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                        cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
                        :issueStoryType :Mainline ;
                        cbo:issueNumber 21 ;
-                       cbo:publicationDate "1950-04-28"^^xsd:dateTime ;
+                       cbo:publicationDate "1950-04-28"^^xsd:date ;
                        <http://purl.org/dc/terms/title> "Lotta senza quartiere" .
 
 
@@ -1258,7 +1274,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                      cbo:story :Storia_La_banda_dei_Dalton ;
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 59 ;
-                     cbo:publicationDate "1951-01-23"^^xsd:dateTime ;
+                     cbo:publicationDate "1951-01-23"^^xsd:date ;
                      <http://purl.org/dc/terms/title> "Nel covo dei Dalton" .
 
 
@@ -1269,7 +1285,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                        cbo:story :Storia_El_Diablo ;
                        :issueStoryType :Mainline ;
                        cbo:issueNumber 11 ;
-                       cbo:publicationDate "1948-12-09"^^xsd:dateTime ;
+                       cbo:publicationDate "1948-12-09"^^xsd:date ;
                        <http://purl.org/dc/terms/title> "Nel covo di El Diablo" .
 
 
@@ -1280,7 +1296,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                      cbo:story :Storia_Satania ;
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 9 ;
-                     cbo:publicationDate "1950-02-02"^^xsd:dateTime ;
+                     cbo:publicationDate "1950-02-02"^^xsd:date ;
                      <http://purl.org/dc/terms/title> "Nel covo di Satania" .
 
 
@@ -1291,7 +1307,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                           cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
                           :issueStoryType :Mainline ;
                           cbo:issueNumber 20 ;
-                          cbo:publicationDate "1950-04-21"^^xsd:dateTime ;
+                          cbo:publicationDate "1950-04-21"^^xsd:date ;
                           <http://purl.org/dc/terms/title> "Nelle mani degli Outlaws" .
 
 
@@ -1302,7 +1318,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                           cbo:story :Storia_La_banda_del_Rosso ;
                           :issueStoryType :Mainline ;
                           cbo:issueNumber 4 ;
-                          cbo:publicationDate "1949-12-29"^^xsd:dateTime ;
+                          cbo:publicationDate "1949-12-29"^^xsd:date ;
                           <http://purl.org/dc/terms/title> "Nelle mani del carnefice" .
 
 
@@ -1313,7 +1329,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                  cbo:story :Storia_La_banda_del_Rosso ;
                  :issueStoryType :Mainline ;
                  cbo:issueNumber 2 ;
-                 cbo:publicationDate "1949-12-15"^^xsd:dateTime ;
+                 cbo:publicationDate "1949-12-15"^^xsd:date ;
                  <http://purl.org/dc/terms/title> "Notte di sangue" .
 
 
@@ -1324,7 +1340,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                     cbo:story :Storia_La_Mano_Rossa ;
                     :issueStoryType :Mainline ;
                     cbo:issueNumber 6 ;
-                    cbo:publicationDate "1948-11-04"^^xsd:dateTime ;
+                    cbo:publicationDate "1948-11-04"^^xsd:date ;
                     <http://purl.org/dc/terms/title> "Pista insanguinata" .
 
 
@@ -1341,7 +1357,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                     cbo:story :Storia_La_banda_dei_Dalton ;
                     :issueStoryType :Mainline ;
                     cbo:issueNumber 60 ;
-                    cbo:publicationDate "1951-01-30"^^xsd:dateTime ;
+                    cbo:publicationDate "1951-01-30"^^xsd:date ;
                     <http://purl.org/dc/terms/title> "Sangue su Danville" .
 
 
@@ -1352,7 +1368,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                      cbo:story :Storia_Il_tranello ;
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 10 ;
-                     cbo:publicationDate "1951-07-24"^^xsd:dateTime ;
+                     cbo:publicationDate "1951-07-24"^^xsd:date ;
                      <http://purl.org/dc/terms/title> "Sangue sugli spalti" .
 
 
@@ -1363,7 +1379,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                         cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
                         :issueStoryType :Mainline ;
                         cbo:issueNumber 28 ;
-                        cbo:publicationDate "1949-04-07"^^xsd:dateTime ;
+                        cbo:publicationDate "1949-04-07"^^xsd:date ;
                         <http://purl.org/dc/terms/title> "Sangue sulla frontiera" .
 
 
@@ -1374,7 +1390,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                    cbo:story :Storia_La_Banda_degli_Orsi ;
                    :issueStoryType :Mainline ;
                    cbo:issueNumber 23 ;
-                   cbo:publicationDate "1951-10-23"^^xsd:dateTime ;
+                   cbo:publicationDate "1951-10-23"^^xsd:date ;
                    <http://purl.org/dc/terms/title> "Sangue sulla neve" .
 
 
@@ -1385,7 +1401,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
          cbo:story :Storia_Satania ;
          :issueStoryType :Mainline ;
          cbo:issueNumber 6 ;
-         cbo:publicationDate "1950-01-12"^^xsd:dateTime ;
+         cbo:publicationDate "1950-01-12"^^xsd:date ;
          <http://purl.org/dc/terms/title> "Satania" .
 
 
@@ -1396,7 +1412,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
               cbo:story :Storia_Il_figlio_di_Tex ;
               :issueStoryType :Mainline ;
               cbo:issueNumber 24 ;
-              cbo:publicationDate "1952-06-17"^^xsd:dateTime ;
+              cbo:publicationDate "1952-06-17"^^xsd:date ;
               <http://purl.org/dc/terms/title> "Senza scampo" .
 
 
@@ -1455,7 +1471,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                    cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
                    :issueStoryType :Mainline ;
                    cbo:issueNumber 32 ;
-                   cbo:publicationDate "1949-05-05"^^xsd:dateTime ;
+                   cbo:publicationDate "1949-05-05"^^xsd:date ;
                    <http://purl.org/dc/terms/title> "Sfida al pericolo" .
 
 
@@ -1466,7 +1482,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                     cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
                     :issueStoryType :Mainline ;
                     cbo:issueNumber 42 ;
-                    cbo:publicationDate "1949-07-14"^^xsd:dateTime ;
+                    cbo:publicationDate "1949-07-14"^^xsd:date ;
                     <http://purl.org/dc/terms/title> "Showdown a El Paso" .
 
 
@@ -1477,7 +1493,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                        cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
                        :issueStoryType :Mainline ;
                        cbo:issueNumber 17 ;
-                       cbo:publicationDate "1950-03-31"^^xsd:dateTime ;
+                       cbo:publicationDate "1950-03-31"^^xsd:date ;
                        <http://purl.org/dc/terms/title> "Situazione pericolosa" .
 
 
@@ -1488,7 +1504,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                    cbo:story :Storia_Avventura_sul_Rio_Grande ;
                    :issueStoryType :Mainline ;
                    cbo:issueNumber 74 ;
-                   cbo:publicationDate "1951-05-08"^^xsd:dateTime ;
+                   cbo:publicationDate "1951-05-08"^^xsd:date ;
                    <http://purl.org/dc/terms/title> "Solo contro tutti" .
 
 
@@ -1589,7 +1605,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                           cbo:story :Storia_El_Diablo ;
                           :issueStoryType :Mainline ;
                           cbo:issueNumber 9 ;
-                          cbo:publicationDate "1948-11-25"^^xsd:dateTime ;
+                          cbo:publicationDate "1948-11-25"^^xsd:date ;
                           <http://purl.org/dc/terms/title> "Sul sentiero della morte" .
 
 
@@ -1603,8 +1619,8 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                         :issueStoryType :Mainline ;
                         cbo:issueNumber 22 ,
                                         58 ;
-                        cbo:publicationDate "1949-02-24"^^xsd:dateTime ,
-                                            "1951-01-16"^^xsd:dateTime ;
+                        cbo:publicationDate "1949-02-24"^^xsd:date ,
+                                            "1951-01-16"^^xsd:date ;
                         <http://purl.org/dc/terms/title> "Sul sentiero di guerra" .
 
 
@@ -1615,7 +1631,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                           cbo:story :Storia_La_banda_del_Rosso ;
                           :issueStoryType :Mainline ;
                           cbo:issueNumber 54 ;
-                          cbo:publicationDate "1949-10-20"^^xsd:dateTime ;
+                          cbo:publicationDate "1949-10-20"^^xsd:date ;
                           <http://purl.org/dc/terms/title> "Sulle soglie della morte" .
 
 
@@ -1626,7 +1642,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                        cbo:story :Storia_Il_totem_misterioso ;
                        :issueStoryType :Mainline ;
                        cbo:issueNumber 3 ;
-                       cbo:publicationDate "1948-10-14"^^xsd:dateTime ;
+                       cbo:publicationDate "1948-10-14"^^xsd:date ;
                        <http://purl.org/dc/terms/title> "Terrore a Culver City" .
 
 
@@ -1637,7 +1653,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                    cbo:story :Storia_El_Diablo ;
                    :issueStoryType :Mainline ;
                    cbo:issueNumber 10 ;
-                   cbo:publicationDate "1948-12-02"^^xsd:dateTime ;
+                   cbo:publicationDate "1948-12-02"^^xsd:date ;
                    <http://purl.org/dc/terms/title> "Terrore a El Paso" .
 
 
@@ -1663,7 +1679,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                    cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
                    :issueStoryType :Mainline ;
                    cbo:issueNumber 32 ;
-                   cbo:publicationDate "1950-07-14"^^xsd:dateTime ;
+                   cbo:publicationDate "1950-07-14"^^xsd:date ;
                    <http://purl.org/dc/terms/title> "Tex alla riscossa" .
 
 
@@ -1674,7 +1690,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                      cbo:story :Storia_Il_patto_di_sangue ;
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 56 ;
-                     cbo:publicationDate "1951-01-02"^^xsd:dateTime ;
+                     cbo:publicationDate "1951-01-02"^^xsd:date ;
                      <http://purl.org/dc/terms/title> "Tex non perde tempo" .
 
 
@@ -1685,7 +1701,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                    cbo:story :Storia_Il_patto_di_sangue ;
                    :issueStoryType :Mainline ;
                    cbo:issueNumber 47 ;
-                   cbo:publicationDate "1950-10-27"^^xsd:dateTime ;
+                   cbo:publicationDate "1950-10-27"^^xsd:date ;
                    <http://purl.org/dc/terms/title> "Traccia di sangue" .
 
 
@@ -1696,7 +1712,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                    cbo:story :Storia_La_Banda_degli_Orsi ;
                    :issueStoryType :Mainline ;
                    cbo:issueNumber 33 ;
-                   cbo:publicationDate "1952-01-01"^^xsd:dateTime ;
+                   cbo:publicationDate "1952-01-01"^^xsd:date ;
                    <http://purl.org/dc/terms/title> "Tragedia sul mare" .
 
 
@@ -1707,7 +1723,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                  cbo:story :Storia_Il_figlio_di_Tex ;
                  :issueStoryType :Mainline ;
                  cbo:issueNumber 22 ;
-                 cbo:publicationDate "1952-06-03"^^xsd:dateTime ;
+                 cbo:publicationDate "1952-06-03"^^xsd:date ;
                  <http://purl.org/dc/terms/title> "Tragico assedio" .
 
 
@@ -1718,7 +1734,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
               cbo:story :Storia_La_Banda_degli_Orsi ;
               :issueStoryType :Mainline ;
               cbo:issueNumber 29 ;
-              cbo:publicationDate "1951-12-04"^^xsd:dateTime ;
+              cbo:publicationDate "1951-12-04"^^xsd:date ;
               <http://purl.org/dc/terms/title> "Troppo tardi" .
 
 
@@ -1729,7 +1745,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                      cbo:story :Storia_Il_figlio_di_Tex ;
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 8 ;
-                     cbo:publicationDate "1952-02-26"^^xsd:dateTime ;
+                     cbo:publicationDate "1952-02-26"^^xsd:date ;
                      <http://purl.org/dc/terms/title> "Un colpo da maestro" .
 
 
@@ -1740,7 +1756,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                     cbo:story :Storia_La_banda_del_Rosso ;
                     :issueStoryType :Mainline ;
                     cbo:issueNumber 56 ;
-                    cbo:publicationDate "1949-11-03"^^xsd:dateTime ;
+                    cbo:publicationDate "1949-11-03"^^xsd:date ;
                     <http://purl.org/dc/terms/title> "Un turpe contratto" .
 
 
@@ -1751,7 +1767,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                   cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
                   :issueStoryType :Mainline ;
                   cbo:issueNumber 34 ;
-                  cbo:publicationDate "1950-07-28"^^xsd:dateTime ;
+                  cbo:publicationDate "1950-07-28"^^xsd:date ;
                   <http://purl.org/dc/terms/title> "Un turpe mercato" .
 
 
@@ -1762,7 +1778,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                        cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
                        :issueStoryType :Mainline ;
                        cbo:issueNumber 36 ;
-                       cbo:publicationDate "1950-08-11"^^xsd:dateTime ;
+                       cbo:publicationDate "1950-08-11"^^xsd:date ;
                        <http://purl.org/dc/terms/title> "Una fuga rocambolesca" .
 
 
@@ -1773,7 +1789,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                        cbo:story :Storia_Il_patto_di_sangue ;
                        :issueStoryType :Mainline ;
                        cbo:issueNumber 45 ;
-                       cbo:publicationDate "1950-10-13"^^xsd:dateTime ;
+                       cbo:publicationDate "1950-10-13"^^xsd:date ;
                        <http://purl.org/dc/terms/title> "Una notte movimentata" .
 
 
@@ -1784,7 +1800,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                      cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 38 ;
-                     cbo:publicationDate "1949-06-16"^^xsd:dateTime ;
+                     cbo:publicationDate "1949-06-16"^^xsd:date ;
                      <http://purl.org/dc/terms/title> "Una trama infernale" .
 
 
@@ -1795,7 +1811,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                    cbo:story :Storia_Uno_contro_venti ;
                    :issueStoryType :Mainline ;
                    cbo:issueNumber 15 ;
-                   cbo:publicationDate "1949-01-06"^^xsd:dateTime ;
+                   cbo:publicationDate "1949-01-06"^^xsd:date ;
                    <http://purl.org/dc/terms/title> "Uno contro cinque" .
 
 
@@ -1806,7 +1822,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                   cbo:story :Storia_Uno_contro_venti ;
                   :issueStoryType :Mainline ;
                   cbo:issueNumber 19 ;
-                  cbo:publicationDate "1949-02-03"^^xsd:dateTime ;
+                  cbo:publicationDate "1949-02-03"^^xsd:date ;
                   <http://purl.org/dc/terms/title> "Uno contro venti" .
 
 
@@ -1838,7 +1854,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                      cbo:seriesOf :Tex ;
                      cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
                      cbo:pageCount 160 ;
-                     cbo:publicationDate "1959-09-01"^^xsd:dateTime ;
+                     cbo:publicationDate "1959-09-01"^^xsd:date ;
                      cbo:volumeNumber 6 ;
                      <http://purl.org/dc/terms/title> "Doppio gioco"@it .
 
@@ -1868,7 +1884,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                          cbo:seriesOf :Tex ;
                          cbo:story :Storia_La_banda_dei_Dalton ;
                          cbo:pageCount 161 ;
-                         cbo:publicationDate "1960-03-01"^^xsd:dateTime ;
+                         cbo:publicationDate "1960-03-01"^^xsd:date ;
                          cbo:volumeNumber 8 ;
                          <http://purl.org/dc/terms/title> "Due contro cento"@it .
 
@@ -1901,7 +1917,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                    cbo:seriesOf :Tex ;
                    cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
                    cbo:pageCount 161 ;
-                   cbo:publicationDate "1959-02-01"^^xsd:dateTime ;
+                   cbo:publicationDate "1959-02-01"^^xsd:date ;
                    cbo:volumeNumber 3 ;
                    <http://purl.org/dc/terms/title> "Fuorilegge"@it .
 
@@ -1948,7 +1964,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                          cbo:seriesOf :Tex ;
                          cbo:story :Storia_Il_figlio_di_Tex ;
                          cbo:pageCount 160 ;
-                         cbo:publicationDate "1960-11-01"^^xsd:dateTime ;
+                         cbo:publicationDate "1960-11-01"^^xsd:date ;
                          cbo:volumeNumber 12 ;
                          <http://purl.org/dc/terms/title> "Il figlio di Tex"@it .
 
@@ -1979,7 +1995,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                            cbo:seriesOf :Tex ;
                            cbo:story :Storia_Il_patto_di_sangue ;
                            cbo:pageCount 160 ;
-                           cbo:publicationDate "1960-01-01"^^xsd:dateTime ;
+                           cbo:publicationDate "1960-01-01"^^xsd:date ;
                            cbo:volumeNumber 7 ;
                            <http://purl.org/dc/terms/title> "Il patto di sangue"@it .
 
@@ -2023,7 +2039,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                          cbo:seriesOf :Tex ;
                          cbo:story :Storia_La_Banda_degli_Orsi ;
                          cbo:pageCount 160 ;
-                         cbo:publicationDate "1960-09-01"^^xsd:dateTime ;
+                         cbo:publicationDate "1960-09-01"^^xsd:date ;
                          cbo:volumeNumber 11 ;
                          <http://purl.org/dc/terms/title> "Il segno indiano"@it .
 
@@ -2055,7 +2071,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                     cbo:seriesOf :Tex ;
                     cbo:story :Storia_Il_tranello ;
                     cbo:pageCount 160 ;
-                    cbo:publicationDate "1960-07-01"^^xsd:dateTime ;
+                    cbo:publicationDate "1960-07-01"^^xsd:date ;
                     cbo:volumeNumber 10 ;
                     <http://purl.org/dc/terms/title> "Il tranello" .
 
@@ -2087,7 +2103,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                 :Storia_Il_totem_misterioso ,
                                 :Storia_La_Mano_Rossa ;
                       cbo:pageCount 160 ;
-                      cbo:publicationDate "1958-10-01"^^xsd:dateTime ;
+                      cbo:publicationDate "1958-10-01"^^xsd:date ;
                       cbo:volumeNumber 1 ;
                       <http://purl.org/dc/terms/title> "La Mano Rossa"@it .
 
@@ -2131,7 +2147,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                    :Storia_Uno_contro_venti ,
                                    <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
                          cbo:pageCount 161 ;
-                         cbo:publicationDate "1958-12-01"^^xsd:dateTime ;
+                         cbo:publicationDate "1958-12-01"^^xsd:date ;
                          cbo:volumeNumber 2 ;
                          <http://purl.org/dc/terms/title> "Uno contro venti"@it .
 
@@ -2143,7 +2159,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                           cbo:story :Storia_Satania ;
                                                                           :issueStoryType :Mainline ;
                                                                           cbo:issueNumber 7 ;
-                                                                          cbo:publicationDate "1950-01-19"^^xsd:dateTime ;
+                                                                          cbo:publicationDate "1950-01-19"^^xsd:date ;
                                                                           <http://purl.org/dc/terms/title> "Al Corno d'Oro" .
 
 
@@ -2154,7 +2170,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                     cbo:story :Storia_Il_figlio_di_Tex ;
                                                                     :issueStoryType :Mainline ;
                                                                     cbo:issueNumber 21 ;
-                                                                    cbo:publicationDate "1952-05-27"^^xsd:dateTime ;
+                                                                    cbo:publicationDate "1952-05-27"^^xsd:date ;
                                                                     <http://purl.org/dc/terms/title> "Apaches!" .
 
 
@@ -2165,7 +2181,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                                   cbo:story :Storia_El_Diablo ;
                                                                                                   :issueStoryType :Mainline ;
                                                                                                   cbo:issueNumber 13 ;
-                                                                                                  cbo:publicationDate "1948-12-23"^^xsd:dateTime ;
+                                                                                                  cbo:publicationDate "1948-12-23"^^xsd:date ;
                                                                                                   <http://purl.org/dc/terms/title> "Bill Mohican, il rapitore di fanciulle" .
 
 
@@ -2176,7 +2192,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                            cbo:story :Storia_Uno_contro_venti ;
                                                                            :issueStoryType :Mainline ;
                                                                            cbo:issueNumber 18 ;
-                                                                           cbo:publicationDate "1949-01-27"^^xsd:dateTime ;
+                                                                           cbo:publicationDate "1949-01-27"^^xsd:date ;
                                                                            <http://purl.org/dc/terms/title> "Caccia all'uomo" .
 
 
@@ -2187,7 +2203,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                 cbo:story :Storia_La_banda_del_Rosso ;
                                                                                 :issueStoryType :Mainline ;
                                                                                 cbo:issueNumber 53 ;
-                                                                                cbo:publicationDate "1949-10-13"^^xsd:dateTime ;
+                                                                                cbo:publicationDate "1949-10-13"^^xsd:date ;
                                                                                 <http://purl.org/dc/terms/title> "Complotti nell'ombra" .
 
 
@@ -2198,7 +2214,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                        cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
                                                                        :issueStoryType :Mainline ;
                                                                        cbo:issueNumber 40 ;
-                                                                       cbo:publicationDate "1949-06-30"^^xsd:dateTime ;
+                                                                       cbo:publicationDate "1949-06-30"^^xsd:date ;
                                                                        <http://purl.org/dc/terms/title> "Fuorilegge!" .
 
 
@@ -2209,7 +2225,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                   cbo:story :Storia_Il_tranello ;
                                                                                   :issueStoryType :Mainline ;
                                                                                   cbo:issueNumber 4 ;
-                                                                                  cbo:publicationDate "1951-06-12"^^xsd:dateTime ;
+                                                                                  cbo:publicationDate "1951-06-12"^^xsd:date ;
                                                                                   <http://purl.org/dc/terms/title> "Gros-Jean, il meticcio" .
 
 
@@ -2220,7 +2236,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                            cbo:story :Storia_Uno_contro_venti ;
                                                                                            :issueStoryType :Mainline ;
                                                                                            cbo:issueNumber 16 ;
-                                                                                           cbo:publicationDate "1949-01-13"^^xsd:dateTime ;
+                                                                                           cbo:publicationDate "1949-01-13"^^xsd:date ;
                                                                                            <http://purl.org/dc/terms/title> "Il capitano della River's Queen" .
 
 
@@ -2231,7 +2247,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                        cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
                                                                                        :issueStoryType :Mainline ;
                                                                                        cbo:issueNumber 24 ;
-                                                                                       cbo:publicationDate "1949-03-10"^^xsd:dateTime ;
+                                                                                       cbo:publicationDate "1949-03-10"^^xsd:date ;
                                                                                        <http://purl.org/dc/terms/title> "Il mistero dell'idolo d'oro" .
 
 
@@ -2242,7 +2258,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                  cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
                                                                                  :issueStoryType :Mainline ;
                                                                                  cbo:issueNumber 29 ;
-                                                                                 cbo:publicationDate "1949-04-14"^^xsd:dateTime ;
+                                                                                 cbo:publicationDate "1949-04-14"^^xsd:date ;
                                                                                  <http://purl.org/dc/terms/title> "Il segreto dell'idolo" .
 
 
@@ -2253,7 +2269,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                    cbo:story :Storia_La_banda_del_Rosso ;
                                                                                    :issueStoryType :Mainline ;
                                                                                    cbo:issueNumber 59 ;
-                                                                                   cbo:publicationDate "1949-11-24"^^xsd:dateTime ;
+                                                                                   cbo:publicationDate "1949-11-24"^^xsd:date ;
                                                                                    <http://purl.org/dc/terms/title> "Il sindacato dell'oppio" .
 
 
@@ -2264,7 +2280,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                cbo:story :Storia_La_banda_del_Rosso ;
                                                                                :issueStoryType :Mainline ;
                                                                                cbo:issueNumber 55 ;
-                                                                               cbo:publicationDate "1949-10-27"^^xsd:dateTime ;
+                                                                               cbo:publicationDate "1949-10-27"^^xsd:date ;
                                                                                <http://purl.org/dc/terms/title> "Il volo nell'abisso" .
 
 
@@ -2275,7 +2291,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                    cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
                                                                                    :issueStoryType :Mainline ;
                                                                                    cbo:issueNumber 26 ;
-                                                                                   cbo:publicationDate "1950-06-02"^^xsd:dateTime ;
+                                                                                   cbo:publicationDate "1950-06-02"^^xsd:date ;
                                                                                    <http://purl.org/dc/terms/title> "Ken Logan, il duellista" .
 
 
@@ -2286,7 +2302,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                               cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
                                                                               :issueStoryType :Mainline ;
                                                                               cbo:issueNumber 25 ;
-                                                                              cbo:publicationDate "1949-03-17"^^xsd:dateTime ;
+                                                                              cbo:publicationDate "1949-03-17"^^xsd:date ;
                                                                               <http://purl.org/dc/terms/title> "L'Estrella del Rio" .
 
 
@@ -2297,7 +2313,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                      cbo:story :Storia_Satania ;
                                                                      :issueStoryType :Mainline ;
                                                                      cbo:issueNumber 8 ;
-                                                                     cbo:publicationDate "1950-01-26"^^xsd:dateTime ;
+                                                                     cbo:publicationDate "1950-01-26"^^xsd:date ;
                                                                      <http://purl.org/dc/terms/title> "L'agguato" .
 
 
@@ -2308,7 +2324,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                     cbo:story :Storia_Il_patto_di_sangue ;
                                                                                     :issueStoryType :Mainline ;
                                                                                     cbo:issueNumber 48 ;
-                                                                                    cbo:publicationDate "1950-11-03"^^xsd:dateTime ;
+                                                                                    cbo:publicationDate "1950-11-03"^^xsd:date ;
                                                                                     <http://purl.org/dc/terms/title> "L'agguato di Volpe Rossa" .
 
 
@@ -2319,7 +2335,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                 cbo:story :Storia_La_banda_di_Kid_Billy ;
                                                                                 :issueStoryType :Mainline ;
                                                                                 cbo:issueNumber 21 ;
-                                                                                cbo:publicationDate "1949-02-17"^^xsd:dateTime ;
+                                                                                cbo:publicationDate "1949-02-17"^^xsd:date ;
                                                                                 <http://purl.org/dc/terms/title> "L'agguato nel canyon" .
 
 
@@ -2330,7 +2346,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                      cbo:story :Storia_Il_figlio_di_Tex ;
                                                                                      :issueStoryType :Mainline ;
                                                                                      cbo:issueNumber 7 ;
-                                                                                     cbo:publicationDate "1952-02-19"^^xsd:dateTime ;
+                                                                                     cbo:publicationDate "1952-02-19"^^xsd:date ;
                                                                                      <http://purl.org/dc/terms/title> "L'agguato nella boscaglia" .
 
 
@@ -2341,7 +2357,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                   cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
                                                                                   :issueStoryType :Mainline ;
                                                                                   cbo:issueNumber 31 ;
-                                                                                  cbo:publicationDate "1950-07-07"^^xsd:dateTime ;
+                                                                                  cbo:publicationDate "1950-07-07"^^xsd:date ;
                                                                                   <http://purl.org/dc/terms/title> "L'agguato sul Rio Mayo" .
 
 
@@ -2352,7 +2368,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                 cbo:story :Storia_Il_patto_di_sangue ;
                                                                                 :issueStoryType :Mainline ;
                                                                                 cbo:issueNumber 44 ;
-                                                                                cbo:publicationDate "1950-10-06"^^xsd:dateTime ;
+                                                                                cbo:publicationDate "1950-10-06"^^xsd:date ;
                                                                                 <http://purl.org/dc/terms/title> "L'aquila della notte" .
 
 
@@ -2363,7 +2379,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                          cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
                                                                                          :issueStoryType :Mainline ;
                                                                                          cbo:issueNumber 33 ;
-                                                                                         cbo:publicationDate "1949-05-12"^^xsd:dateTime ;
+                                                                                         cbo:publicationDate "1949-05-12"^^xsd:date ;
                                                                                          <http://purl.org/dc/terms/title> "L'assedio di Forte Wellington" .
 
 
@@ -2374,7 +2390,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                  cbo:story :Storia_Il_figlio_di_Tex ;
                                                                                  :issueStoryType :Mainline ;
                                                                                  cbo:issueNumber 18 ;
-                                                                                 cbo:publicationDate "1952-05-06"^^xsd:dateTime ;
+                                                                                 cbo:publicationDate "1952-05-06"^^xsd:date ;
                                                                                  <http://purl.org/dc/terms/title> "L'attacco di Eldorado" .
 
 
@@ -2385,7 +2401,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                             cbo:story :Storia_La_banda_di_Kid_Billy ;
                                                                             :issueStoryType :Mainline ;
                                                                             cbo:issueNumber 23 ;
-                                                                            cbo:publicationDate "1949-03-03"^^xsd:dateTime ;
+                                                                            cbo:publicationDate "1949-03-03"^^xsd:date ;
                                                                             <http://purl.org/dc/terms/title> "L'audace impresa" .
 
 
@@ -2396,7 +2412,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                               cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_L'eroe_del_Messico> ;
                                                                               :issueStoryType :Mainline ;
                                                                               cbo:issueNumber 50 ;
-                                                                              cbo:publicationDate "1949-09-22"^^xsd:dateTime ;
+                                                                              cbo:publicationDate "1949-09-22"^^xsd:date ;
                                                                               <http://purl.org/dc/terms/title> "L'eroe del Messico" .
 
 
@@ -2407,7 +2423,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                   cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
                                                                                   :issueStoryType :Mainline ;
                                                                                   cbo:issueNumber 44 ;
-                                                                                  cbo:publicationDate "1949-07-28"^^xsd:dateTime ;
+                                                                                  cbo:publicationDate "1949-07-28"^^xsd:date ;
                                                                                   <http://purl.org/dc/terms/title> "L'impresa di Hermadina" .
 
 
@@ -2418,7 +2434,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                  cbo:story :Storia_La_Banda_degli_Orsi ;
                                                                                  :issueStoryType :Mainline ;
                                                                                  cbo:issueNumber 22 ;
-                                                                                 cbo:publicationDate "1951-10-16"^^xsd:dateTime ;
+                                                                                 cbo:publicationDate "1951-10-16"^^xsd:date ;
                                                                                  <http://purl.org/dc/terms/title> "L'impronta misteriosa" .
 
 
@@ -2429,7 +2445,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                  cbo:story :Storia_La_banda_del_Rosso ;
                                                                                  :issueStoryType :Mainline ;
                                                                                  cbo:issueNumber 5 ;
-                                                                                 cbo:publicationDate "1950-01-05"^^xsd:dateTime ;
+                                                                                 cbo:publicationDate "1950-01-05"^^xsd:date ;
                                                                                  <http://purl.org/dc/terms/title> "L'infernale battaglia" .
 
 
@@ -2440,7 +2456,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                               cbo:story :Storia_Il_tranello ;
                                                                               :issueStoryType :Mainline ;
                                                                               cbo:issueNumber 1 ;
-                                                                              cbo:publicationDate "1951-05-22"^^xsd:dateTime ;
+                                                                              cbo:publicationDate "1951-05-22"^^xsd:date ;
                                                                               <http://purl.org/dc/terms/title> "L'orma della paura" .
 
 
@@ -2451,7 +2467,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                            cbo:story :Storia_Il_tranello ;
                                                                            :issueStoryType :Mainline ;
                                                                            cbo:issueNumber 11 ;
-                                                                           cbo:publicationDate "1951-07-31"^^xsd:dateTime ;
+                                                                           cbo:publicationDate "1951-07-31"^^xsd:date ;
                                                                            <http://purl.org/dc/terms/title> "L'orrenda notte" .
 
 
@@ -2462,7 +2478,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                               cbo:story :Storia_Il_tranello ;
                                                                               :issueStoryType :Mainline ;
                                                                               cbo:issueNumber 18 ;
-                                                                              cbo:publicationDate "1951-09-18"^^xsd:dateTime ;
+                                                                              cbo:publicationDate "1951-09-18"^^xsd:date ;
                                                                               <http://purl.org/dc/terms/title> "L'orribile ricatto" .
 
 
@@ -2473,7 +2489,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                               cbo:story :Storia_Avventura_sul_Rio_Grande ;
                                                                               :issueStoryType :Mainline ;
                                                                               cbo:issueNumber 75 ;
-                                                                              cbo:publicationDate "1951-05-15"^^xsd:dateTime ;
+                                                                              cbo:publicationDate "1951-05-15"^^xsd:date ;
                                                                               <http://purl.org/dc/terms/title> "L'ultima battaglia" .
 
 
@@ -2484,7 +2500,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                               cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
                                                                                               :issueStoryType :Mainline ;
                                                                                               cbo:issueNumber 25 ;
-                                                                                              cbo:publicationDate "1950-05-26"^^xsd:dateTime ;
+                                                                                              cbo:publicationDate "1950-05-26"^^xsd:date ;
                                                                                               <http://purl.org/dc/terms/title> "L'ultima carta dei fratelli Benton" .
 
 
@@ -2495,7 +2511,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                  cbo:story :Storia_Il_tranello ;
                                                                                  :issueStoryType :Mainline ;
                                                                                  cbo:issueNumber 12 ;
-                                                                                 cbo:publicationDate "1951-08-07"^^xsd:dateTime ;
+                                                                                 cbo:publicationDate "1951-08-07"^^xsd:date ;
                                                                                  <http://purl.org/dc/terms/title> "L'ultima carta di Tex" .
 
 
@@ -2506,7 +2522,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                     cbo:story :Storia_La_Banda_degli_Orsi ;
                                                                                     :issueStoryType :Mainline ;
                                                                                     cbo:issueNumber 32 ;
-                                                                                    cbo:publicationDate "1951-12-25"^^xsd:dateTime ;
+                                                                                    cbo:publicationDate "1951-12-25"^^xsd:date ;
                                                                                     <http://purl.org/dc/terms/title> "L'ultima impresa di Brad" .
 
 
@@ -2517,7 +2533,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                        cbo:story :Storia_Il_tranello ;
                                                                        :issueStoryType :Mainline ;
                                                                        cbo:issueNumber 9 ;
-                                                                       cbo:publicationDate "1951-07-17"^^xsd:dateTime ;
+                                                                       cbo:publicationDate "1951-07-17"^^xsd:date ;
                                                                        <http://purl.org/dc/terms/title> "L'ultimatum" .
 
 
@@ -2528,7 +2544,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                        cbo:story :Storia_Il_figlio_di_Tex ;
                                                                                        :issueStoryType :Mainline ;
                                                                                        cbo:issueNumber 13 ;
-                                                                                       cbo:publicationDate "1952-04-01"^^xsd:dateTime ;
+                                                                                       cbo:publicationDate "1952-04-01"^^xsd:date ;
                                                                                        <http://purl.org/dc/terms/title> "L'ultimo colpo di Black Sam" .
 
 
@@ -2539,7 +2555,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                           cbo:story :Storia_Il_figlio_di_Tex ;
                                                                                           :issueStoryType :Mainline ;
                                                                                           cbo:issueNumber 2 ;
-                                                                                          cbo:publicationDate "1952-01-15"^^xsd:dateTime ;
+                                                                                          cbo:publicationDate "1952-01-15"^^xsd:date ;
                                                                                           <http://purl.org/dc/terms/title> "L'uomo dagli speroni d'argento" .
 
 
@@ -2550,7 +2566,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                  cbo:story :Storia_La_Banda_degli_Orsi ;
                                                                                  :issueStoryType :Mainline ;
                                                                                  cbo:issueNumber 31 ;
-                                                                                 cbo:publicationDate "1951-12-18"^^xsd:dateTime ;
+                                                                                 cbo:publicationDate "1951-12-18"^^xsd:date ;
                                                                                  <http://purl.org/dc/terms/title> "La fine dell'Eldorado" .
 
 
@@ -2561,7 +2577,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
                                                                                :issueStoryType :Mainline ;
                                                                                cbo:issueNumber 26 ;
-                                                                               cbo:publicationDate "1949-03-24"^^xsd:dateTime ;
+                                                                               cbo:publicationDate "1949-03-24"^^xsd:date ;
                                                                                <http://purl.org/dc/terms/title> "La morte nell'ombra" .
 
 
@@ -2572,7 +2588,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                        cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
                                                                                        :issueStoryType :Mainline ;
                                                                                        cbo:issueNumber 18 ;
-                                                                                       cbo:publicationDate "1950-04-07"^^xsd:dateTime ;
+                                                                                       cbo:publicationDate "1950-04-07"^^xsd:date ;
                                                                                        <http://purl.org/dc/terms/title> "Lo sceriffo di Devil's Hole" .
 
 
@@ -2583,7 +2599,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                               cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
                                                                               :issueStoryType :Mainline ;
                                                                               cbo:issueNumber 28 ;
-                                                                              cbo:publicationDate "1950-06-16"^^xsd:dateTime ;
+                                                                              cbo:publicationDate "1950-06-16"^^xsd:date ;
                                                                               <http://purl.org/dc/terms/title> "Lupe, la messicana" .
 
 
@@ -2594,7 +2610,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                             cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
                                                                             :issueStoryType :Mainline ;
                                                                             cbo:issueNumber 35 ;
-                                                                            cbo:publicationDate "1949-05-26"^^xsd:dateTime ;
+                                                                            cbo:publicationDate "1949-05-26"^^xsd:date ;
                                                                             <http://purl.org/dc/terms/title> "Mefisto, la spia" .
 
 
@@ -2605,7 +2621,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                    cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
                                                                                    :issueStoryType :Mainline ;
                                                                                    cbo:issueNumber 15 ;
-                                                                                   cbo:publicationDate "1950-03-17"^^xsd:dateTime ;
+                                                                                   cbo:publicationDate "1950-03-17"^^xsd:date ;
                                                                                    <http://purl.org/dc/terms/title> "Missione a Devil's Hole" .
 
 
@@ -2616,7 +2632,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                   cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
                                                                                   :issueStoryType :Mainline ;
                                                                                   cbo:issueNumber 43 ;
-                                                                                  cbo:publicationDate "1949-07-21"^^xsd:dateTime ;
+                                                                                  cbo:publicationDate "1949-07-21"^^xsd:date ;
                                                                                   <http://purl.org/dc/terms/title> "Montales, el desperado" .
 
 
@@ -2627,7 +2643,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                           cbo:story :Storia_Satania ;
                                                                           :issueStoryType :Mainline ;
                                                                           cbo:issueNumber 13 ;
-                                                                          cbo:publicationDate "1950-03-03"^^xsd:dateTime ;
+                                                                          cbo:publicationDate "1950-03-03"^^xsd:date ;
                                                                           <http://purl.org/dc/terms/title> "Notte d'orrore" .
 
 
@@ -2668,7 +2684,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                  cbo:story :Storia_El_Diablo ;
                                                                                  :issueStoryType :Mainline ;
                                                                                  cbo:issueNumber 14 ;
-                                                                                 cbo:publicationDate "1948-12-30"^^xsd:dateTime ;
+                                                                                 cbo:publicationDate "1948-12-30"^^xsd:date ;
                                                                                  <http://purl.org/dc/terms/title> "Sull'orlo dell'abisso" .
 
 
@@ -2679,7 +2695,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                      cbo:story :Storia_Il_figlio_di_Tex ;
                                                                                      :issueStoryType :Mainline ;
                                                                                      cbo:issueNumber 12 ;
-                                                                                     cbo:publicationDate "1952-03-25"^^xsd:dateTime ;
+                                                                                     cbo:publicationDate "1952-03-25"^^xsd:date ;
                                                                                      <http://purl.org/dc/terms/title> "Sulle soglie dell'inferno" .
 
 
@@ -2690,7 +2706,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                             cbo:story :Storia_Il_figlio_di_Tex ;
                                                                             :issueStoryType :Mainline ;
                                                                             cbo:issueNumber 19 ;
-                                                                            cbo:publicationDate "1952-05-13"^^xsd:dateTime ;
+                                                                            cbo:publicationDate "1952-05-13"^^xsd:date ;
                                                                             <http://purl.org/dc/terms/title> "Tex, l'intrepido" .
 
 
@@ -2701,7 +2717,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
                                                                                :issueStoryType :Mainline ;
                                                                                cbo:issueNumber 41 ;
-                                                                               cbo:publicationDate "1949-07-07"^^xsd:dateTime ;
+                                                                               cbo:publicationDate "1949-07-07"^^xsd:date ;
                                                                                <http://purl.org/dc/terms/title> "Tex, l'uomo-ciclone" .
 
 
@@ -2712,7 +2728,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                 cbo:story :Storia_Avventura_sul_Rio_Grande ;
                                                                                 :issueStoryType :Mainline ;
                                                                                 cbo:issueNumber 72 ;
-                                                                                cbo:publicationDate "1951-04-24"^^xsd:dateTime ;
+                                                                                cbo:publicationDate "1951-04-24"^^xsd:date ;
                                                                                 <http://purl.org/dc/terms/title> "Tiger Jack all'opera" .
 
 
@@ -2723,7 +2739,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                 cbo:story :Storia_Il_figlio_di_Tex ;
                                                                                 :issueStoryType :Mainline ;
                                                                                 cbo:issueNumber 11 ;
-                                                                                cbo:publicationDate "1952-03-18"^^xsd:dateTime ;
+                                                                                cbo:publicationDate "1952-03-18"^^xsd:date ;
                                                                                 <http://purl.org/dc/terms/title> "Un'impresa disperata" .
 
 
@@ -2734,7 +2750,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                             cbo:story :Storia_Il_patto_di_sangue ;
                                                                             :issueStoryType :Mainline ;
                                                                             cbo:issueNumber 55 ;
-                                                                            cbo:publicationDate "1950-12-26"^^xsd:dateTime ;
+                                                                            cbo:publicationDate "1950-12-26"^^xsd:date ;
                                                                             <http://purl.org/dc/terms/title> "Un'orribile fine" .
 
 
@@ -2776,7 +2792,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                      cbo:story :Storia_La_banda_del_Rosso ,
                                                                                                <https://github.com/asperan/comic-book-extension-ontology#Storia_L'eroe_del_Messico> ;
                                                                                      cbo:pageCount 152 ;
-                                                                                     cbo:publicationDate "1959-04-01"^^xsd:dateTime ;
+                                                                                     cbo:publicationDate "1959-04-01"^^xsd:date ;
                                                                                      cbo:volumeNumber 4 ;
                                                                                      <http://purl.org/dc/terms/title> "L'eroe del Messico"@it .
 
@@ -2807,7 +2823,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                                      cbo:story :Storia_Avventura_sul_Rio_Grande ,
                                                                                                :Storia_Il_dio_Puma ;
                                                                                      cbo:pageCount 161 ;
-                                                                                     cbo:publicationDate "1960-05-01"^^xsd:dateTime ;
+                                                                                     cbo:publicationDate "1960-05-01"^^xsd:date ;
                                                                                      cbo:volumeNumber 9 ;
                                                                                      <http://purl.org/dc/terms/title> "L'ultima battaglia"@it .
 
@@ -2854,7 +2870,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                                                                            cbo:story :Storia_Satania ,
                                                                                      <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
                                                                            cbo:pageCount 162 ;
-                                                                           cbo:publicationDate "1959-06-01"^^xsd:dateTime ;
+                                                                           cbo:publicationDate "1959-06-01"^^xsd:date ;
                                                                            cbo:volumeNumber 5 ;
                                                                            <http://purl.org/dc/terms/title> "Satania!"@it .
 
