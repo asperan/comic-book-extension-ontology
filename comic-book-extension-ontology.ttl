@@ -87,7 +87,7 @@
 :Comic_Series_Story_Type rdf:type owl:Class ;
                          rdfs:subClassOf <http://schema.org/Intangible> ;
                          rdfs:comment "The type of the story in a ComicSeries."@en ;
-                         rdfs:label "Comis Series Story Type"@en ;
+                         rdfs:label "Comic Series Story Type"@en ;
                          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
 
 
