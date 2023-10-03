@@ -1642,7 +1642,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
               cbo:Comic ;
      cbo:penciller wd:Q12092 ;
      cbo:publisher wd:Q12103 ;
-     cbo:startDate "1958"@en .
+     cbo:startDate 1948 .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :Tex ;
