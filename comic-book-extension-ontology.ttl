@@ -110,7 +110,8 @@ wd:Q12092 rdf:type owl:NamedIndividual ,
 
 
 ###  http://www.wikidata.org/entity/Q12103
-wd:Q12103 rdf:type owl:NamedIndividual .
+wd:Q12103 rdf:type owl:NamedIndividual ,
+                   cbo:Publisher .
 
 
 ###  https://github.com/asperan/comic-book-extension-ontology#A_carte_scoperte
