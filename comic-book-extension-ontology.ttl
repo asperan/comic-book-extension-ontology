@@ -1405,6 +1405,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                       cbo:Series ;
              cbo:publicationFrequency <http://comicmeta.org/vocab/Weekly> ;
              cbo:publisher wd:Q12103 ;
+             cbo:seriesOf :Tex ;
              cbo:endDate 1949 ;
              cbo:itemNumber 1 ;
              cbo:seriesTitle "Serie prima"@it ;
@@ -1416,6 +1417,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                        cbo:Series ;
               cbo:publicationFrequency <http://comicmeta.org/vocab/Weekly> ;
               cbo:publisher wd:Q12103 ;
+              cbo:seriesOf :Tex ;
               cbo:endDate 1952 ;
               cbo:itemNumber 4 ;
               cbo:seriesTitle "Serie quarta"@it ;
@@ -1427,6 +1429,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                         cbo:Series ;
                cbo:publicationFrequency <http://comicmeta.org/vocab/Weekly> ;
                cbo:publisher wd:Q12103 ;
+               cbo:seriesOf :Tex ;
                cbo:endDate 1951 ;
                cbo:itemNumber 2 ;
                cbo:seriesTitle "Serie seconda"@it ;
@@ -1438,6 +1441,7 @@ wd:Q12103 rdf:type owl:NamedIndividual ,
                       cbo:Series ;
              cbo:publicationFrequency <http://comicmeta.org/vocab/Weekly> ;
              cbo:publisher wd:Q12103 ;
+             cbo:seriesOf :Tex ;
              cbo:endDate 1952 ;
              cbo:itemNumber 3 ;
              cbo:seriesTitle "Serie terza"@it ;
