@@ -137,8 +137,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 1 ;
                      cbo:publicationDate "1961-01"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix il gallico"@it ;
                      <http://purl.org/dc/terms/title> "Astérix le Gaulois"@fr . 
 
@@ -150,8 +148,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 2 ;
                      cbo:publicationDate "1962-01"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix e il falcetto d'oro"@it ;
                      <http://purl.org/dc/terms/title> "La Serpe d'Or"@fr . 
 
@@ -162,8 +158,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 3 ;
                      cbo:publicationDate "1963-01"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix e i Goti"@it ;
                      <http://purl.org/dc/terms/title> "Astérix chez les Goths"@fr . 
 
@@ -174,8 +168,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 4 ;
                      cbo:publicationDate "1964-01"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix gladiatore"@it ;
                      <http://purl.org/dc/terms/title> "Astérix gladiateur"@fr . 
 
@@ -187,8 +179,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 5 ;
                      cbo:publicationDate "1965-01"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix e il giro di Gallia"@it ;
                      <http://purl.org/dc/terms/title> "Le Tour de Gaule"@fr . 
 
@@ -199,8 +189,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 6 ;
                      cbo:publicationDate "1965-07"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix e Cleopatra"@it ;
                      <http://purl.org/dc/terms/title> "Astérix et Cléopatre"@fr . 
 
@@ -212,8 +200,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 7 ;
                      cbo:publicationDate "1966-01"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix e il duello dei capi"@it ;
                      <http://purl.org/dc/terms/title> "Le combat des Chefs"@fr . 
 
@@ -225,8 +211,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 8 ;
                      cbo:publicationDate "1966-07"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix e i Britanni"@it ;
                      <http://purl.org/dc/terms/title> "Asterix in Britannia"@it ;
                      <http://purl.org/dc/terms/title> "Astérix chez les Bretons"@fr . 
@@ -239,8 +223,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 9 ;
                      cbo:publicationDate "1966-10"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix e i Normanni"@it ;
                      <http://purl.org/dc/terms/title> "Astérix et les Normands"@fr . 
 
@@ -252,8 +234,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 10 ;
                      cbo:publicationDate "1967-01"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix legionario"@it ;
                      <http://purl.org/dc/terms/title> "Astérix Légionnaire"@fr . 
 
@@ -265,8 +245,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 11 ;
                      cbo:publicationDate "1968-01"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix e lo scudo degli Arverni"@it ;
                      <http://purl.org/dc/terms/title> "Le bouclier arverne"@fr . 
 
@@ -278,8 +256,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 12 ;
                      cbo:publicationDate "1968-07"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix alle Olimpiadi"@it ;
                      <http://purl.org/dc/terms/title> "Asterix ai Giochi Olimpici"@it ;
                      <http://purl.org/dc/terms/title> "Astérix aux Jeux Olympiques"@fr . 
@@ -292,8 +268,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 13 ;
                      cbo:publicationDate "1969-01"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix e il paiolo"@it ;
                      <http://purl.org/dc/terms/title> "Le chaudron"@fr . 
 
@@ -305,8 +279,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 14 ;
                      cbo:publicationDate "1969-07"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix in Iberia"@it ;
                      <http://purl.org/dc/terms/title> "Asterix in Spagna"@it ;
                      <http://purl.org/dc/terms/title> "Astérix en Hispanie"@fr . 
@@ -318,8 +290,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 15 ;
                      cbo:publicationDate "1970-01"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix e la zizzania"@it ;
                      <http://purl.org/dc/terms/title> "La zizanie"@fr . 
 
@@ -330,8 +300,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 16 ;
                      cbo:publicationDate "1970-01"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix e gli Elvezi"@it ;
                      <http://purl.org/dc/terms/title> "Astérix chez les Helvète"@fr . 
 
@@ -343,8 +311,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 17 ;
                      cbo:publicationDate "1971-01"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix e il Regno degli dei"@it ;
                      <http://purl.org/dc/terms/title> "La residenza degli dei"@it ;
                      <http://purl.org/dc/terms/title> "Le domaine des dieux"@fr .
@@ -356,8 +322,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 18 ;
                      cbo:publicationDate "1971-06"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix e gli allori di Cesare"@it ;
                      <http://purl.org/dc/terms/title> "L'alloro di Cesare"@it ;
                      <http://purl.org/dc/terms/title> "Les lauriers de César"@fr .
@@ -370,8 +334,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 19 ;
                      cbo:publicationDate "1972-01"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix e l'indovino"@it ;
                      <http://purl.org/dc/terms/title> "Le devin"@fr .
 
@@ -383,8 +345,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 20 ;
                      cbo:publicationDate "1973-01"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix in Corsica"@it ;
                      <http://purl.org/dc/terms/title> "Astérix en Corse"@fr .
 
@@ -396,8 +356,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 21 ;
                      cbo:publicationDate "1974-01"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix e il regalo di Cesare"@it ;
                      <http://purl.org/dc/terms/title> "Le cadeau de César"@fr .
 
@@ -409,8 +367,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 22 ;
                      cbo:publicationDate "1975-10"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix in America"@it ;
                      <http://purl.org/dc/terms/title> "La grande traversata"@it ;
                      <http://purl.org/dc/terms/title> "La grande traversée"@fr .
@@ -424,8 +380,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 23 ;
                      cbo:publicationDate "1976-01"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix e la Obelix SpA"@it ;
                      <http://purl.org/dc/terms/title> "Obelix e soci"@it ;
                      <http://purl.org/dc/terms/title> "La Obelix S.p.A"@it ;
@@ -439,8 +393,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 24 ;
                      cbo:publicationDate "1979-01"^^xsd:dateTime ;
-                     cbo:writer "René Goscinny" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix e i Belgi"@it ;
                      <http://purl.org/dc/terms/title> "Asterix et les Belges"@fr .
 
@@ -452,8 +404,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 25 ;
                      cbo:publicationDate "1980-01"^^xsd:dateTime ;
-                     cbo:writer "Albert Uderzo" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix e il grande fossato"@it ;
                      <http://purl.org/dc/terms/title> "Le grand fossé"@fr .
 
@@ -465,8 +415,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 26 ;
                      cbo:publicationDate "1981-10"^^xsd:dateTime ;
-                     cbo:writer "Albert Uderzo" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "L'odissea di Asterix"@it ;
                      <http://purl.org/dc/terms/title> "L'odyssée d'Astérix"@fr .
 
@@ -478,8 +426,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 27 ;
                      cbo:publicationDate "1983-01"^^xsd:dateTime ;
-                     cbo:writer "Albert Uderzo" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Il figlio di Asterix"@it ;
                      <http://purl.org/dc/terms/title> "Le fils d'Astérix"@fr .
 
@@ -491,8 +437,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 28 ;
                      cbo:publicationDate "1987-01"^^xsd:dateTime ;
-                     cbo:writer "Albert Uderzo" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Le mille e un'ora di Asterix"@it ;
                      <http://purl.org/dc/terms/title> "Astérix chez Rahazade"@fr .
 
@@ -504,8 +448,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 29 ;
                      cbo:publicationDate "1991-01"^^xsd:dateTime ;
-                     cbo:writer "Albert Uderzo" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix la rosa e il gladio"@it ;
                      <http://purl.org/dc/terms/title> "La rose et le glaive"@fr .
 
@@ -517,8 +459,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 30 ;
                      cbo:publicationDate "1996-10"^^xsd:dateTime ;
-                     cbo:writer "Albert Uderzo" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix e la galera di Obelix"@it ;
                      <http://purl.org/dc/terms/title> "La galère d'Obélix"@fr .
 
@@ -530,8 +470,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 31 ;
                      cbo:publicationDate "2001-01"^^xsd:dateTime ;
-                     cbo:writer "Albert Uderzo" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix e Latraviata"@it ;
                      <http://purl.org/dc/terms/title> "Astérix et Latraviata"@fr .
 
@@ -543,8 +481,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 32 ;
                      cbo:publicationDate "2003-01"^^xsd:dateTime ;
-                     cbo:writer "Albert Uderzo" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Asterix tra banchi e... banchetti"@it ;
                      <http://purl.org/dc/terms/title> "Astérix e la rentrée gauloise"@fr .
 
@@ -556,8 +492,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 33 ;
                      cbo:publicationDate "2005-10"^^xsd:dateTime ;
-                     cbo:writer "Albert Uderzo" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Quando il cielo gli cadde sulla testa"@it ;
                      <http://purl.org/dc/terms/title> "Le ciel lui tombe sur la tête"@fr .
 
@@ -569,8 +503,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 34 ;
                      cbo:publicationDate "2009-01"^^xsd:dateTime ;
-                     cbo:writer "Albert Uderzo" ;
-                     cbo:inker "Albert Uderzo" ;
                      <http://purl.org/dc/terms/title> "Il compleanno di Asterix & Obelix - L'albo d'oro"@it ;
                      <http://purl.org/dc/terms/title> "L'anniversaire d'Astérix et Obélix - Le Livre d'or"@fr .
 
@@ -582,8 +514,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 35 ;
                      cbo:publicationDate "2013-01"^^xsd:dateTime ;
-                     cbo:writer "Jean-Yves Ferri" ;
-                     cbo:inker "Didier Conrad" ;
                      <http://purl.org/dc/terms/title> "Asterix e i Pitti"@it ;
                      <http://purl.org/dc/terms/title> "Astérix chez les Pictes"@fr .
 
@@ -595,8 +525,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 36 ;
                      cbo:publicationDate "2015-01"^^xsd:dateTime ;
-                     cbo:writer "Jean-Yves Ferri" ;
-                     cbo:inker "Didier Conrad" ;
                      <http://purl.org/dc/terms/title> "Asterix e il papiro di Cesare"@it ;
                      <http://purl.org/dc/terms/title> "Le papyrus de César"@fr .
 
@@ -608,8 +536,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 37 ;
                      cbo:publicationDate "2017-10"^^xsd:dateTime ;
-                     cbo:writer "Jean-Yves Ferri" ;
-                     cbo:inker "Didier Conrad" ;
                      <http://purl.org/dc/terms/title> "Asterix e la corsa d'Italia"@it ;
                      <http://purl.org/dc/terms/title> "Astérix et la Transitalique"@fr .
 
@@ -621,8 +547,6 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 38 ;
                      cbo:publicationDate "2019-10"^^xsd:dateTime ;
-                     cbo:writer "Jean-Yves Ferri" ;
-                     cbo:inker "Didier Conrad" ;
                      <http://purl.org/dc/terms/title> "Asterix e la figlia di Vercingetorige"@it ;
                      <http://purl.org/dc/terms/title> "La fille de Vercingétorix"@fr .
 
@@ -634,36 +558,91 @@
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 39 ;
                      cbo:publicationDate "2021-10-21"^^xsd:dateTime ;
-                     cbo:writer "Jean-Yves Ferri" ;
-                     cbo:inker "Didier Conrad" ;
                      :soldCopies 1547000 ;
                      <http://purl.org/dc/terms/title> "Asterix e il Grifone"@it ;
                      <http://purl.org/dc/terms/title> "Asterix et le griffon"@fr .
 
-
-
-###  https://github.com/asperan/comic-book-extension-ontology#Asterix
-:Asterix rdf:type owl:NamedIndividual ,
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_volume_ufficiale
+:Asterix_volume_ufficiale rdf:type owl:NamedIndividual ,
                   cbo:Volume ;
-         cbo:comicSeriesStoryType :Primary ;
          cbo:country :France ;
-         cbo:publicationDate "1959-10"^^xsd:dateTime ;
          cbo:issueCount 39 ;
-         cbo:volumeNumber 1 ;
-         cbo:issue :Asterix_il_gallico , :Asterix_e_il_falcetto_doro , :Asterix_e_i_goti ,
-                   :Asterix_gladiatore , :Asterix_e_il_giro_di_gallia , :Asterix_e_cleopatra ,
-                   :Asterix_e_il_duello_dei_capi , :Asterix_e_i_britanni , :Asterix_e_i_normanni ,
-                   :Asterix_legionario , :Asterix_e_lo_scudo_degli_arverni , :Asterix_alle_olimpiadi ,
-                   :Asterix_e_il_paiolo , :Asterix_in_iberia , :Asterix_e_la_zizzania ,
-                   :Asterix_e_gli_elvezi , :Asterix_e_il_regno_degli_dei , :Asterix_e_gli_allori_di_cesare ,
-                   :Asterix_e_lindovino , :Asterix_in_corsica , :Asterix_e_il_regalo_di_cesare ,
-                   :Asterix_in_america , :Asterix_e_la_obelix_spa , :Asterix_e_i_belgi , :Lodissea_di_asterix ,
-                   :Il_figlio_di_asterix , :Le_mille_e_unora_di_asterix , :Asterix_la_rosa_e_il_gladio ,
-                   :Asterix_e_la_galera_di_obelix , :Asterix_e_latraviata , :Asterix_tra_banchi_e_banchetti ,
-                   :Quando_il_cielo_gli_cadde_sulla_testa , :Il_compleanno_di_asterix_e_obelix_lalbo_doro ,
-                   :Asterix_e_i_pitti , :Asterix_e_il_papiro_di_cesare , :Asterix_e_la_corsa_ditalia ,
-                   :Asterix_e_la_figlia_di_vercingetorige , :Asterix_e_il_grifone .
+         cbo:issue <https://github.com/asperan/comic-book-extension-ontology#Asterix_il_gallico> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_il_falcetto_doro> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_i_goti> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_gladiatore> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_il_giro_di_gallia> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_cleopatra> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_il_duello_dei_capi> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_i_britanni> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_i_normanni> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_legionario> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_lo_scudo_degli_arverni> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_alle_olimpiadi> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_il_paiolo> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_in_iberia> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_la_zizzania> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_gli_elvezi> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_il_regno_degli_dei> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_gli_allori_di_cesare> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_lindovino> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_in_corsica> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_il_regalo_di_cesare> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_in_america> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_la_obelix_spa> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_i_belgi> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Lodissea_di_asterix> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Il_figlio_di_asterix> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Le_mille_e_unora_di_asterix> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_la_rosa_e_il_gladio> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_la_galera_di_obelix> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_latraviata> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_tra_banchi_e_banchetti> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Quando_il_cielo_gli_cadde_sulla_testa> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Il_compleanno_di_asterix_e_obelix_lalbo_doro> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_i_pitti> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_il_papiro_di_cesare> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_la_corsa_ditalia> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_la_figlia_di_vercingetorige> ,
+                   <https://github.com/asperan/comic-book-extension-ontology#Asterix_e_il_grifone> .
 
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_serie_ufficiale
+:Asterix_serie_ufficiale rdf:type owl:NamedIndividual ,
+                  cbo:ComicSeries ;
+                  cbo:comicSeriesStoryType <https://github.com/asperan/comic-book-extension-ontology#Primary> ;
+                  cbo:volume <https://github.com/asperan/comic-book-extension-ontology#Asterix_volume_ufficiale> .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Genesi_di_un_idea
+:Genesi_di_un_idea rdf:type owl:NamedIndividual ,
+                             cbo:Issue ;
+                     :issueStoryType :SpinOff ;
+                     cbo:issueNumber 1 ;
+                     cbo:publicationDate "1962"^^xsd:dateTime ;
+                     :soldCopies 1547000 ;
+                     <http://purl.org/dc/terms/title> "Genesi di un'idea"@it ;
+                     <http://purl.org/dc/terms/title> "Naissance d'une idée (Les secrets d' Asterix)"@fr .
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_volume_serie_brevi
+:Asterix_volume_serie_brevi rdf:type owl:NamedIndividual , cbo:Volume ;
+          cbo:country :France ;
+          cbo:issueCount 15 ;
+          cbo:volumeOf <https://github.com/asperan/comic-book-extension-ontology#Asterix_serie_secondaria> ;
+          cbo:issue <https://github.com/asperan/comic-book-extension-ontology#Genesi_di_un_idea> ,
+                :messinscena_dautori , :obeliscio , :la_primavera_gallica , :la_stagione_gallica ,
+                :anno_ix_sotto_il_vischio , :la_mascotte , :gli_asterix_che_non_si_sono_mai_visti ,
+                :bannix , :mini_midi_maxi , :latinofilia , :nel_50_ac , :lutezia_citta_olimpica ,
+                :nel_35_ac_c_cesare, :chanteclairix .
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_serie_secondaria
+:Asterix_serie_secondaria rdf:type owl:NamedIndividual ,
+                  cbo:ComicSeries ;
+                  cbo:comicSeriesStoryType <https://github.com/asperan/comic-book-extension-ontology#Primary> ;
+                  cbo:volume <https://github.com/asperan/comic-book-extension-ontology#Asterix_volume_serie_brevi> .
+
+### https://github.com/asperan/comic-book-extension-ontology#Asterix
+:Asterix rdf:type owl:NamedIndividual, cbo:ComicUniverse .
 
 
 ###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
