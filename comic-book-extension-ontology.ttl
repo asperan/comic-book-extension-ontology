@@ -798,6 +798,74 @@ wd:Q3170138 rdf:type owl:NamedIndividual .
 
 [ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
    rdfs:comment "" ;
+   rdfs:label "From 2013 the inker is Didier Conrad" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate cbo:publicationDate ;
+                           swrl:argument1 :i ;
+                           swrl:argument2 :pubDate
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                      swrl:builtin <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                      swrl:arguments [ rdf:type rdf:List ;
+                                                       rdf:first :pubDate ;
+                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                  rdf:first "2010-01-01T00:00:00"^^xsd:date ;
+                                                                  rdf:rest rdf:nil
+                                                                ]
+                                                     ]
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate cbo:inker ;
+                           swrl:argument1 :i ;
+                           swrl:argument2 wd:Q3026974
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "From 2013 the writer is Jean-Yves Ferri" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate cbo:publicationDate ;
+                           swrl:argument1 :i ;
+                           swrl:argument2 :pubDate
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                      swrl:builtin <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                      swrl:arguments [ rdf:type rdf:List ;
+                                                       rdf:first :pubDate ;
+                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                  rdf:first "2012-01-01T00:00:00"^^xsd:date ;
+                                                                  rdf:rest rdf:nil
+                                                                ]
+                                                     ]
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate cbo:inker ;
+                           swrl:argument1 :i ;
+                           swrl:argument2 wd:Q3170138
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
    rdfs:label "Before 1977 the writer was Goscinny" ;
    rdf:type swrl:Imp ;
    swrl:body [ rdf:type swrl:AtomList ;
@@ -825,6 +893,86 @@ wd:Q3170138 rdf:type owl:NamedIndividual .
                            swrl:propertyPredicate cbo:writer ;
                            swrl:argument1 :i ;
                            swrl:argument2 wd:Q192214
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Before 2009 Uderzo was the inker" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate cbo:publicationDate ;
+                           swrl:argument1 :i ;
+                           swrl:argument2 :pubDate
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                      swrl:builtin <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                      swrl:arguments [ rdf:type rdf:List ;
+                                                       rdf:first :pubDate ;
+                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                  rdf:first "2010-01-01T00:00:00"^^xsd:date ;
+                                                                  rdf:rest rdf:nil
+                                                                ]
+                                                     ]
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate cbo:inker ;
+                           swrl:argument1 :i ;
+                           swrl:argument2 wd:Q206685
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "From 1977 to 2009 Uderzo was the writer" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate cbo:publicationDate ;
+                           swrl:argument1 :i ;
+                           swrl:argument2 :pubDate
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                      swrl:builtin <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                      swrl:arguments [ rdf:type rdf:List ;
+                                                       rdf:first :pubDate ;
+                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                  rdf:first "2010-01-01T00:00:00"^^xsd:date ;
+                                                                  rdf:rest rdf:nil
+                                                                ]
+                                                     ]
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                 swrl:builtin <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                 swrl:arguments [ rdf:type rdf:List ;
+                                                                  rdf:first :pubDate ;
+                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                             rdf:first "1977-01-01T00:00:00"^^xsd:date ;
+                                                                             rdf:rest rdf:nil
+                                                                           ]
+                                                                ]
+                                               ] ;
+                                     rdf:rest rdf:nil
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate cbo:writer ;
+                           swrl:argument1 :i ;
+                           swrl:argument2 wd:Q206685
                          ] ;
                rdf:rest rdf:nil
              ]
