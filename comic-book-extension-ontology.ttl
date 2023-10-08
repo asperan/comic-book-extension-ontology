@@ -7,6 +7,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix cbext: <https://github.com/asperan/comic-book-extension-ontology> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
 @base <https://github.com/asperan/comic-book-extension-ontology#> .
 
 <https://github.com/asperan/comic-book-extension-ontology> rdf:type owl:Ontology ;
@@ -137,6 +138,7 @@
                              cbo:Issue ;
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 1 ;
+                     :soldCopies 6000 ;
                      cbo:publicationDate "1961-01"^^xsd:dateTime ;
                      <http://purl.org/dc/terms/title> "Asterix il gallico"@it ;
                      <http://purl.org/dc/terms/title> "Astérix le Gaulois"@fr . 
@@ -223,6 +225,7 @@
                              cbo:Issue ;
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 9 ;
+                     :soldCopies 1200000 ;
                      cbo:publicationDate "1966-10"^^xsd:dateTime ;
                      <http://purl.org/dc/terms/title> "Asterix e i Normanni"@it ;
                      <http://purl.org/dc/terms/title> "Astérix et les Normands"@fr . 
@@ -470,6 +473,7 @@
                              cbo:Issue ;
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 31 ;
+                     :soldCopies 2288065 ;
                      cbo:publicationDate "2001-01"^^xsd:dateTime ;
                      <http://purl.org/dc/terms/title> "Asterix e Latraviata"@it ;
                      <http://purl.org/dc/terms/title> "Astérix et Latraviata"@fr .
@@ -492,6 +496,7 @@
                              cbo:Issue ;
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 33 ;
+                     :soldCopies 2400000 ;
                      cbo:publicationDate "2005-10"^^xsd:dateTime ;
                      <http://purl.org/dc/terms/title> "Quando il cielo gli cadde sulla testa"@it ;
                      <http://purl.org/dc/terms/title> "Le ciel lui tombe sur la tête"@fr .
@@ -525,6 +530,7 @@
                              cbo:Issue ;
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 36 ;
+                     :soldCopies 1630000 ;
                      cbo:publicationDate "2015-01"^^xsd:dateTime ;
                      <http://purl.org/dc/terms/title> "Asterix e il papiro di Cesare"@it ;
                      <http://purl.org/dc/terms/title> "Le papyrus de César"@fr .
@@ -536,6 +542,7 @@
                              cbo:Issue ;
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 37 ;
+                     :soldCopies 987000 ;
                      cbo:publicationDate "2017-10"^^xsd:dateTime ;
                      <http://purl.org/dc/terms/title> "Asterix e la corsa d'Italia"@it ;
                      <http://purl.org/dc/terms/title> "Astérix et la Transitalique"@fr .
@@ -547,6 +554,7 @@
                              cbo:Issue ;
                      :issueStoryType :Mainline ;
                      cbo:issueNumber 38 ;
+                     :soldCopies 1243000 ;
                      cbo:publicationDate "2019-10"^^xsd:dateTime ;
                      <http://purl.org/dc/terms/title> "Asterix e la figlia di Vercingetorige"@it ;
                      <http://purl.org/dc/terms/title> "La fille de Vercingétorix"@fr .
