@@ -23,7 +23,7 @@ PREFIX wd: <http://www.wikidata.org/entity/>
 PREFIX cbo: <http://comicmeta.org/cbo/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 
-SELECT ?writer  (COUNT (DISTINCT ?issue) AS ?numIssues) WHERE {
+SELECT (COUNT (DISTINCT ?issue) AS ?numIssues) WHERE {
   ?issue a cbo:Issue .
   ?issue dcterms:title ?title .
   FILTER (LANG(?title)="it")
