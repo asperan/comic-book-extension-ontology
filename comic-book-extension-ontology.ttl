@@ -1,67 +1,90 @@
 @prefix : <https://github.com/asperan/comic-book-extension-ontology#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 @prefix cbo: <http://comicmeta.org/cbo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
 @prefix cbext: <https://github.com/asperan/comic-book-extension-ontology> .
+@prefix comic-book-extension-ontology: <https://github.com/asperan/comic-book-extension-ontology#> .
 @base <https://github.com/asperan/comic-book-extension-ontology#> .
 
 <https://github.com/asperan/comic-book-extension-ontology> rdf:type owl:Ontology ;
                                                             owl:imports cbo: .
 
 #################################################################
+#    Annotation properties
+#################################################################
+
+###  http://comicmeta.org/cbo/comicSeriesStoryType
+cbo:comicSeriesStoryType rdf:type owl:AnnotationProperty .
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
 #    Object Properties
 #################################################################
 
 ###  https://github.com/asperan/comic-book-extension-ontology#comicSeriesStoryType
-:comicSeriesStoryType rdf:type owl:ObjectProperty ,
-                               owl:FunctionalProperty ,
-                               owl:AsymmetricProperty ,
-                               owl:IrreflexiveProperty ;
-                      rdfs:domain <http://schema.org/ComicSeries> ;
-                      rdfs:range :Comic_Series_Story_Type ;
-                      rdfs:comment "Indicates the story type of a ComicSeries."@en ;
-                      rdfs:label "comicSeriesStoryType"@en ;
-                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
+comic-book-extension-ontology:comicSeriesStoryType rdf:type owl:ObjectProperty ,
+                                                            owl:FunctionalProperty ,
+                                                            owl:AsymmetricProperty ,
+                                                            owl:IrreflexiveProperty ;
+                                                   rdfs:domain <http://schema.org/ComicSeries> ;
+                                                   rdfs:range comic-book-extension-ontology:Comic_Series_Story_Type ;
+                                                   rdfs:comment "Indicates the story type of a ComicSeries."@en ;
+                                                   rdfs:label "comicSeriesStoryType"@en ;
+                                                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
 
 
 ###  https://github.com/asperan/comic-book-extension-ontology#issueStoryType
-:issueStoryType rdf:type owl:ObjectProperty ,
-                         owl:FunctionalProperty ,
-                         owl:AsymmetricProperty ,
-                         owl:IrreflexiveProperty ;
-                rdfs:domain cbo:Issue ;
-                rdfs:range :Issue_Story_Type ;
-                rdfs:comment "Indicates the type of the story of an issue."@en ;
-                rdfs:label "issueStoryType"@en ;
-                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
+comic-book-extension-ontology:issueStoryType rdf:type owl:ObjectProperty ,
+                                                      owl:FunctionalProperty ,
+                                                      owl:AsymmetricProperty ,
+                                                      owl:IrreflexiveProperty ;
+                                             rdfs:domain cbo:Issue ;
+                                             rdfs:range comic-book-extension-ontology:Issue_Story_Type ;
+                                             rdfs:comment "Indicates the type of the story of an issue."@en ;
+                                             rdfs:label "issueStoryType"@en ;
+                                             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
 
 
 ###  https://github.com/asperan/comic-book-extension-ontology#tieIn
-:tieIn rdf:type owl:ObjectProperty ;
-       owl:inverseOf :tieInOf ;
-       rdf:type owl:AsymmetricProperty ,
-                owl:TransitiveProperty ,
-                owl:IrreflexiveProperty ;
-       rdfs:domain cbo:Issue ;
-       rdfs:range cbo:Issue ;
-       rdfs:comment "Indicate that the domain Issue has the range Issue as a tie-in."@en ;
-       rdfs:label "tieIn"@en ;
-       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
+comic-book-extension-ontology:tieIn rdf:type owl:ObjectProperty ;
+                                    owl:inverseOf comic-book-extension-ontology:tieInOf ;
+                                    rdf:type owl:AsymmetricProperty ,
+                                             owl:TransitiveProperty ,
+                                             owl:IrreflexiveProperty ;
+                                    rdfs:domain cbo:Issue ;
+                                    rdfs:range cbo:Issue ;
+                                    rdfs:comment "Indicate that the domain Issue has the range Issue as a tie-in."@en ;
+                                    rdfs:label "tieIn"@en ;
+                                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
 
 
 ###  https://github.com/asperan/comic-book-extension-ontology#tieInOf
-:tieInOf rdf:type owl:ObjectProperty ,
-                  owl:AsymmetricProperty ,
-                  owl:TransitiveProperty ,
-                  owl:IrreflexiveProperty ;
-         rdfs:domain cbo:Issue ;
-         rdfs:range cbo:Issue ;
-         rdfs:comment "Indicate that the domain issue story insert itself in the story of the range issue."@en ;
-         rdfs:label "tieInOf"@en ;
-         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
+comic-book-extension-ontology:tieInOf rdf:type owl:ObjectProperty ,
+                                               owl:AsymmetricProperty ,
+                                               owl:TransitiveProperty ,
+                                               owl:IrreflexiveProperty ;
+                                      rdfs:domain cbo:Issue ;
+                                      rdfs:range cbo:Issue ;
+                                      rdfs:comment "Indicate that the domain issue story insert itself in the story of the range issue."@en ;
+                                      rdfs:label "tieInOf"@en ;
+                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
 
 
 #################################################################
@@ -69,67 +92,832 @@
 #################################################################
 
 ###  https://github.com/asperan/comic-book-extension-ontology#soldCopies
-:soldCopies rdf:type owl:DatatypeProperty ,
-                     owl:FunctionalProperty ;
-            rdfs:domain cbo:Issue ;
-            rdfs:range xsd:unsignedLong ;
-            <http://purl.org/dc/elements/1.1/description> "Used to indicate the number of sold copy of an issue."@en ;
-            rdfs:comment "A non-negative Long value, i.e. a value between 0 and 2^64 - 1."@en ;
-            rdfs:isDefinedBy "https://github.com/asperan/comic-book-extension-ontology" .
+comic-book-extension-ontology:soldCopies rdf:type owl:DatatypeProperty ,
+                                                  owl:FunctionalProperty ;
+                                         rdfs:domain cbo:Issue ;
+                                         rdfs:range xsd:unsignedLong ;
+                                         <http://purl.org/dc/elements/1.1/description> "Used to indicate the number of sold copy of an issue."@en ;
+                                         rdfs:comment "A non-negative Long value, i.e. a value between 0 and 2^64 - 1."@en ;
+                                         rdfs:isDefinedBy "https://github.com/asperan/comic-book-extension-ontology" .
 
 
 #################################################################
 #    Classes
 #################################################################
 
+###  http://comicmeta.org/cbo/ComicSeries
+cbo:ComicSeries rdf:type owl:Class .
+
+
 ###  https://github.com/asperan/comic-book-extension-ontology#Comic_Series_Story_Type
-:Comic_Series_Story_Type rdf:type owl:Class ;
-                         rdfs:subClassOf <http://schema.org/Intangible> ;
-                         rdfs:comment "The type of the story in a ComicSeries."@en ;
-                         rdfs:label "Comis Series Story Type"@en ;
-                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
+comic-book-extension-ontology:Comic_Series_Story_Type rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://schema.org/Intangible> ;
+                                                      rdfs:comment "The type of the story in a ComicSeries."@en ;
+                                                      rdfs:label "Comis Series Story Type"@en ;
+                                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
 
 
 ###  https://github.com/asperan/comic-book-extension-ontology#Issue_Story_Type
-:Issue_Story_Type rdf:type owl:Class ;
-                  rdfs:subClassOf <http://schema.org/Intangible> ;
-                  rdfs:comment "The type of the Issue story."@en ;
-                  rdfs:label "Issue Story Type"@en ;
-                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
+comic-book-extension-ontology:Issue_Story_Type rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://schema.org/Intangible> ;
+                                               rdfs:comment "The type of the Issue story."@en ;
+                                               rdfs:label "Issue Story Type"@en ;
+                                               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
+###  http://www.wikidata.org/entity/Q192214
+wd:Q192214 rdf:type owl:NamedIndividual .
+
+
+###  http://www.wikidata.org/entity/Q206685
+wd:Q206685 rdf:type owl:NamedIndividual .
+
+
+###  http://www.wikidata.org/entity/Q3026974
+wd:Q3026974 rdf:type owl:NamedIndividual .
+
+
+###  http://www.wikidata.org/entity/Q3170138
+wd:Q3170138 rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix
+comic-book-extension-ontology:Asterix rdf:type owl:NamedIndividual ,
+                                               cbo:Comic ;
+                                      cbo:inker wd:Q206685 ,
+                                                wd:Q3026974 ;
+                                      cbo:writer wd:Q192214 ,
+                                                 wd:Q206685 ,
+                                                 wd:Q3170138 ;
+                                      cbo:startDate 1961 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource comic-book-extension-ontology:Asterix ;
+   owl:annotatedProperty cbo:inker ;
+   owl:annotatedTarget wd:Q206685 ;
+   rdfs:comment "From 1961 to 2009"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource comic-book-extension-ontology:Asterix ;
+   owl:annotatedProperty cbo:inker ;
+   owl:annotatedTarget wd:Q3026974 ;
+   rdfs:comment "From 2013"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource comic-book-extension-ontology:Asterix ;
+   owl:annotatedProperty cbo:writer ;
+   owl:annotatedTarget wd:Q192214 ;
+   rdfs:comment "From 1961 to 1977"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource comic-book-extension-ontology:Asterix ;
+   owl:annotatedProperty cbo:writer ;
+   owl:annotatedTarget wd:Q206685 ;
+   rdfs:comment "From 1977 to 2009"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource comic-book-extension-ontology:Asterix ;
+   owl:annotatedProperty cbo:writer ;
+   owl:annotatedTarget wd:Q3170138 ;
+   rdfs:comment "From 2013"
+ ] .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_alle_olimpiadi
+comic-book-extension-ontology:Asterix_alle_olimpiadi rdf:type owl:NamedIndividual ,
+                                                              cbo:Issue ;
+                                                     cbo:inker wd:Q206685 ;
+                                                     cbo:writer wd:Q192214 ;
+                                                     comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                     cbo:issueNumber 12 ;
+                                                     cbo:publicationDate "1968-07-01T00:00:00"^^xsd:dateTime ;
+                                                     <http://purl.org/dc/terms/title> "Asterix ai Giochi Olimpici"@it ,
+                                                                                      "Asterix alle Olimpiadi"@it ,
+                                                                                      "Astérix aux Jeux Olympiques"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_cleopatra
+comic-book-extension-ontology:Asterix_e_cleopatra rdf:type owl:NamedIndividual ,
+                                                           cbo:Issue ;
+                                                  cbo:inker wd:Q206685 ;
+                                                  cbo:writer wd:Q192214 ;
+                                                  comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                  cbo:issueNumber 6 ;
+                                                  cbo:publicationDate "1965-07-01T00:00:00"^^xsd:dateTime ;
+                                                  <http://purl.org/dc/terms/title> "Asterix e Cleopatra"@it ,
+                                                                                   "Astérix et Cléopatre"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_gli_allori_di_cesare
+comic-book-extension-ontology:Asterix_e_gli_allori_di_cesare rdf:type owl:NamedIndividual ,
+                                                                      cbo:Issue ;
+                                                             cbo:inker wd:Q206685 ;
+                                                             cbo:writer wd:Q192214 ;
+                                                             comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                             cbo:issueNumber 18 ;
+                                                             cbo:publicationDate "1971-06-01T00:00:00"^^xsd:dateTime ;
+                                                             <http://purl.org/dc/terms/title> "Asterix e gli allori di Cesare"@it ,
+                                                                                              "L'alloro di Cesare"@it ,
+                                                                                              "Les lauriers de César"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_gli_elvezi
+comic-book-extension-ontology:Asterix_e_gli_elvezi rdf:type owl:NamedIndividual ,
+                                                            cbo:Issue ;
+                                                   cbo:inker wd:Q206685 ;
+                                                   cbo:writer wd:Q192214 ;
+                                                   comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                   cbo:issueNumber 16 ;
+                                                   cbo:publicationDate "1970-01-01T00:00:00"^^xsd:dateTime ;
+                                                   <http://purl.org/dc/terms/title> "Asterix e gli Elvezi"@it ,
+                                                                                    "Astérix chez les Helvète"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_i_belgi
+comic-book-extension-ontology:Asterix_e_i_belgi rdf:type owl:NamedIndividual ,
+                                                         cbo:Issue ;
+                                                cbo:inker wd:Q206685 ;
+                                                cbo:writer wd:Q192214 ;
+                                                comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                cbo:issueNumber 24 ;
+                                                cbo:publicationDate "1979-01-01T00:00:00"^^xsd:dateTime ;
+                                                <http://purl.org/dc/terms/title> "Asterix e i Belgi"@it ,
+                                                                                 "Asterix et les Belges"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_i_britanni
+comic-book-extension-ontology:Asterix_e_i_britanni rdf:type owl:NamedIndividual ,
+                                                            cbo:Issue ;
+                                                   cbo:inker wd:Q206685 ;
+                                                   cbo:writer wd:Q192214 ;
+                                                   comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                   cbo:issueNumber 8 ;
+                                                   cbo:publicationDate "1966-07-01T00:00:00"^^xsd:dateTime ;
+                                                   <http://purl.org/dc/terms/title> "Asterix e i Britanni"@it ,
+                                                                                    "Asterix in Britannia"@it ,
+                                                                                    "Astérix chez les Bretons"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_i_goti
+comic-book-extension-ontology:Asterix_e_i_goti rdf:type owl:NamedIndividual ,
+                                                        cbo:Issue ;
+                                               cbo:inker wd:Q206685 ;
+                                               cbo:writer wd:Q192214 ;
+                                               comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                               cbo:issueNumber 3 ;
+                                               cbo:publicationDate "1963-01-01T00:00:00"^^xsd:dateTime ;
+                                               <http://purl.org/dc/terms/title> "Asterix e i Goti"@it ,
+                                                                                "Astérix chez les Goths"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_i_normanni
+comic-book-extension-ontology:Asterix_e_i_normanni rdf:type owl:NamedIndividual ,
+                                                            cbo:Issue ;
+                                                   cbo:inker wd:Q206685 ;
+                                                   cbo:issueOf comic-book-extension-ontology:Asterix_volume_ufficiale ;
+                                                   cbo:writer wd:Q192214 ;
+                                                   comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                   cbo:issueNumber 9 ;
+                                                   cbo:publicationDate "1966-10-01T00:00:00"^^xsd:dateTime ;
+                                                   <http://purl.org/dc/terms/title> "Asterix e i Normanni"@it ,
+                                                                                    "Astérix et les Normands"@fr ;
+                                                   comic-book-extension-ontology:soldCopies 1200000 .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_i_pitti
+comic-book-extension-ontology:Asterix_e_i_pitti rdf:type owl:NamedIndividual ,
+                                                         cbo:Issue ;
+                                                cbo:inker wd:Q3026974 ;
+                                                cbo:writer wd:Q3170138 ;
+                                                comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                cbo:issueNumber 35 ;
+                                                cbo:publicationDate "2013-01-01T00:00:00"^^xsd:dateTime ;
+                                                <http://purl.org/dc/terms/title> "Asterix e i Pitti"@it ,
+                                                                                 "Astérix chez les Pictes"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_il_duello_dei_capi
+comic-book-extension-ontology:Asterix_e_il_duello_dei_capi rdf:type owl:NamedIndividual ,
+                                                                    cbo:Issue ;
+                                                           cbo:inker wd:Q206685 ;
+                                                           cbo:writer wd:Q192214 ;
+                                                           comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                           cbo:issueNumber 7 ;
+                                                           cbo:publicationDate "1966-01-01T00:00:00"^^xsd:dateTime ;
+                                                           <http://purl.org/dc/terms/title> "Asterix e il duello dei capi"@it ,
+                                                                                            "Le combat des Chefs"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_il_falcetto_doro
+comic-book-extension-ontology:Asterix_e_il_falcetto_doro rdf:type owl:NamedIndividual ,
+                                                                  cbo:Issue ;
+                                                         cbo:inker wd:Q206685 ;
+                                                         cbo:writer wd:Q192214 ;
+                                                         comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                         cbo:issueNumber 2 ;
+                                                         cbo:publicationDate "1962-01-01T00:00:00"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/terms/title> "Asterix e il falcetto d'oro"@it ,
+                                                                                          "La Serpe d'Or"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_il_giro_di_gallia
+comic-book-extension-ontology:Asterix_e_il_giro_di_gallia rdf:type owl:NamedIndividual ,
+                                                                   cbo:Issue ;
+                                                          cbo:inker wd:Q206685 ;
+                                                          cbo:writer wd:Q192214 ;
+                                                          comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                          cbo:issueNumber 5 ;
+                                                          cbo:publicationDate "1965-01-01T00:00:00"^^xsd:dateTime ;
+                                                          <http://purl.org/dc/terms/title> "Asterix e il giro di Gallia"@it ,
+                                                                                           "Le Tour de Gaule"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_il_grande_fossato
+comic-book-extension-ontology:Asterix_e_il_grande_fossato rdf:type owl:NamedIndividual ,
+                                                                   cbo:Issue ;
+                                                          cbo:inker wd:Q206685 ;
+                                                          cbo:writer wd:Q206685 ;
+                                                          comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                          cbo:issueNumber 25 ;
+                                                          cbo:publicationDate "1980-01-01T00:00:00"^^xsd:dateTime ;
+                                                          <http://purl.org/dc/terms/title> "Asterix e il grande fossato"@it ,
+                                                                                           "Le grand fossé"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_il_grifone
+comic-book-extension-ontology:Asterix_e_il_grifone rdf:type owl:NamedIndividual ,
+                                                            cbo:Issue ;
+                                                   cbo:inker wd:Q3026974 ;
+                                                   cbo:issueOf comic-book-extension-ontology:Asterix_volume_ufficiale ;
+                                                   cbo:writer wd:Q3170138 ;
+                                                   comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                   cbo:issueNumber 39 ;
+                                                   cbo:publicationDate "2021-10-21T00:00:00"^^xsd:dateTime ;
+                                                   <http://purl.org/dc/terms/title> "Asterix e il Grifone"@it ,
+                                                                                    "Asterix et le griffon"@fr ;
+                                                   comic-book-extension-ontology:soldCopies 1547000 .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_il_paiolo
+comic-book-extension-ontology:Asterix_e_il_paiolo rdf:type owl:NamedIndividual ,
+                                                           cbo:Issue ;
+                                                  cbo:inker wd:Q206685 ;
+                                                  cbo:writer wd:Q192214 ;
+                                                  comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                  cbo:issueNumber 13 ;
+                                                  cbo:publicationDate "1969-01-01T00:00:00"^^xsd:dateTime ;
+                                                  <http://purl.org/dc/terms/title> "Asterix e il paiolo"@it ,
+                                                                                   "Le chaudron"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_il_papiro_di_cesare
+comic-book-extension-ontology:Asterix_e_il_papiro_di_cesare rdf:type owl:NamedIndividual ,
+                                                                     cbo:Issue ;
+                                                            cbo:inker wd:Q3026974 ;
+                                                            cbo:issueOf comic-book-extension-ontology:Asterix_volume_ufficiale ;
+                                                            cbo:writer wd:Q3170138 ;
+                                                            comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                            cbo:issueNumber 36 ;
+                                                            cbo:publicationDate "2015-01-01T00:00:00"^^xsd:dateTime ;
+                                                            <http://purl.org/dc/terms/title> "Asterix e il papiro di Cesare"@it ,
+                                                                                             "Le papyrus de César"@fr ;
+                                                            comic-book-extension-ontology:soldCopies 1630000 .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_il_regalo_di_Cesare
+comic-book-extension-ontology:Asterix_e_il_regalo_di_Cesare rdf:type owl:NamedIndividual ,
+                                                                     cbo:Issue ;
+                                                            cbo:inker wd:Q206685 ;
+                                                            cbo:writer wd:Q192214 ;
+                                                            comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                            cbo:issueNumber 21 ;
+                                                            cbo:publicationDate "1974-01-01T00:00:00"^^xsd:dateTime ;
+                                                            <http://purl.org/dc/terms/title> "Asterix e il regalo di Cesare"@it ,
+                                                                                             "Le cadeau de César"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_il_regalo_di_cesare
+comic-book-extension-ontology:Asterix_e_il_regalo_di_cesare rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_il_regno_degli_dei
+comic-book-extension-ontology:Asterix_e_il_regno_degli_dei rdf:type owl:NamedIndividual ,
+                                                                    cbo:Issue ;
+                                                           cbo:inker wd:Q206685 ;
+                                                           cbo:writer wd:Q192214 ;
+                                                           comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                           cbo:issueNumber 17 ;
+                                                           cbo:publicationDate "1971-01-01T00:00:00"^^xsd:dateTime ;
+                                                           <http://purl.org/dc/terms/title> "Asterix e il Regno degli dei"@it ,
+                                                                                            "La residenza degli dei"@it ,
+                                                                                            "Le domaine des dieux"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_la_corsa_ditalia
+comic-book-extension-ontology:Asterix_e_la_corsa_ditalia rdf:type owl:NamedIndividual ,
+                                                                  cbo:Issue ;
+                                                         cbo:inker wd:Q3026974 ;
+                                                         cbo:issueOf comic-book-extension-ontology:Asterix_volume_ufficiale ;
+                                                         cbo:writer wd:Q3170138 ;
+                                                         comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                         cbo:issueNumber 37 ;
+                                                         cbo:publicationDate "2017-10-01T00:00:00"^^xsd:dateTime ;
+                                                         <http://purl.org/dc/terms/title> "Asterix e la corsa d'Italia"@it ,
+                                                                                          "Astérix et la Transitalique"@fr ;
+                                                         comic-book-extension-ontology:soldCopies 1087000 .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_la_figlia_di_vercingetorige
+comic-book-extension-ontology:Asterix_e_la_figlia_di_vercingetorige rdf:type owl:NamedIndividual ,
+                                                                             cbo:Issue ;
+                                                                    cbo:inker wd:Q3026974 ;
+                                                                    cbo:issueOf comic-book-extension-ontology:Asterix_volume_ufficiale ;
+                                                                    cbo:writer wd:Q3170138 ;
+                                                                    comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                                    cbo:issueNumber 38 ;
+                                                                    cbo:publicationDate "2019-10-01T00:00:00"^^xsd:dateTime ;
+                                                                    <http://purl.org/dc/terms/title> "Asterix e la figlia di Vercingetorige"@it ,
+                                                                                                     "La fille de Vercingétorix"@fr ;
+                                                                    comic-book-extension-ontology:soldCopies 1243000 .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_la_galera_di_obelix
+comic-book-extension-ontology:Asterix_e_la_galera_di_obelix rdf:type owl:NamedIndividual ,
+                                                                     cbo:Issue ;
+                                                            cbo:inker wd:Q206685 ;
+                                                            cbo:writer wd:Q206685 ;
+                                                            comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                            cbo:issueNumber 30 ;
+                                                            cbo:publicationDate "1996-10-01T00:00:00"^^xsd:dateTime ;
+                                                            <http://purl.org/dc/terms/title> "Asterix e la galera di Obelix"@it ,
+                                                                                             "La galère d'Obélix"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_la_obelix_spa
+comic-book-extension-ontology:Asterix_e_la_obelix_spa rdf:type owl:NamedIndividual ,
+                                                               cbo:Issue ;
+                                                      cbo:inker wd:Q206685 ;
+                                                      cbo:writer wd:Q192214 ;
+                                                      comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                      cbo:issueNumber 23 ;
+                                                      cbo:publicationDate "1976-01-01T00:00:00"^^xsd:dateTime ;
+                                                      <http://purl.org/dc/terms/title> "Asterix e la Obelix SpA"@it ,
+                                                                                       "La Obelix S.p.A"@it ,
+                                                                                       "Obelix e soci"@it ,
+                                                                                       "Obélix et compagnie"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_la_zizzania
+comic-book-extension-ontology:Asterix_e_la_zizzania rdf:type owl:NamedIndividual ,
+                                                             cbo:Issue ;
+                                                    cbo:inker wd:Q206685 ;
+                                                    cbo:writer wd:Q192214 ;
+                                                    comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                    cbo:issueNumber 15 ;
+                                                    cbo:publicationDate "1970-01-01T00:00:00"^^xsd:dateTime ;
+                                                    <http://purl.org/dc/terms/title> "Asterix e la zizzania"@it ,
+                                                                                     "La zizanie"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_latraviata
+comic-book-extension-ontology:Asterix_e_latraviata rdf:type owl:NamedIndividual ,
+                                                            cbo:Issue ;
+                                                   cbo:inker wd:Q206685 ;
+                                                   cbo:issueOf comic-book-extension-ontology:Asterix_volume_ufficiale ;
+                                                   cbo:writer wd:Q206685 ;
+                                                   comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                   cbo:issueNumber 31 ;
+                                                   cbo:publicationDate "2001-01-01T00:00:00"^^xsd:dateTime ;
+                                                   <http://purl.org/dc/terms/title> "Asterix e Latraviata"@it ,
+                                                                                    "Astérix et Latraviata"@fr ;
+                                                   comic-book-extension-ontology:soldCopies 2288065 .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_lindovino
+comic-book-extension-ontology:Asterix_e_lindovino rdf:type owl:NamedIndividual ,
+                                                           cbo:Issue ;
+                                                  cbo:inker wd:Q206685 ;
+                                                  cbo:writer wd:Q192214 ;
+                                                  comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                  cbo:issueNumber 19 ;
+                                                  cbo:publicationDate "1972-01-01T00:00:00"^^xsd:dateTime ;
+                                                  <http://purl.org/dc/terms/title> "Asterix e l'indovino"@it ,
+                                                                                   "Le devin"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_e_lo_scudo_degli_arverni
+comic-book-extension-ontology:Asterix_e_lo_scudo_degli_arverni rdf:type owl:NamedIndividual ,
+                                                                        cbo:Issue ;
+                                                               cbo:inker wd:Q206685 ;
+                                                               cbo:writer wd:Q192214 ;
+                                                               comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                               cbo:issueNumber 11 ;
+                                                               cbo:publicationDate "1968-01-01T00:00:00"^^xsd:dateTime ;
+                                                               <http://purl.org/dc/terms/title> "Asterix e lo scudo degli Arverni"@it ,
+                                                                                                "Le bouclier arverne"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_gladiatore
+comic-book-extension-ontology:Asterix_gladiatore rdf:type owl:NamedIndividual ,
+                                                          cbo:Issue ;
+                                                 cbo:inker wd:Q206685 ;
+                                                 cbo:writer wd:Q192214 ;
+                                                 comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                 cbo:issueNumber 4 ;
+                                                 cbo:publicationDate "1964-01-01T00:00:00"^^xsd:dateTime ;
+                                                 <http://purl.org/dc/terms/title> "Asterix gladiatore"@it ,
+                                                                                  "Astérix gladiateur"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_il_gallico
+comic-book-extension-ontology:Asterix_il_gallico rdf:type owl:NamedIndividual ,
+                                                          cbo:Issue ;
+                                                 cbo:inker wd:Q206685 ;
+                                                 cbo:issueOf comic-book-extension-ontology:Asterix_volume_ufficiale ;
+                                                 cbo:writer wd:Q192214 ;
+                                                 comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                 cbo:issueNumber 1 ;
+                                                 cbo:publicationDate "1961-01-01T00:00:00"^^xsd:dateTime ;
+                                                 <http://purl.org/dc/terms/title> "Asterix il gallico"@it ,
+                                                                                  "Astérix le Gaulois"@fr ;
+                                                 comic-book-extension-ontology:soldCopies 1506000 .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_in_america
+comic-book-extension-ontology:Asterix_in_america rdf:type owl:NamedIndividual ,
+                                                          cbo:Issue ;
+                                                 cbo:inker wd:Q206685 ;
+                                                 cbo:writer wd:Q192214 ;
+                                                 comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                 cbo:issueNumber 22 ;
+                                                 cbo:publicationDate "1975-10-01T00:00:00"^^xsd:dateTime ;
+                                                 <http://purl.org/dc/terms/title> "Asterix in America"@it ,
+                                                                                  "La grande traversata"@it ,
+                                                                                  "La grande traversée"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_in_corsica
+comic-book-extension-ontology:Asterix_in_corsica rdf:type owl:NamedIndividual ,
+                                                          cbo:Issue ;
+                                                 cbo:inker wd:Q206685 ;
+                                                 cbo:writer wd:Q192214 ;
+                                                 comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                 cbo:issueNumber 20 ;
+                                                 cbo:publicationDate "1973-01-01T00:00:00"^^xsd:dateTime ;
+                                                 <http://purl.org/dc/terms/title> "Asterix in Corsica"@it ,
+                                                                                  "Astérix en Corse"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_in_iberia
+comic-book-extension-ontology:Asterix_in_iberia rdf:type owl:NamedIndividual ,
+                                                         cbo:Issue ;
+                                                cbo:inker wd:Q206685 ;
+                                                cbo:writer wd:Q192214 ;
+                                                comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                cbo:issueNumber 14 ;
+                                                cbo:publicationDate "1969-07-01T00:00:00"^^xsd:dateTime ;
+                                                <http://purl.org/dc/terms/title> "Asterix in Iberia"@it ,
+                                                                                 "Asterix in Spagna"@it ,
+                                                                                 "Astérix en Hispanie"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_la_rosa_e_il_gladio
+comic-book-extension-ontology:Asterix_la_rosa_e_il_gladio rdf:type owl:NamedIndividual ,
+                                                                   cbo:Issue ;
+                                                          cbo:inker wd:Q206685 ;
+                                                          cbo:writer wd:Q206685 ;
+                                                          comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                          cbo:issueNumber 29 ;
+                                                          cbo:publicationDate "1991-01-01T00:00:00"^^xsd:dateTime ;
+                                                          <http://purl.org/dc/terms/title> "Asterix la rosa e il gladio"@it ,
+                                                                                           "La rose et le glaive"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_legionario
+comic-book-extension-ontology:Asterix_legionario rdf:type owl:NamedIndividual ,
+                                                          cbo:Issue ;
+                                                 cbo:inker wd:Q206685 ;
+                                                 cbo:writer wd:Q192214 ;
+                                                 comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                 cbo:issueNumber 10 ;
+                                                 cbo:publicationDate "1967-01-01T00:00:00"^^xsd:dateTime ;
+                                                 <http://purl.org/dc/terms/title> "Asterix legionario"@it ,
+                                                                                  "Astérix Légionnaire"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_serie_secondaria
+comic-book-extension-ontology:Asterix_serie_secondaria rdf:type owl:NamedIndividual ,
+                                                                cbo:ComicSeries ;
+                                                       cbo:volume comic-book-extension-ontology:Asterix_volume_serie_brevi ;
+                                                       cbo:comicSeriesStoryType comic-book-extension-ontology:Primary .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_serie_ufficiale
+comic-book-extension-ontology:Asterix_serie_ufficiale rdf:type owl:NamedIndividual ,
+                                                               cbo:ComicSeries ;
+                                                      cbo:volume comic-book-extension-ontology:Asterix_volume_ufficiale ;
+                                                      cbo:comicSeriesStoryType comic-book-extension-ontology:Primary .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_tra_banchi_e_banchetti
+comic-book-extension-ontology:Asterix_tra_banchi_e_banchetti rdf:type owl:NamedIndividual ,
+                                                                      cbo:Issue ;
+                                                             cbo:inker wd:Q206685 ;
+                                                             cbo:writer wd:Q206685 ;
+                                                             comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                             cbo:issueNumber 32 ;
+                                                             cbo:publicationDate "2003-01-01T00:00:00"^^xsd:dateTime ;
+                                                             <http://purl.org/dc/terms/title> "Asterix tra banchi e... banchetti"@it ,
+                                                                                              "Astérix e la rentrée gauloise"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_universe
+comic-book-extension-ontology:Asterix_universe rdf:type owl:NamedIndividual ,
+                                                        cbo:ComicUniverse .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_volume_serie_brevi
+comic-book-extension-ontology:Asterix_volume_serie_brevi rdf:type owl:NamedIndividual ,
+                                                                  cbo:Volume ;
+                                                         cbo:country comic-book-extension-ontology:France ;
+                                                         cbo:issue comic-book-extension-ontology:Genesi_di_un_idea ,
+                                                                   comic-book-extension-ontology:anno_ix_sotto_il_vischio ,
+                                                                   comic-book-extension-ontology:bannix ,
+                                                                   comic-book-extension-ontology:chanteclairix ,
+                                                                   comic-book-extension-ontology:gli_asterix_che_non_si_sono_mai_visti ,
+                                                                   comic-book-extension-ontology:la_mascotte ,
+                                                                   comic-book-extension-ontology:la_primavera_gallica ,
+                                                                   comic-book-extension-ontology:la_stagione_gallica ,
+                                                                   comic-book-extension-ontology:latinofilia ,
+                                                                   comic-book-extension-ontology:lutezia_citta_olimpica ,
+                                                                   comic-book-extension-ontology:messinscena_dautori ,
+                                                                   comic-book-extension-ontology:mini_midi_maxi ,
+                                                                   comic-book-extension-ontology:nel_35_ac_c_cesare ,
+                                                                   comic-book-extension-ontology:nel_50_ac ,
+                                                                   comic-book-extension-ontology:obeliscio ;
+                                                         cbo:volumeOf comic-book-extension-ontology:Asterix_serie_secondaria ;
+                                                         cbo:issueCount 15 .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Asterix_volume_ufficiale
+comic-book-extension-ontology:Asterix_volume_ufficiale rdf:type owl:NamedIndividual ,
+                                                                cbo:Volume ;
+                                                       cbo:country comic-book-extension-ontology:France ;
+                                                       cbo:issue comic-book-extension-ontology:Asterix_alle_olimpiadi ,
+                                                                 comic-book-extension-ontology:Asterix_e_cleopatra ,
+                                                                 comic-book-extension-ontology:Asterix_e_gli_allori_di_cesare ,
+                                                                 comic-book-extension-ontology:Asterix_e_gli_elvezi ,
+                                                                 comic-book-extension-ontology:Asterix_e_i_belgi ,
+                                                                 comic-book-extension-ontology:Asterix_e_i_britanni ,
+                                                                 comic-book-extension-ontology:Asterix_e_i_goti ,
+                                                                 comic-book-extension-ontology:Asterix_e_i_normanni ,
+                                                                 comic-book-extension-ontology:Asterix_e_i_pitti ,
+                                                                 comic-book-extension-ontology:Asterix_e_il_duello_dei_capi ,
+                                                                 comic-book-extension-ontology:Asterix_e_il_falcetto_doro ,
+                                                                 comic-book-extension-ontology:Asterix_e_il_giro_di_gallia ,
+                                                                 comic-book-extension-ontology:Asterix_e_il_grifone ,
+                                                                 comic-book-extension-ontology:Asterix_e_il_paiolo ,
+                                                                 comic-book-extension-ontology:Asterix_e_il_papiro_di_cesare ,
+                                                                 comic-book-extension-ontology:Asterix_e_il_regalo_di_cesare ,
+                                                                 comic-book-extension-ontology:Asterix_e_il_regno_degli_dei ,
+                                                                 comic-book-extension-ontology:Asterix_e_la_corsa_ditalia ,
+                                                                 comic-book-extension-ontology:Asterix_e_la_figlia_di_vercingetorige ,
+                                                                 comic-book-extension-ontology:Asterix_e_la_galera_di_obelix ,
+                                                                 comic-book-extension-ontology:Asterix_e_la_obelix_spa ,
+                                                                 comic-book-extension-ontology:Asterix_e_la_zizzania ,
+                                                                 comic-book-extension-ontology:Asterix_e_latraviata ,
+                                                                 comic-book-extension-ontology:Asterix_e_lindovino ,
+                                                                 comic-book-extension-ontology:Asterix_e_lo_scudo_degli_arverni ,
+                                                                 comic-book-extension-ontology:Asterix_gladiatore ,
+                                                                 comic-book-extension-ontology:Asterix_il_gallico ,
+                                                                 comic-book-extension-ontology:Asterix_in_america ,
+                                                                 comic-book-extension-ontology:Asterix_in_corsica ,
+                                                                 comic-book-extension-ontology:Asterix_in_iberia ,
+                                                                 comic-book-extension-ontology:Asterix_la_rosa_e_il_gladio ,
+                                                                 comic-book-extension-ontology:Asterix_legionario ,
+                                                                 comic-book-extension-ontology:Asterix_tra_banchi_e_banchetti ,
+                                                                 comic-book-extension-ontology:Il_compleanno_di_asterix_e_obelix_lalbo_doro ,
+                                                                 comic-book-extension-ontology:Il_figlio_di_asterix ,
+                                                                 comic-book-extension-ontology:Le_mille_e_unora_di_asterix ,
+                                                                 comic-book-extension-ontology:Lodissea_di_asterix ,
+                                                                 comic-book-extension-ontology:Quando_il_cielo_gli_cadde_sulla_testa ;
+                                                       cbo:issueCount 39 .
+
+
 ###  https://github.com/asperan/comic-book-extension-ontology#Crossover
-:Crossover rdf:type owl:NamedIndividual ,
-                    :Comic_Series_Story_Type ;
-           rdfs:isDefinedBy "https://github.com/asperan/comic-book-extension-ontology" .
+comic-book-extension-ontology:Crossover rdf:type owl:NamedIndividual ,
+                                                 comic-book-extension-ontology:Comic_Series_Story_Type ;
+                                        rdfs:isDefinedBy "https://github.com/asperan/comic-book-extension-ontology" .
 
 
 ###  https://github.com/asperan/comic-book-extension-ontology#Filler
-:Filler rdf:type owl:NamedIndividual ,
-                 :Issue_Story_Type ;
-        rdfs:isDefinedBy "https://github.com/asperan/comic-book-extension-ontology" .
+comic-book-extension-ontology:Filler rdf:type owl:NamedIndividual ,
+                                              comic-book-extension-ontology:Issue_Story_Type ;
+                                     rdfs:isDefinedBy "https://github.com/asperan/comic-book-extension-ontology" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#France
+comic-book-extension-ontology:France rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Genesi_di_un_idea
+comic-book-extension-ontology:Genesi_di_un_idea rdf:type owl:NamedIndividual ,
+                                                         cbo:Issue ;
+                                                cbo:inker wd:Q206685 ;
+                                                cbo:issueOf comic-book-extension-ontology:Asterix_volume_ufficiale ;
+                                                cbo:writer wd:Q192214 ;
+                                                comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:SpinOff ;
+                                                cbo:issueNumber 1 ;
+                                                cbo:publicationDate "1962-01-01T00:00:00"^^xsd:dateTime ;
+                                                <http://purl.org/dc/terms/title> "Genesi di un'idea"@it ,
+                                                                                 "Naissance d'une idée (Les secrets d' Asterix)"@fr ;
+                                                comic-book-extension-ontology:soldCopies 1547000 .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_compleanno_di_asterix_e_obelix_lalbo_doro
+comic-book-extension-ontology:Il_compleanno_di_asterix_e_obelix_lalbo_doro rdf:type owl:NamedIndividual ,
+                                                                                    cbo:Issue ;
+                                                                           cbo:inker wd:Q206685 ;
+                                                                           cbo:writer wd:Q206685 ;
+                                                                           comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                                           cbo:issueNumber 34 ;
+                                                                           cbo:publicationDate "2009-01-01T00:00:00"^^xsd:dateTime ;
+                                                                           <http://purl.org/dc/terms/title> "Il compleanno di Asterix & Obelix - L'albo d'oro"@it ,
+                                                                                                            "L'anniversaire d'Astérix et Obélix - Le Livre d'or"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_figlio_di_asterix
+comic-book-extension-ontology:Il_figlio_di_asterix rdf:type owl:NamedIndividual ,
+                                                            cbo:Issue ;
+                                                   cbo:inker wd:Q206685 ;
+                                                   cbo:writer wd:Q206685 ;
+                                                   comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                   cbo:issueNumber 27 ;
+                                                   cbo:publicationDate "1983-01-01T00:00:00"^^xsd:dateTime ;
+                                                   <http://purl.org/dc/terms/title> "Il figlio di Asterix"@it ,
+                                                                                    "Le fils d'Astérix"@fr .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Le_mille_e_unora_di_asterix
+comic-book-extension-ontology:Le_mille_e_unora_di_asterix rdf:type owl:NamedIndividual ,
+                                                                   cbo:Issue ;
+                                                          cbo:inker wd:Q206685 ;
+                                                          cbo:writer wd:Q206685 ;
+                                                          comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                          cbo:issueNumber 28 ;
+                                                          cbo:publicationDate "1987-01-01T00:00:00"^^xsd:dateTime ;
+                                                          <http://purl.org/dc/terms/title> "Astérix chez Rahazade"@fr ,
+                                                                                           "Le mille e un'ora di Asterix"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Lodissea_di_asterix
+comic-book-extension-ontology:Lodissea_di_asterix rdf:type owl:NamedIndividual ,
+                                                           cbo:Issue ;
+                                                  cbo:inker wd:Q206685 ;
+                                                  cbo:writer wd:Q206685 ;
+                                                  comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                  cbo:issueNumber 26 ;
+                                                  cbo:publicationDate "1981-10-01T00:00:00"^^xsd:dateTime ;
+                                                  <http://purl.org/dc/terms/title> "L'odissea di Asterix"@it ,
+                                                                                   "L'odyssée d'Astérix"@fr .
 
 
 ###  https://github.com/asperan/comic-book-extension-ontology#Mainline
-:Mainline rdf:type owl:NamedIndividual ,
-                   :Issue_Story_Type ;
-          rdfs:isDefinedBy "https://github.com/asperan/comic-book-extension-ontology" .
+comic-book-extension-ontology:Mainline rdf:type owl:NamedIndividual ,
+                                                comic-book-extension-ontology:Issue_Story_Type ;
+                                       rdfs:isDefinedBy "https://github.com/asperan/comic-book-extension-ontology" .
 
 
 ###  https://github.com/asperan/comic-book-extension-ontology#Primary
-:Primary rdf:type owl:NamedIndividual ,
-                  :Comic_Series_Story_Type ;
-         rdfs:isDefinedBy "https://github.com/asperan/comic-book-extension-ontology" .
+comic-book-extension-ontology:Primary rdf:type owl:NamedIndividual ,
+                                               comic-book-extension-ontology:Comic_Series_Story_Type ;
+                                      rdfs:isDefinedBy "https://github.com/asperan/comic-book-extension-ontology" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Quando_il_cielo_gli_cadde_sulla_testa
+comic-book-extension-ontology:Quando_il_cielo_gli_cadde_sulla_testa rdf:type owl:NamedIndividual ,
+                                                                             cbo:Issue ;
+                                                                    cbo:inker wd:Q206685 ;
+                                                                    cbo:issueOf comic-book-extension-ontology:Asterix_volume_ufficiale ;
+                                                                    cbo:writer wd:Q206685 ;
+                                                                    comic-book-extension-ontology:issueStoryType comic-book-extension-ontology:Mainline ;
+                                                                    cbo:issueNumber 33 ;
+                                                                    cbo:publicationDate "2005-10-01T00:00:00"^^xsd:dateTime ;
+                                                                    <http://purl.org/dc/terms/title> "Le ciel lui tombe sur la tête"@fr ,
+                                                                                                     "Quando il cielo gli cadde sulla testa"@it ;
+                                                                    comic-book-extension-ontology:soldCopies 2400000 .
 
 
 ###  https://github.com/asperan/comic-book-extension-ontology#SpinOff
-:SpinOff rdf:type owl:NamedIndividual ,
-                  :Comic_Series_Story_Type ;
-         rdfs:isDefinedBy "https://github.com/asperan/comic-book-extension-ontology" .
+comic-book-extension-ontology:SpinOff rdf:type owl:NamedIndividual ,
+                                               comic-book-extension-ontology:Comic_Series_Story_Type ;
+                                      rdfs:isDefinedBy "https://github.com/asperan/comic-book-extension-ontology" .
 
+
+###  https://github.com/asperan/comic-book-extension-ontology#anno_ix_sotto_il_vischio
+comic-book-extension-ontology:anno_ix_sotto_il_vischio rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#bannix
+comic-book-extension-ontology:bannix rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#chanteclairix
+comic-book-extension-ontology:chanteclairix rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#gli_asterix_che_non_si_sono_mai_visti
+comic-book-extension-ontology:gli_asterix_che_non_si_sono_mai_visti rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#la_mascotte
+comic-book-extension-ontology:la_mascotte rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#la_primavera_gallica
+comic-book-extension-ontology:la_primavera_gallica rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#la_stagione_gallica
+comic-book-extension-ontology:la_stagione_gallica rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#latinofilia
+comic-book-extension-ontology:latinofilia rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#lutezia_citta_olimpica
+comic-book-extension-ontology:lutezia_citta_olimpica rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#messinscena_dautori
+comic-book-extension-ontology:messinscena_dautori rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#mini_midi_maxi
+comic-book-extension-ontology:mini_midi_maxi rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#nel_35_ac_c_cesare
+comic-book-extension-ontology:nel_35_ac_c_cesare rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#nel_50_ac
+comic-book-extension-ontology:nel_50_ac rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#obeliscio
+comic-book-extension-ontology:obeliscio rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+comic-book-extension-ontology:i rdf:type swrl:Variable .
+
+comic-book-extension-ontology:c rdf:type swrl:Variable .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Every issue of asterix volume ufficiale has sold more than 1M copies" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate comic-book-extension-ontology:soldCopies ;
+                           swrl:argument1 comic-book-extension-ontology:i ;
+                           swrl:argument2 comic-book-extension-ontology:c
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                      swrl:builtin <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                      swrl:arguments [ rdf:type rdf:List ;
+                                                       rdf:first comic-book-extension-ontology:c ;
+                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                  rdf:first "1000000"^^xsd:unsignedLong ;
+                                                                  rdf:rest rdf:nil
+                                                                ]
+                                                     ]
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate cbo:issueOf ;
+                           swrl:argument1 comic-book-extension-ontology:i ;
+                           swrl:argument2 comic-book-extension-ontology:Asterix_volume_ufficiale
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
 
 ###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

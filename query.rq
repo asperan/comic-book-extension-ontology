@@ -1,0 +1,35 @@
+# Tutti le issue scritte da Jean-Yves Ferri e disegnate da Didier Conrad 
+
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX cbo: <http://comicmeta.org/cbo/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT DISTINCT ?issue ?title ?writer ?inker
+WHERE {
+  ?issue a cbo:Issue .
+  ?issue dcterms:title ?title .
+  FILTER (LANG(?title)="it")
+  ?issue cbo:writer wd:Q3170138 ;
+         	cbo:writer ?writer .
+  ?issue cbo:inker wd:Q3026974 ;
+  			cbo:inker ?inker .
+}
+ORDER BY(?title)
+LIMIT 10
+
+# Numero di Issue in cui Albert Uderzo ha collaborato da scrittore, da illustratore o entrambi.
+
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX cbo: <http://comicmeta.org/cbo/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT (COUNT (DISTINCT ?issue) AS ?numIssues) WHERE {
+  ?issue a cbo:Issue .
+  ?issue dcterms:title ?title .
+  FILTER (LANG(?title)="it")
+  ?issue cbo:writer|cbo:inker wd:Q206685 .
+}
+GROUP BY ?writer
+ORDER BY(?numIssues)
+LIMIT 10
+
