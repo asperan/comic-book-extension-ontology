@@ -33,3 +33,51 @@ GROUP BY ?writer
 ORDER BY(?numIssues)
 LIMIT 10
 
+# Qual è la serie con più Issue in Tex
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cbo: <http://comicmeta.org/cbo/>
+
+SELECT ?title (COUNT(?i) AS ?numIssues) WHERE {
+  	?s cbo:seriesTitle ?title .
+    ?i cbo:series ?s .
+}
+GROUP BY ?title
+ORDER BY DESC(?numIssues)
+LIMIT 1
+
+# Quali sono i titoli ripetuti nelle strisce di Tex
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cbo: <http://comicmeta.org/cbo/>
+
+SELECT ?title (COUNT(?number) AS ?numIssues) WHERE {
+	?i dcterms:title ?title .
+  	?i rdf:type cbo:Issue .
+  	?i cbo:issueNumber ?number .
+}
+GROUP BY ?title
+HAVING (?numIssues > 1)
+
+# Qual è il numero medio di strisce presenti in ogni Volume
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cbo: <http://comicmeta.org/cbo/>
+
+SELECT (AVG(?numIssues) AS ?avgIssues) WHERE {
+  	{
+    	SELECT ?title (COUNT(?issue) AS ?numIssues) WHERE {
+            ?volume dcterms:title ?title .
+            ?volume rdf:type cbo:Volume .
+            ?volume cbo:issue ?issue .
+    	}
+		GROUP BY ?title
+  	}
+}
+
