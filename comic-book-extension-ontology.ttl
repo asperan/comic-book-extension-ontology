@@ -7,7 +7,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix swrl: <http://www.w3.org/2003/11/swrl#> .
-@prefix cbext: <https://github.com/asperan/comic-book-extension-ontology> .
 @prefix comic-book-extension-ontology: <https://github.com/asperan/comic-book-extension-ontology#> .
 @base <https://github.com/asperan/comic-book-extension-ontology#> .
 
@@ -20,7 +19,6 @@
 
 ###  http://comicmeta.org/cbo/comicSeriesStoryType
 cbo:comicSeriesStoryType rdf:type owl:AnnotationProperty .
-
 
 ###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
@@ -116,6 +114,11 @@ comic-book-extension-ontology:Comic_Series_Story_Type rdf:type owl:Class ;
                                                       rdfs:label "Comis Series Story Type"@en ;
                                                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
 
+:Comic_Series_Story_Type rdf:type owl:Class ;
+                         rdfs:subClassOf <http://schema.org/Intangible> ;
+                         rdfs:comment "The type of the story in a ComicSeries."@en ;
+                         rdfs:label "Comic Series Story Type"@en ;
+                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
 
 ###  https://github.com/asperan/comic-book-extension-ontology#Issue_Story_Type
 comic-book-extension-ontology:Issue_Story_Type rdf:type owl:Class ;
@@ -711,11 +714,274 @@ comic-book-extension-ontology:Asterix_volume_ufficiale rdf:type owl:NamedIndivid
                                                                  comic-book-extension-ontology:Quando_il_cielo_gli_cadde_sulla_testa ;
                                                        cbo:issueCount 39 .
 
+###  http://www.wikidata.org/entity/Q12092
+wd:Q12092 rdf:type owl:NamedIndividual ,
+                   cbo:Contributor ;
+          cbo:role <http://comicmeta.org/vocab/Illustrator> .
+
+
+###  http://www.wikidata.org/entity/Q12103
+wd:Q12103 rdf:type owl:NamedIndividual ,
+                   cbo:Publisher .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#A_carte_scoperte
+:A_carte_scoperte rdf:type owl:NamedIndividual ,
+                           cbo:Issue ;
+                  cbo:series :Serie_seconda ;
+                  cbo:story :Storia_Il_patto_di_sangue ;
+                  :issueStoryType :Mainline ;
+                  cbo:issueNumber 40 ;
+                  cbo:publicationDate "1950-09-08"^^xsd:date ;
+                  <http://purl.org/dc/terms/title> "A carte scoperte" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Agguato_a_Yuma
+:Agguato_a_Yuma rdf:type owl:NamedIndividual ,
+                         cbo:Issue ;
+                cbo:series :Serie_seconda ;
+                cbo:story :Storia_Satania ;
+                :issueStoryType :Mainline ;
+                cbo:issueNumber 11 ;
+                cbo:publicationDate "1950-02-16"^^xsd:date ;
+                <http://purl.org/dc/terms/title> "Agguato a Yuma" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Agguato_al_passo_di_Tula
+:Agguato_al_passo_di_Tula rdf:type owl:NamedIndividual ,
+                                   cbo:Issue ;
+                          cbo:series :Serie_seconda ;
+                          cbo:story :Storia_Il_patto_di_sangue ;
+                          :issueStoryType :Mainline ;
+                          cbo:issueNumber 39 ;
+                          cbo:publicationDate "1950-09-01"^^xsd:date ;
+                          <http://purl.org/dc/terms/title> "Agguato al passo di Tula" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Agguato_nella_palude
+:Agguato_nella_palude rdf:type owl:NamedIndividual ,
+                               cbo:Issue ;
+                      cbo:series :Serie_terza ;
+                      cbo:story :Storia_Il_tranello ;
+                      :issueStoryType :Mainline ;
+                      cbo:issueNumber 16 ;
+                      cbo:publicationDate "1951-09-04"^^xsd:date ;
+                      <http://purl.org/dc/terms/title> "Agguato nella palude" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Ai_ferri_corti
+:Ai_ferri_corti rdf:type owl:NamedIndividual ,
+                         cbo:Issue ;
+                cbo:series :Serie_seconda ;
+                cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
+                :issueStoryType :Mainline ;
+                cbo:issueNumber 24 ;
+                cbo:publicationDate "1950-05-19"^^xsd:date ;
+                <http://purl.org/dc/terms/title> "Ai ferri corti" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Al_palo_della_tortura
+:Al_palo_della_tortura rdf:type owl:NamedIndividual ,
+                                cbo:Issue ;
+                       cbo:series :Serie_terza ;
+                       cbo:story :Storia_Il_tranello ;
+                       :issueStoryType :Mainline ;
+                       cbo:issueNumber 17 ;
+                       cbo:publicationDate "1951-09-11"^^xsd:date ;
+                       <http://purl.org/dc/terms/title> "Al palo della tortura" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Ala_di_Morte
+:Ala_di_Morte rdf:type owl:NamedIndividual ,
+                       cbo:Issue ;
+              cbo:series :Serie_terza ;
+              cbo:story :Storia_La_Banda_degli_Orsi ;
+              :issueStoryType :Mainline ;
+              cbo:issueNumber 28 ;
+              cbo:publicationDate "1951-11-27"^^xsd:date ;
+              <http://purl.org/dc/terms/title> "Ala di Morte" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Allarme_a_Buenavista
+:Allarme_a_Buenavista rdf:type owl:NamedIndividual ,
+                               cbo:Issue ;
+                      cbo:series :Serie_prima ;
+                      cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_L'eroe_del_Messico> ;
+                      :issueStoryType :Mainline ;
+                      cbo:issueNumber 48 ;
+                      cbo:publicationDate "1949-09-08"^^xsd:date ;
+                      <http://purl.org/dc/terms/title> "Allarme a Buenavista" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Attacco_a_Santa_Fe
+:Attacco_a_Santa_Fe rdf:type owl:NamedIndividual ,
+                             cbo:Issue ;
+                    cbo:series :Serie_prima ;
+                    cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
+                    :issueStoryType :Mainline ;
+                    cbo:issueNumber 31 ;
+                    cbo:publicationDate "1949-04-28"^^xsd:date ;
+                    <http://purl.org/dc/terms/title> "Attacco a Santa Fe" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Attacco_alla_miniera
+:Attacco_alla_miniera rdf:type owl:NamedIndividual ,
+                               cbo:Issue ;
+                      cbo:series :Serie_seconda ;
+                      cbo:story :Storia_Satania ;
+                      :issueStoryType :Mainline ;
+                      cbo:issueNumber 10 ;
+                      cbo:publicationDate "1950-02-09"^^xsd:date ;
+                      <http://purl.org/dc/terms/title> "Attacco alla miniera" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Attacco_nella_notte
+:Attacco_nella_notte rdf:type owl:NamedIndividual ,
+                              cbo:Issue ;
+                     cbo:series :Serie_seconda ;
+                     cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
+                     :issueStoryType :Mainline ;
+                     cbo:issueNumber 16 ;
+                     cbo:publicationDate "1950-03-24"^^xsd:date ;
+                     <http://purl.org/dc/terms/title> "Attacco nella notte" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Avventura_a_Piedras_Negras
+:Avventura_a_Piedras_Negras rdf:type owl:NamedIndividual ,
+                                     cbo:Issue ;
+                            cbo:series :Serie_seconda ;
+                            cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
+                            :issueStoryType :Mainline ;
+                            cbo:issueNumber 23 ;
+                            cbo:publicationDate "1950-05-12"^^xsd:date ;
+                            <http://purl.org/dc/terms/title> "Avventura a Piedras Negras" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Avventura_sul_Rio_Grande
+:Avventura_sul_Rio_Grande rdf:type owl:NamedIndividual ,
+                                   cbo:Issue ;
+                          cbo:series :Serie_seconda ;
+                          cbo:story :Storia_Avventura_sul_Rio_Grande ;
+                          :issueStoryType :Mainline ;
+                          cbo:issueNumber 70 ;
+                          cbo:publicationDate "1951-04-10"^^xsd:date ;
+                          <http://purl.org/dc/terms/title> "Avventura sul Rio Grande" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Battaglia_sul_tempio
+:Battaglia_sul_tempio rdf:type owl:NamedIndividual ,
+                               cbo:Issue ;
+                      cbo:series :Serie_seconda ;
+                      cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
+                      :issueStoryType :Mainline ;
+                      cbo:issueNumber 35 ;
+                      cbo:publicationDate "1950-08-04"^^xsd:date ;
+                      <http://purl.org/dc/terms/title> "Battaglia sul tempio" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Cerchio_di_morte
+:Cerchio_di_morte rdf:type owl:NamedIndividual ,
+                           cbo:Issue ;
+                  cbo:series :Serie_terza ;
+                  cbo:story :Storia_Il_tranello ;
+                  :issueStoryType :Mainline ;
+                  cbo:issueNumber 6 ;
+                  cbo:publicationDate "1951-06-26"^^xsd:date ;
+                  <http://purl.org/dc/terms/title> "Cerchio di morte" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Condanna_a_morte
+:Condanna_a_morte rdf:type owl:NamedIndividual ,
+                           cbo:Issue ;
+                  cbo:series :Serie_prima ;
+                  cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
+                  :issueStoryType :Mainline ;
+                  cbo:issueNumber 39 ;
+                  cbo:publicationDate "1949-06-23"^^xsd:date ;
+                  <http://purl.org/dc/terms/title> "Condanna a morte" .
+
 
 ###  https://github.com/asperan/comic-book-extension-ontology#Crossover
 comic-book-extension-ontology:Crossover rdf:type owl:NamedIndividual ,
                                                  comic-book-extension-ontology:Comic_Series_Story_Type ;
                                         rdfs:isDefinedBy "https://github.com/asperan/comic-book-extension-ontology" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Dinamite
+:Dinamite rdf:type owl:NamedIndividual ,
+                   cbo:Issue ;
+          cbo:series :Serie_terza ;
+          cbo:story :Storia_Il_tranello ;
+          :issueStoryType :Mainline ;
+          cbo:issueNumber 7 ;
+          cbo:publicationDate "1951-07-03"^^xsd:date ;
+          <http://purl.org/dc/terms/title> "Dinamite" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Doppio_gioco
+:Doppio_gioco rdf:type owl:NamedIndividual ,
+                       cbo:Issue ;
+              cbo:series :Serie_seconda ;
+              cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
+              :issueStoryType :Mainline ;
+              cbo:issueNumber 22 ;
+              cbo:publicationDate "1950-05-05"^^xsd:date ;
+              <http://purl.org/dc/terms/title> "Doppio gioco" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Due_contro_cento
+:Due_contro_cento rdf:type owl:NamedIndividual ,
+                           cbo:Issue ;
+                  cbo:series :Serie_seconda ;
+                  cbo:story :Storia_Il_patto_di_sangue ;
+                  :issueStoryType :Mainline ;
+                  cbo:issueNumber 53 ;
+                  cbo:publicationDate "1950-12-12"^^xsd:date ;
+                  <http://purl.org/dc/terms/title> "Due contro cento" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Duello_a_Lineville
+:Duello_a_Lineville rdf:type owl:NamedIndividual ,
+                             cbo:Issue ;
+                    cbo:series :Serie_prima ;
+                    cbo:story :Storia_La_banda_del_Rosso ;
+                    :issueStoryType :Mainline ;
+                    cbo:issueNumber 52 ;
+                    cbo:publicationDate "1949-10-06"^^xsd:date ;
+                    <http://purl.org/dc/terms/title> "Duello a Lineville" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Duello_nella_foresta
+:Duello_nella_foresta rdf:type owl:NamedIndividual ,
+                               cbo:Issue ;
+                      cbo:series :Serie_terza ;
+                      cbo:story :Storia_Il_tranello ;
+                      :issueStoryType :Mainline ;
+                      cbo:issueNumber 5 ;
+                      cbo:publicationDate "1951-06-19"^^xsd:date ;
+                      <http://purl.org/dc/terms/title> "Duello nella foresta" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Duello_sul_treno
+:Duello_sul_treno rdf:type owl:NamedIndividual ,
+                           cbo:Issue ;
+                  cbo:series :Serie_seconda ;
+                  cbo:story :Storia_Il_patto_di_sangue ;
+                  :issueStoryType :Mainline ;
+                  cbo:issueNumber 52 ;
+                  cbo:publicationDate "1950-12-05"^^xsd:date ;
+                  <http://purl.org/dc/terms/title> "Duello sul treno" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#El_Diablo
+:El_Diablo rdf:type owl:NamedIndividual ,
+                    cbo:Issue ;
+           cbo:series :Serie_prima ;
+           cbo:story :Storia_La_Mano_Rossa ;
+           :issueStoryType :Mainline ;
+           cbo:issueNumber 8 ;
+           cbo:publicationDate "1948-11-18"^^xsd:date ;
+           <http://purl.org/dc/terms/title> "El Diablo" .
 
 
 ###  https://github.com/asperan/comic-book-extension-ontology#Filler
@@ -790,10 +1056,953 @@ comic-book-extension-ontology:Lodissea_di_asterix rdf:type owl:NamedIndividual ,
                                                                                    "L'odyssée d'Astérix"@fr .
 
 
+###  https://github.com/asperan/comic-book-extension-ontology#Fra_due_fuochi
+:Fra_due_fuochi rdf:type owl:NamedIndividual ,
+                         cbo:Issue ;
+                cbo:series :Serie_terza ;
+                cbo:story :Storia_La_Banda_degli_Orsi ;
+                :issueStoryType :Mainline ;
+                cbo:issueNumber 30 ;
+                cbo:publicationDate "1951-12-11"^^xsd:date ;
+                <http://purl.org/dc/terms/title> "Fra due fuochi" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Fuoco_ad_Angel_City
+:Fuoco_ad_Angel_City rdf:type owl:NamedIndividual ,
+                              cbo:Issue ;
+                     cbo:series :Serie_quarta ;
+                     cbo:story :Storia_Il_figlio_di_Tex ;
+                     :issueStoryType :Mainline ;
+                     cbo:issueNumber 5 ;
+                     cbo:publicationDate "1952-02-05"^^xsd:date ;
+                     <http://purl.org/dc/terms/title> "Fuoco ad Angel City" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Fuoco_nella_notte
+:Fuoco_nella_notte rdf:type owl:NamedIndividual ,
+                            cbo:Issue ;
+                   cbo:series :Serie_prima ;
+                   cbo:story :Storia_Uno_contro_venti ;
+                   :issueStoryType :Mainline ;
+                   cbo:issueNumber 17 ;
+                   cbo:publicationDate "1949-01-20"^^xsd:date ;
+                   <http://purl.org/dc/terms/title> "Fuoco nella notte" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Gioco_pericoloso
+:Gioco_pericoloso rdf:type owl:NamedIndividual ,
+                           cbo:Issue ;
+                  cbo:series :Serie_prima ;
+                  cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
+                  :issueStoryType :Mainline ;
+                  cbo:issueNumber 37 ;
+                  cbo:publicationDate "1949-06-09"^^xsd:date ;
+                  <http://purl.org/dc/terms/title> "Gioco pericoloso" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Gli_eroi_di_Forte_Kinder
+:Gli_eroi_di_Forte_Kinder rdf:type owl:NamedIndividual ,
+                                   cbo:Issue ;
+                          cbo:series :Serie_terza ;
+                          cbo:story :Storia_Il_tranello ;
+                          :issueStoryType :Mainline ;
+                          cbo:issueNumber 8 ;
+                          cbo:publicationDate "1951-07-10"^^xsd:date ;
+                          <http://purl.org/dc/terms/title> "Gli eroi di Forte Kinder" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#I_sicari_del_Drago
+:I_sicari_del_Drago rdf:type owl:NamedIndividual ,
+                             cbo:Issue ;
+                    cbo:series :Serie_prima ;
+                    cbo:story :Storia_La_banda_del_Rosso ;
+                    :issueStoryType :Mainline ;
+                    cbo:issueNumber 60 ;
+                    cbo:publicationDate "1949-12-01"^^xsd:date ;
+                    <http://purl.org/dc/terms/title> "I sicari del Drago" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_battesimo_del_fuoco_di_Kit_Willer
+:Il_battesimo_del_fuoco_di_Kit_Willer rdf:type owl:NamedIndividual ,
+                                               cbo:Issue ;
+                                      cbo:series :Serie_quarta ;
+                                      cbo:story :Storia_Il_figlio_di_Tex ;
+                                      :issueStoryType :Mainline ;
+                                      cbo:issueNumber 3 ;
+                                      cbo:publicationDate "1952-01-22"^^xsd:date ;
+                                      <http://purl.org/dc/terms/title> "Il battesimo del fuoco di Kit Willer" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_campo_dei_desperados
+:Il_campo_dei_desperados rdf:type owl:NamedIndividual ,
+                                  cbo:Issue ;
+                         cbo:series :Serie_quarta ;
+                         cbo:story :Storia_Il_figlio_di_Tex ;
+                         :issueStoryType :Mainline ;
+                         cbo:issueNumber 17 ;
+                         cbo:publicationDate "1952-04-29"^^xsd:date ;
+                         <http://purl.org/dc/terms/title> "Il campo dei desperados" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_campo_della_morte
+:Il_campo_della_morte rdf:type owl:NamedIndividual ,
+                               cbo:Issue ;
+                      cbo:series :Serie_quarta ;
+                      cbo:story :Storia_Il_figlio_di_Tex ;
+                      :issueStoryType :Mainline ;
+                      cbo:issueNumber 6 ;
+                      cbo:publicationDate "1952-02-12"^^xsd:date ;
+                      <http://purl.org/dc/terms/title> "Il campo della morte" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_cavaliere_nero
+:Il_cavaliere_nero rdf:type owl:NamedIndividual ,
+                            cbo:Issue ;
+                   cbo:series :Serie_seconda ;
+                   cbo:story :Storia_Il_patto_di_sangue ;
+                   :issueStoryType :Mainline ;
+                   cbo:issueNumber 43 ;
+                   cbo:publicationDate "1950-09-29"^^xsd:date ;
+                   <http://purl.org/dc/terms/title> "Il cavaliere nero" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_colpo_di_Fulton_Creek
+:Il_colpo_di_Fulton_Creek rdf:type owl:NamedIndividual ,
+                                   cbo:Issue ;
+                          cbo:series :Serie_seconda ;
+                          cbo:story :Storia_La_banda_dei_Dalton ;
+                          :issueStoryType :Mainline ;
+                          cbo:issueNumber 61 ;
+                          cbo:publicationDate "1951-02-06"^^xsd:date ;
+                          <http://purl.org/dc/terms/title> "Il colpo di Fulton Creek" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_covo_sulla_Sierra
+:Il_covo_sulla_Sierra rdf:type owl:NamedIndividual ,
+                               cbo:Issue ;
+                      cbo:series :Serie_seconda ;
+                      cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
+                      :issueStoryType :Mainline ;
+                      cbo:issueNumber 30 ;
+                      cbo:publicationDate "1950-06-30"^^xsd:date ;
+                      <http://purl.org/dc/terms/title> "Il covo sulla Sierra" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_deserto_di_Gila
+:Il_deserto_di_Gila rdf:type owl:NamedIndividual ,
+                             cbo:Issue ;
+                    cbo:series :Serie_seconda ;
+                    cbo:story :Storia_La_banda_dei_Dalton ;
+                    :issueStoryType :Mainline ;
+                    cbo:issueNumber 62 ;
+                    cbo:publicationDate "1951-02-13"^^xsd:date ;
+                    <http://purl.org/dc/terms/title> "Il deserto di Gila" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_dio_Puma
+:Il_dio_Puma rdf:type owl:NamedIndividual ,
+                      cbo:Issue ;
+             cbo:series :Serie_seconda ;
+             cbo:story :Storia_Il_dio_Puma ;
+             :issueStoryType :Mainline ;
+             cbo:issueNumber 65 ;
+             cbo:publicationDate "1951-03-06"^^xsd:date ;
+             <http://purl.org/dc/terms/title> "Il dio Puma" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_fantasma_di_Villa-Rica
+:Il_fantasma_di_Villa-Rica rdf:type owl:NamedIndividual ,
+                                    cbo:Issue ;
+                           cbo:series :Serie_prima ;
+                           cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
+                           :issueStoryType :Mainline ;
+                           cbo:issueNumber 45 ;
+                           cbo:publicationDate "1949-08-04"^^xsd:date ;
+                           <http://purl.org/dc/terms/title> "Il fantasma di Villa-Rica" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_figlio_di_Tex
+:Il_figlio_di_Tex rdf:type owl:NamedIndividual ,
+                           cbo:Issue ;
+                  cbo:series :Serie_quarta ;
+                  cbo:story :Storia_Il_figlio_di_Tex ;
+                  :issueStoryType :Mainline ;
+                  cbo:issueNumber 1 ;
+                  cbo:publicationDate "1952-01-08"^^xsd:date ;
+                  <http://purl.org/dc/terms/title> "Il figlio di Tex" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_guado_dei_Piute
+:Il_guado_dei_Piute rdf:type owl:NamedIndividual ,
+                             cbo:Issue ;
+                    cbo:series :Serie_seconda ;
+                    cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
+                    :issueStoryType :Mainline ;
+                    cbo:issueNumber 27 ;
+                    cbo:publicationDate "1950-06-09"^^xsd:date ;
+                    <http://purl.org/dc/terms/title> "Il guado dei Piute" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_mostro_di_Satania
+:Il_mostro_di_Satania rdf:type owl:NamedIndividual ,
+                               cbo:Issue ;
+                      cbo:series :Serie_seconda ;
+                      cbo:story :Storia_Satania ;
+                      :issueStoryType :Mainline ;
+                      cbo:issueNumber 12 ;
+                      cbo:publicationDate "1950-02-23"^^xsd:date ;
+                      <http://purl.org/dc/terms/title> "Il mostro di Satania" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_patto_di_sangue
+:Il_patto_di_sangue rdf:type owl:NamedIndividual ,
+                             cbo:Issue ;
+                    cbo:series :Serie_seconda ;
+                    cbo:story :Storia_Il_patto_di_sangue ;
+                    :issueStoryType :Mainline ;
+                    cbo:issueNumber 38 ;
+                    cbo:publicationDate "1950-08-25"^^xsd:date ;
+                    <http://purl.org/dc/terms/title> "Il patto di sangue" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_ranch_abbandonato
+:Il_ranch_abbandonato rdf:type owl:NamedIndividual ,
+                               cbo:Issue ;
+                      cbo:series :Serie_quarta ;
+                      cbo:story :Storia_Il_figlio_di_Tex ;
+                      :issueStoryType :Mainline ;
+                      cbo:issueNumber 23 ;
+                      cbo:publicationDate "1952-06-10"^^xsd:date ;
+                      <http://purl.org/dc/terms/title> "Il ranch abbandonato" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_rapimento_di_Lilyth
+:Il_rapimento_di_Lilyth rdf:type owl:NamedIndividual ,
+                                 cbo:Issue ;
+                        cbo:series :Serie_seconda ;
+                        cbo:story :Storia_Il_patto_di_sangue ;
+                        :issueStoryType :Mainline ;
+                        cbo:issueNumber 46 ;
+                        cbo:publicationDate "1950-10-20"^^xsd:date ;
+                        <http://purl.org/dc/terms/title> "Il rapimento di Lilyth" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_rapimento_di_Tesah
+:Il_rapimento_di_Tesah rdf:type owl:NamedIndividual ,
+                                cbo:Issue ;
+                       cbo:series :Serie_prima ;
+                       cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
+                       :issueStoryType :Mainline ;
+                       cbo:issueNumber 27 ;
+                       cbo:publicationDate "1949-03-31"^^xsd:date ;
+                       <http://purl.org/dc/terms/title> "Il rapimento di Tesah" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_re_dei_tiratori
+:Il_re_dei_tiratori rdf:type owl:NamedIndividual ,
+                             cbo:Issue ;
+                    cbo:series :Serie_seconda ;
+                    cbo:story :Storia_Avventura_sul_Rio_Grande ;
+                    :issueStoryType :Mainline ;
+                    cbo:issueNumber 71 ;
+                    cbo:publicationDate "1951-04-17"^^xsd:date ;
+                    <http://purl.org/dc/terms/title> "Il re dei tiratori" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_rogo
+:Il_rogo rdf:type owl:NamedIndividual ,
+                  cbo:Issue ;
+         cbo:series :Serie_quarta ;
+         cbo:story :Storia_Il_figlio_di_Tex ;
+         :issueStoryType :Mainline ;
+         cbo:issueNumber 15 ;
+         cbo:publicationDate "1952-04-15"^^xsd:date ;
+         <http://purl.org/dc/terms/title> "Il rogo" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_sacrificio_di_Jim
+:Il_sacrificio_di_Jim rdf:type owl:NamedIndividual ,
+                               cbo:Issue ;
+                      cbo:series :Serie_terza ;
+                      cbo:story :Storia_Il_tranello ;
+                      :issueStoryType :Mainline ;
+                      cbo:issueNumber 21 ;
+                      cbo:publicationDate "1951-10-09"^^xsd:date ;
+                      <http://purl.org/dc/terms/title> "Il sacrificio di Jim" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_salto_del_diavolo
+:Il_salto_del_diavolo rdf:type owl:NamedIndividual ,
+                               cbo:Issue ;
+                      cbo:series :Serie_seconda ;
+                      cbo:story :Storia_Il_patto_di_sangue ;
+                      :issueStoryType :Mainline ;
+                      cbo:issueNumber 37 ;
+                      cbo:publicationDate "1950-08-18"^^xsd:date ;
+                      <http://purl.org/dc/terms/title> "Il salto del diavolo" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_segno_indiano
+:Il_segno_indiano rdf:type owl:NamedIndividual ,
+                           cbo:Issue ;
+                  cbo:series :Serie_terza ;
+                  cbo:story :Storia_Il_tranello ;
+                  :issueStoryType :Mainline ;
+                  cbo:issueNumber 20 ;
+                  cbo:publicationDate "1951-10-02"^^xsd:date ;
+                  <http://purl.org/dc/terms/title> "Il segno indiano" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_sepolcro_indiano
+:Il_sepolcro_indiano rdf:type owl:NamedIndividual ,
+                              cbo:Issue ;
+                     cbo:series :Serie_seconda ;
+                     cbo:story :Storia_Avventura_sul_Rio_Grande ;
+                     :issueStoryType :Mainline ;
+                     cbo:issueNumber 73 ;
+                     cbo:publicationDate "1951-05-01"^^xsd:date ;
+                     <http://purl.org/dc/terms/title> "Il sepolcro indiano" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_tempio_tragico
+:Il_tempio_tragico rdf:type owl:NamedIndividual ,
+                            cbo:Issue ;
+                   cbo:series :Serie_prima ;
+                   cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
+                   :issueStoryType :Mainline ;
+                   cbo:issueNumber 30 ;
+                   cbo:publicationDate "1949-04-21"^^xsd:date ;
+                   <http://purl.org/dc/terms/title> "Il tempio tragico" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_terrore_sul_Durango
+:Il_terrore_sul_Durango rdf:type owl:NamedIndividual ,
+                                 cbo:Issue ;
+                        cbo:series :Serie_seconda ;
+                        cbo:story :Storia_Il_patto_di_sangue ;
+                        :issueStoryType :Mainline ;
+                        cbo:issueNumber 54 ;
+                        cbo:publicationDate "1950-12-19"^^xsd:date ;
+                        <http://purl.org/dc/terms/title> "Il terrore sul Durango" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_totem_misterioso
+:Il_totem_misterioso rdf:type owl:NamedIndividual ,
+                              cbo:Issue ;
+                     cbo:series :Serie_prima ;
+                     cbo:story :Storia_Il_totem_misterioso ;
+                     :issueStoryType :Mainline ;
+                     cbo:issueNumber 1 ;
+                     cbo:publicationDate "1948-09-30"^^xsd:date ;
+                     <http://purl.org/dc/terms/title> "Il totem misterioso" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_tradimento_di_El_Fierro
+:Il_tradimento_di_El_Fierro rdf:type owl:NamedIndividual ,
+                                     cbo:Issue ;
+                            cbo:series :Serie_seconda ;
+                            cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
+                            :issueStoryType :Mainline ;
+                            cbo:issueNumber 29 ;
+                            cbo:publicationDate "1950-06-23"^^xsd:date ;
+                            <http://purl.org/dc/terms/title> "Il tradimento di El Fierro" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_traditore
+:Il_traditore rdf:type owl:NamedIndividual ,
+                       cbo:Issue ;
+              cbo:series :Serie_prima ;
+              cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_L'eroe_del_Messico> ;
+              :issueStoryType :Mainline ;
+              cbo:issueNumber 49 ;
+              cbo:publicationDate "1949-09-15"^^xsd:date ;
+              <http://purl.org/dc/terms/title> "Il traditore" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_tranello
+:Il_tranello rdf:type owl:NamedIndividual ,
+                      cbo:Issue ;
+             cbo:series :Serie_terza ;
+             cbo:story :Storia_Il_tranello ;
+             :issueStoryType :Mainline ;
+             cbo:issueNumber 3 ;
+             cbo:publicationDate "1951-06-05"^^xsd:date ;
+             <http://purl.org/dc/terms/title> "Il tranello" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_villaggio_fantasma
+:Il_villaggio_fantasma rdf:type owl:NamedIndividual ,
+                                cbo:Issue ;
+                       cbo:series :Serie_terza ;
+                       cbo:story :Storia_Il_tranello ;
+                       :issueStoryType :Mainline ;
+                       cbo:issueNumber 19 ;
+                       cbo:publicationDate "1951-09-25"^^xsd:date ;
+                       <http://purl.org/dc/terms/title> "Il villaggio fantasma" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Intrighi_nella_notte
+:Intrighi_nella_notte rdf:type owl:NamedIndividual ,
+                               cbo:Issue ;
+                      cbo:series :Serie_terza ;
+                      cbo:story :Storia_La_Banda_degli_Orsi ;
+                      :issueStoryType :Mainline ;
+                      cbo:issueNumber 25 ;
+                      cbo:publicationDate "1951-11-06"^^xsd:date ;
+                      <http://purl.org/dc/terms/title> "Intrighi nella notte" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Kit_Willer_si_fa_onore
+:Kit_Willer_si_fa_onore rdf:type owl:NamedIndividual ,
+                                 cbo:Issue ;
+                        cbo:series :Serie_quarta ;
+                        cbo:story :Storia_Il_figlio_di_Tex ;
+                        :issueStoryType :Mainline ;
+                        cbo:issueNumber 9 ;
+                        cbo:publicationDate "1952-03-04"^^xsd:date ;
+                        <http://purl.org/dc/terms/title> "Kit Willer si fa onore" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Kit_segue_una_traccia
+:Kit_segue_una_traccia rdf:type owl:NamedIndividual ,
+                                cbo:Issue ;
+                       cbo:series :Serie_quarta ;
+                       cbo:story :Storia_Il_figlio_di_Tex ;
+                       :issueStoryType :Mainline ;
+                       cbo:issueNumber 16 ;
+                       cbo:publicationDate "1952-04-22"^^xsd:date ;
+                       <http://purl.org/dc/terms/title> "Kit segue una traccia" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_Banda_degli_Orsi
+:La_Banda_degli_Orsi rdf:type owl:NamedIndividual ,
+                              cbo:Issue ;
+                     cbo:series :Serie_terza ;
+                     cbo:story :Storia_La_Banda_degli_Orsi ;
+                     :issueStoryType :Mainline ;
+                     cbo:issueNumber 24 ;
+                     cbo:publicationDate "1951-10-30"^^xsd:date ;
+                     <http://purl.org/dc/terms/title> "La Banda degli Orsi" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_Mano_Rossa
+:La_Mano_Rossa rdf:type owl:NamedIndividual ,
+                        cbo:Issue ;
+               cbo:series :Serie_prima ;
+               cbo:story :Storia_La_Mano_Rossa ;
+               :issueStoryType :Mainline ;
+               cbo:issueNumber 4 ;
+               cbo:publicationDate "1948-10-21"^^xsd:date ;
+               <http://purl.org/dc/terms/title> "La Mano Rossa" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_Mesa_del_Diablo
+:La_Mesa_del_Diablo rdf:type owl:NamedIndividual ,
+                             cbo:Issue ;
+                    cbo:series :Serie_prima ;
+                    cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
+                    :issueStoryType :Mainline ;
+                    cbo:issueNumber 36 ;
+                    cbo:publicationDate "1949-06-02"^^xsd:date ;
+                    <http://purl.org/dc/terms/title> "La Mesa del Diablo" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_banda_degli_incappucciati
+:La_banda_degli_incappucciati rdf:type owl:NamedIndividual ,
+                                       cbo:Issue ;
+                              cbo:series :Serie_quarta ;
+                              cbo:story :Storia_Il_figlio_di_Tex ;
+                              :issueStoryType :Mainline ;
+                              cbo:issueNumber 4 ;
+                              cbo:publicationDate "1952-01-29"^^xsd:date ;
+                              <http://purl.org/dc/terms/title> "La banda degli incappucciati" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_banda_dei_Dalton
+:La_banda_dei_Dalton rdf:type owl:NamedIndividual ,
+                              cbo:Issue ;
+                     cbo:series :Serie_seconda ;
+                     cbo:story :Storia_La_banda_dei_Dalton ;
+                     :issueStoryType :Mainline ;
+                     cbo:issueNumber 57 ;
+                     cbo:publicationDate "1951-01-09"^^xsd:date ;
+                     <http://purl.org/dc/terms/title> "La banda dei Dalton" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_banda_del_Rosso
+:La_banda_del_Rosso rdf:type owl:NamedIndividual ,
+                             cbo:Issue ;
+                    cbo:series :Serie_prima ;
+                    cbo:story :Storia_La_banda_del_Rosso ;
+                    :issueStoryType :Mainline ;
+                    cbo:issueNumber 51 ;
+                    cbo:publicationDate "1949-09-29"^^xsd:date ;
+                    <http://purl.org/dc/terms/title> "La banda del Rosso" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_banda_di_Kid_Billy
+:La_banda_di_Kid_Billy rdf:type owl:NamedIndividual ,
+                                cbo:Issue ;
+                       cbo:series :Serie_prima ;
+                       cbo:story :Storia_La_banda_di_Kid_Billy ;
+                       :issueStoryType :Mainline ;
+                       cbo:issueNumber 20 ;
+                       cbo:publicationDate "1949-02-10"^^xsd:date ;
+                       <http://purl.org/dc/terms/title> "La banda di Kid Billy" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_barriera_di_fuoco
+:La_barriera_di_fuoco rdf:type owl:NamedIndividual ,
+                               cbo:Issue ;
+                      cbo:series :Serie_prima ;
+                      cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
+                      :issueStoryType :Mainline ;
+                      cbo:issueNumber 34 ;
+                      cbo:publicationDate "1949-05-19"^^xsd:date ;
+                      <http://purl.org/dc/terms/title> "La barriera di fuoco" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_battaglia_di_Holbrok
+:La_battaglia_di_Holbrok rdf:type owl:NamedIndividual ,
+                                  cbo:Issue ;
+                         cbo:series :Serie_quarta ;
+                         cbo:story :Storia_Il_figlio_di_Tex ;
+                         :issueStoryType :Mainline ;
+                         cbo:issueNumber 20 ;
+                         cbo:publicationDate "1952-05-20"^^xsd:date ;
+                         <http://purl.org/dc/terms/title> "La battaglia di Holbrok" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_battaglia_di_Testa_di_Pietra
+:La_battaglia_di_Testa_di_Pietra rdf:type owl:NamedIndividual ,
+                                          cbo:Issue ;
+                                 cbo:series :Serie_seconda ;
+                                 cbo:story :Storia_Il_patto_di_sangue ;
+                                 :issueStoryType :Mainline ;
+                                 cbo:issueNumber 50 ;
+                                 cbo:publicationDate "1950-11-17"^^xsd:date ;
+                                 <http://purl.org/dc/terms/title> "La battaglia di Testa di Pietra" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_bisca_di_Hackett
+:La_bisca_di_Hackett rdf:type owl:NamedIndividual ,
+                              cbo:Issue ;
+                     cbo:series :Serie_seconda ;
+                     cbo:story :Storia_La_banda_del_Rosso ;
+                     :issueStoryType :Mainline ;
+                     cbo:issueNumber 1 ;
+                     cbo:publicationDate "1949-12-08"^^xsd:date ;
+                     <http://purl.org/dc/terms/title> "La bisca di Hackett" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_capanna_sul_fiume
+:La_capanna_sul_fiume rdf:type owl:NamedIndividual ,
+                               cbo:Issue ;
+                      cbo:series :Serie_terza ;
+                      cbo:story :Storia_La_Banda_degli_Orsi ;
+                      :issueStoryType :Mainline ;
+                      cbo:issueNumber 27 ;
+                      cbo:publicationDate "1951-11-20"^^xsd:date ;
+                      <http://purl.org/dc/terms/title> "La capanna sul fiume" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_cattura_di_Gros-Jean
+:La_cattura_di_Gros-Jean rdf:type owl:NamedIndividual ,
+                                  cbo:Issue ;
+                         cbo:series :Serie_terza ;
+                         cbo:story :Storia_La_Banda_degli_Orsi ;
+                         :issueStoryType :Mainline ;
+                         cbo:issueNumber 26 ;
+                         cbo:publicationDate "1951-11-13"^^xsd:date ;
+                         <http://purl.org/dc/terms/title> "La cattura di Gros-Jean" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_cattura_di_Montales
+:La_cattura_di_Montales rdf:type owl:NamedIndividual ,
+                                 cbo:Issue ;
+                        cbo:series :Serie_prima ;
+                        cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_L'eroe_del_Messico> ;
+                        :issueStoryType :Mainline ;
+                        cbo:issueNumber 47 ;
+                        cbo:publicationDate "1949-09-01"^^xsd:date ;
+                        <http://purl.org/dc/terms/title> "La cattura di Montales" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_corsa_infernale
+:La_corsa_infernale rdf:type owl:NamedIndividual ,
+                             cbo:Issue ;
+                    cbo:series :Serie_seconda ;
+                    cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
+                    :issueStoryType :Mainline ;
+                    cbo:issueNumber 33 ;
+                    cbo:publicationDate "1950-07-21"^^xsd:date ;
+                    <http://purl.org/dc/terms/title> "La corsa infernale" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_droga_indiana
+:La_droga_indiana rdf:type owl:NamedIndividual ,
+                           cbo:Issue ;
+                  cbo:series :Serie_terza ;
+                  cbo:story :Storia_Il_tranello ;
+                  :issueStoryType :Mainline ;
+                  cbo:issueNumber 14 ;
+                  cbo:publicationDate "1951-08-21"^^xsd:date ;
+                  <http://purl.org/dc/terms/title> "La droga indiana" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_figlia_del_desperado
+:La_figlia_del_desperado rdf:type owl:NamedIndividual ,
+                                  cbo:Issue ;
+                         cbo:series :Serie_prima ;
+                         cbo:story :Storia_El_Diablo ;
+                         :issueStoryType :Mainline ;
+                         cbo:issueNumber 12 ;
+                         cbo:publicationDate "1948-12-16"^^xsd:date ;
+                         <http://purl.org/dc/terms/title> "La figlia del desperado" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_fine_di_Mefisto
+:La_fine_di_Mefisto rdf:type owl:NamedIndividual ,
+                             cbo:Issue ;
+                    cbo:series :Serie_prima ;
+                    cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
+                    :issueStoryType :Mainline ;
+                    cbo:issueNumber 46 ;
+                    cbo:publicationDate "1949-08-25"^^xsd:date ;
+                    <http://purl.org/dc/terms/title> "La fine di Mefisto" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_fine_di_Satania
+:La_fine_di_Satania rdf:type owl:NamedIndividual ,
+                             cbo:Issue ;
+                    cbo:series :Serie_seconda ;
+                    cbo:story :Storia_Satania ;
+                    :issueStoryType :Mainline ;
+                    cbo:issueNumber 14 ;
+                    cbo:publicationDate "1950-03-10"^^xsd:date ;
+                    <http://purl.org/dc/terms/title> "La fine di Satania" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_freccia_della_morte
+:La_freccia_della_morte rdf:type owl:NamedIndividual ,
+                                 cbo:Issue ;
+                        cbo:series :Serie_prima ,
+                                   :Serie_seconda ;
+                        cbo:story :Storia_Il_dio_Puma ,
+                                  :Storia_La_Mano_Rossa ;
+                        :issueStoryType :Mainline ;
+                        cbo:issueNumber 5 ,
+                                        66 ;
+                        cbo:publicationDate "1948-10-28"^^xsd:date ,
+                                            "1951-03-13"^^xsd:date ;
+                        <http://purl.org/dc/terms/title> "La freccia della morte" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_legge_del_coltello
+:La_legge_del_coltello rdf:type owl:NamedIndividual ,
+                                cbo:Issue ;
+                       cbo:series :Serie_seconda ;
+                       cbo:story :Storia_Il_patto_di_sangue ;
+                       :issueStoryType :Mainline ;
+                       cbo:issueNumber 49 ;
+                       cbo:publicationDate "1950-11-10"^^xsd:date ;
+                       <http://purl.org/dc/terms/title> "La legge del coltello" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_legge_del_giudice_Colt
+:La_legge_del_giudice_Colt rdf:type owl:NamedIndividual ,
+                                    cbo:Issue ;
+                           cbo:series :Serie_seconda ;
+                           cbo:story :Storia_La_banda_dei_Dalton ;
+                           :issueStoryType :Mainline ;
+                           cbo:issueNumber 64 ;
+                           cbo:publicationDate "1951-02-27"^^xsd:date ;
+                           <http://purl.org/dc/terms/title> "La legge del giudice Colt" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_legge_del_taglione
+:La_legge_del_taglione rdf:type owl:NamedIndividual ,
+                                cbo:Issue ;
+                       cbo:series :Serie_seconda ;
+                       cbo:story :Storia_Il_patto_di_sangue ;
+                       :issueStoryType :Mainline ;
+                       cbo:issueNumber 42 ;
+                       cbo:publicationDate "1950-09-22"^^xsd:date ;
+                       <http://purl.org/dc/terms/title> "La legge del taglione" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_mano_del_morto
+:La_mano_del_morto rdf:type owl:NamedIndividual ,
+                            cbo:Issue ;
+                   cbo:series :Serie_quarta ;
+                   cbo:story :Storia_Il_figlio_di_Tex ;
+                   :issueStoryType :Mainline ;
+                   cbo:issueNumber 10 ;
+                   cbo:publicationDate "1952-03-11"^^xsd:date ;
+                   <http://purl.org/dc/terms/title> "La mano del morto" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_mano_fantasma
+:La_mano_fantasma rdf:type owl:NamedIndividual ,
+                           cbo:Issue ;
+                  cbo:series :Serie_prima ;
+                  cbo:story :Storia_La_Mano_Rossa ;
+                  :issueStoryType :Mainline ;
+                  cbo:issueNumber 7 ;
+                  cbo:publicationDate "1948-11-11"^^xsd:date ;
+                  <http://purl.org/dc/terms/title> "La mano fantasma" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_mano_scarlatta
+:La_mano_scarlatta rdf:type owl:NamedIndividual ,
+                            cbo:Issue ;
+                   cbo:series :Serie_terza ;
+                   cbo:story :Storia_Il_tranello ;
+                   :issueStoryType :Mainline ;
+                   cbo:issueNumber 2 ;
+                   cbo:publicationDate "1951-05-29"^^xsd:date ;
+                   <http://purl.org/dc/terms/title> "La mano scarlatta" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_montagna_tragica
+:La_montagna_tragica rdf:type owl:NamedIndividual ,
+                              cbo:Issue ;
+                     cbo:series :Serie_seconda ;
+                     cbo:story :Storia_Il_dio_Puma ;
+                     :issueStoryType :Mainline ;
+                     cbo:issueNumber 69 ;
+                     cbo:publicationDate "1951-04-03"^^xsd:date ;
+                     <http://purl.org/dc/terms/title> "La montagna tragica" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_morte_in_agguato
+:La_morte_in_agguato rdf:type owl:NamedIndividual ,
+                              cbo:Issue ;
+                     cbo:series :Serie_seconda ;
+                     cbo:story :Storia_Il_patto_di_sangue ;
+                     :issueStoryType :Mainline ;
+                     cbo:issueNumber 41 ;
+                     cbo:publicationDate "1950-09-15"^^xsd:date ;
+                     <http://purl.org/dc/terms/title> "La morte in agguato" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_morte_nel_pugno
+:La_morte_nel_pugno rdf:type owl:NamedIndividual ,
+                             cbo:Issue ;
+                    cbo:series :Serie_prima ;
+                    cbo:story :Storia_La_banda_del_Rosso ;
+                    :issueStoryType :Mainline ;
+                    cbo:issueNumber 57 ;
+                    cbo:publicationDate "1949-11-10"^^xsd:date ;
+                    <http://purl.org/dc/terms/title> "La morte nel pugno" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_morte_nel_villaggio
+:La_morte_nel_villaggio rdf:type owl:NamedIndividual ,
+                                 cbo:Issue ;
+                        cbo:series :Serie_seconda ;
+                        cbo:story :Storia_Il_dio_Puma ;
+                        :issueStoryType :Mainline ;
+                        cbo:issueNumber 67 ;
+                        cbo:publicationDate "1951-03-20"^^xsd:date ;
+                        <http://purl.org/dc/terms/title> "La morte nel villaggio" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_rivincita_di_Toba
+:La_rivincita_di_Toba rdf:type owl:NamedIndividual ,
+                               cbo:Issue ;
+                      cbo:series :Serie_seconda ;
+                      cbo:story :Storia_Il_dio_Puma ;
+                      :issueStoryType :Mainline ;
+                      cbo:issueNumber 68 ;
+                      cbo:publicationDate "1951-03-27"^^xsd:date ;
+                      <http://purl.org/dc/terms/title> "La rivincita di Toba" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_roccia_parlante
+:La_roccia_parlante rdf:type owl:NamedIndividual ,
+                             cbo:Issue ;
+                    cbo:series :Serie_prima ;
+                    cbo:story :Storia_Il_totem_misterioso ;
+                    :issueStoryType :Mainline ;
+                    cbo:issueNumber 2 ;
+                    cbo:publicationDate "1948-10-07"^^xsd:date ;
+                    <http://purl.org/dc/terms/title> "La roccia parlante" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_spia
+:La_spia rdf:type owl:NamedIndividual ,
+                  cbo:Issue ;
+         cbo:series :Serie_terza ;
+         cbo:story :Storia_Il_tranello ;
+         :issueStoryType :Mainline ;
+         cbo:issueNumber 13 ;
+         cbo:publicationDate "1951-08-14"^^xsd:date ;
+         <http://purl.org/dc/terms/title> "La spia" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_tragica_corsa
+:La_tragica_corsa rdf:type owl:NamedIndividual ,
+                           cbo:Issue ;
+                  cbo:series :Serie_seconda ;
+                  cbo:story :Storia_Il_patto_di_sangue ;
+                  :issueStoryType :Mainline ;
+                  cbo:issueNumber 51 ;
+                  cbo:publicationDate "1950-11-24"^^xsd:date ;
+                  <http://purl.org/dc/terms/title> "La tragica corsa" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_tragica_notte
+:La_tragica_notte rdf:type owl:NamedIndividual ,
+                           cbo:Issue ;
+                  cbo:series :Serie_prima ,
+                             :Serie_quarta ;
+                  cbo:story :Storia_Il_figlio_di_Tex ,
+                            :Storia_La_banda_del_Rosso ;
+                  :issueStoryType :Mainline ;
+                  cbo:issueNumber 14 ,
+                                  58 ;
+                  cbo:publicationDate "1949-11-17"^^xsd:date ,
+                                      "1952-04-08"^^xsd:date ;
+                  <http://purl.org/dc/terms/title> "La tragica notte" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_trappola
+:La_trappola rdf:type owl:NamedIndividual ,
+                      cbo:Issue ;
+             cbo:series :Serie_seconda ;
+             cbo:story :Storia_La_banda_del_Rosso ;
+             :issueStoryType :Mainline ;
+             cbo:issueNumber 3 ;
+             cbo:publicationDate "1949-12-22"^^xsd:date ;
+             <http://purl.org/dc/terms/title> "La trappola" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_valle_degli_spettri
+:La_valle_degli_spettri rdf:type owl:NamedIndividual ,
+                                 cbo:Issue ;
+                        cbo:series :Serie_seconda ;
+                        cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
+                        :issueStoryType :Mainline ;
+                        cbo:issueNumber 19 ;
+                        cbo:publicationDate "1950-04-14"^^xsd:date ;
+                        <http://purl.org/dc/terms/title> "La valle degli spettri" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_vendetta_dei_Dalton
+:La_vendetta_dei_Dalton rdf:type owl:NamedIndividual ,
+                                 cbo:Issue ;
+                        cbo:series :Serie_seconda ;
+                        cbo:story :Storia_La_banda_dei_Dalton ;
+                        :issueStoryType :Mainline ;
+                        cbo:issueNumber 63 ;
+                        cbo:publicationDate "1951-02-20"^^xsd:date ;
+                        <http://purl.org/dc/terms/title> "La vendetta dei Dalton" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_vendetta_di_Gros-Jean
+:La_vendetta_di_Gros-Jean rdf:type owl:NamedIndividual ,
+                                   cbo:Issue ;
+                          cbo:series :Serie_terza ;
+                          cbo:story :Storia_Il_tranello ;
+                          :issueStoryType :Mainline ;
+                          cbo:issueNumber 15 ;
+                          cbo:publicationDate "1951-08-28"^^xsd:date ;
+                          <http://purl.org/dc/terms/title> "La vendetta di Gros-Jean" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Lotta_senza_quartiere
+:Lotta_senza_quartiere rdf:type owl:NamedIndividual ,
+                                cbo:Issue ;
+                       cbo:series :Serie_seconda ;
+                       cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
+                       :issueStoryType :Mainline ;
+                       cbo:issueNumber 21 ;
+                       cbo:publicationDate "1950-04-28"^^xsd:date ;
+                       <http://purl.org/dc/terms/title> "Lotta senza quartiere" .
+
+
 ###  https://github.com/asperan/comic-book-extension-ontology#Mainline
 comic-book-extension-ontology:Mainline rdf:type owl:NamedIndividual ,
                                                 comic-book-extension-ontology:Issue_Story_Type ;
                                        rdfs:isDefinedBy "https://github.com/asperan/comic-book-extension-ontology" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Nel_covo_dei_Dalton
+:Nel_covo_dei_Dalton rdf:type owl:NamedIndividual ,
+                              cbo:Issue ;
+                     cbo:series :Serie_seconda ;
+                     cbo:story :Storia_La_banda_dei_Dalton ;
+                     :issueStoryType :Mainline ;
+                     cbo:issueNumber 59 ;
+                     cbo:publicationDate "1951-01-23"^^xsd:date ;
+                     <http://purl.org/dc/terms/title> "Nel covo dei Dalton" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Nel_covo_di_El_Diablo
+:Nel_covo_di_El_Diablo rdf:type owl:NamedIndividual ,
+                                cbo:Issue ;
+                       cbo:series :Serie_prima ;
+                       cbo:story :Storia_El_Diablo ;
+                       :issueStoryType :Mainline ;
+                       cbo:issueNumber 11 ;
+                       cbo:publicationDate "1948-12-09"^^xsd:date ;
+                       <http://purl.org/dc/terms/title> "Nel covo di El Diablo" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Nel_covo_di_Satania
+:Nel_covo_di_Satania rdf:type owl:NamedIndividual ,
+                              cbo:Issue ;
+                     cbo:series :Serie_seconda ;
+                     cbo:story :Storia_Satania ;
+                     :issueStoryType :Mainline ;
+                     cbo:issueNumber 9 ;
+                     cbo:publicationDate "1950-02-02"^^xsd:date ;
+                     <http://purl.org/dc/terms/title> "Nel covo di Satania" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Nelle_mani_degli_Outlaws
+:Nelle_mani_degli_Outlaws rdf:type owl:NamedIndividual ,
+                                   cbo:Issue ;
+                          cbo:series :Serie_seconda ;
+                          cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
+                          :issueStoryType :Mainline ;
+                          cbo:issueNumber 20 ;
+                          cbo:publicationDate "1950-04-21"^^xsd:date ;
+                          <http://purl.org/dc/terms/title> "Nelle mani degli Outlaws" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Nelle_mani_del_carnefice
+:Nelle_mani_del_carnefice rdf:type owl:NamedIndividual ,
+                                   cbo:Issue ;
+                          cbo:series :Serie_seconda ;
+                          cbo:story :Storia_La_banda_del_Rosso ;
+                          :issueStoryType :Mainline ;
+                          cbo:issueNumber 4 ;
+                          cbo:publicationDate "1949-12-29"^^xsd:date ;
+                          <http://purl.org/dc/terms/title> "Nelle mani del carnefice" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Notte_di_sangue
+:Notte_di_sangue rdf:type owl:NamedIndividual ,
+                          cbo:Issue ;
+                 cbo:series :Serie_seconda ;
+                 cbo:story :Storia_La_banda_del_Rosso ;
+                 :issueStoryType :Mainline ;
+                 cbo:issueNumber 2 ;
+                 cbo:publicationDate "1949-12-15"^^xsd:date ;
+                 <http://purl.org/dc/terms/title> "Notte di sangue" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Pista_insanguinata
+:Pista_insanguinata rdf:type owl:NamedIndividual ,
+                             cbo:Issue ;
+                    cbo:series :Serie_prima ;
+                    cbo:story :Storia_La_Mano_Rossa ;
+                    :issueStoryType :Mainline ;
+                    cbo:issueNumber 6 ;
+                    cbo:publicationDate "1948-11-04"^^xsd:date ;
+                    <http://purl.org/dc/terms/title> "Pista insanguinata" .
 
 
 ###  https://github.com/asperan/comic-book-extension-ontology#Primary
@@ -814,6 +2023,164 @@ comic-book-extension-ontology:Quando_il_cielo_gli_cadde_sulla_testa rdf:type owl
                                                                     <http://purl.org/dc/terms/title> "Le ciel lui tombe sur la tête"@fr ,
                                                                                                      "Quando il cielo gli cadde sulla testa"@it ;
                                                                     comic-book-extension-ontology:soldCopies 2400000 .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Sangue_su_Danville
+:Sangue_su_Danville rdf:type owl:NamedIndividual ,
+                             cbo:Issue ;
+                    cbo:series :Serie_seconda ;
+                    cbo:story :Storia_La_banda_dei_Dalton ;
+                    :issueStoryType :Mainline ;
+                    cbo:issueNumber 60 ;
+                    cbo:publicationDate "1951-01-30"^^xsd:date ;
+                    <http://purl.org/dc/terms/title> "Sangue su Danville" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Sangue_sugli_spalti
+:Sangue_sugli_spalti rdf:type owl:NamedIndividual ,
+                              cbo:Issue ;
+                     cbo:series :Serie_terza ;
+                     cbo:story :Storia_Il_tranello ;
+                     :issueStoryType :Mainline ;
+                     cbo:issueNumber 10 ;
+                     cbo:publicationDate "1951-07-24"^^xsd:date ;
+                     <http://purl.org/dc/terms/title> "Sangue sugli spalti" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Sangue_sulla_frontiera
+:Sangue_sulla_frontiera rdf:type owl:NamedIndividual ,
+                                 cbo:Issue ;
+                        cbo:series :Serie_prima ;
+                        cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
+                        :issueStoryType :Mainline ;
+                        cbo:issueNumber 28 ;
+                        cbo:publicationDate "1949-04-07"^^xsd:date ;
+                        <http://purl.org/dc/terms/title> "Sangue sulla frontiera" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Sangue_sulla_neve
+:Sangue_sulla_neve rdf:type owl:NamedIndividual ,
+                            cbo:Issue ;
+                   cbo:series :Serie_terza ;
+                   cbo:story :Storia_La_Banda_degli_Orsi ;
+                   :issueStoryType :Mainline ;
+                   cbo:issueNumber 23 ;
+                   cbo:publicationDate "1951-10-23"^^xsd:date ;
+                   <http://purl.org/dc/terms/title> "Sangue sulla neve" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Satania
+:Satania rdf:type owl:NamedIndividual ,
+                  cbo:Issue ;
+         cbo:series :Serie_seconda ;
+         cbo:story :Storia_Satania ;
+         :issueStoryType :Mainline ;
+         cbo:issueNumber 6 ;
+         cbo:publicationDate "1950-01-12"^^xsd:date ;
+         <http://purl.org/dc/terms/title> "Satania" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Senza_scampo
+:Senza_scampo rdf:type owl:NamedIndividual ,
+                       cbo:Issue ;
+              cbo:series :Serie_quarta ;
+              cbo:story :Storia_Il_figlio_di_Tex ;
+              :issueStoryType :Mainline ;
+              cbo:issueNumber 24 ;
+              cbo:publicationDate "1952-06-17"^^xsd:date ;
+              <http://purl.org/dc/terms/title> "Senza scampo" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Serie_prima
+:Serie_prima rdf:type owl:NamedIndividual ,
+                      cbo:Series ;
+             cbo:publicationFrequency <http://comicmeta.org/vocab/Weekly> ;
+             cbo:publisher wd:Q12103 ;
+             cbo:seriesOf :Tex ;
+             cbo:endDate 1949 ;
+             cbo:itemNumber 1 ;
+             cbo:seriesTitle "Serie prima"@it ;
+             cbo:seriesYear 1948 .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Serie_quarta
+:Serie_quarta rdf:type owl:NamedIndividual ,
+                       cbo:Series ;
+              cbo:publicationFrequency <http://comicmeta.org/vocab/Weekly> ;
+              cbo:publisher wd:Q12103 ;
+              cbo:seriesOf :Tex ;
+              cbo:endDate 1952 ;
+              cbo:itemNumber 4 ;
+              cbo:seriesTitle "Serie quarta"@it ;
+              cbo:seriesYear 1952 .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Serie_seconda
+:Serie_seconda rdf:type owl:NamedIndividual ,
+                        cbo:Series ;
+               cbo:publicationFrequency <http://comicmeta.org/vocab/Weekly> ;
+               cbo:publisher wd:Q12103 ;
+               cbo:seriesOf :Tex ;
+               cbo:endDate 1951 ;
+               cbo:itemNumber 2 ;
+               cbo:seriesTitle "Serie seconda"@it ;
+               cbo:seriesYear 1949 .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Serie_terza
+:Serie_terza rdf:type owl:NamedIndividual ,
+                      cbo:Series ;
+             cbo:publicationFrequency <http://comicmeta.org/vocab/Weekly> ;
+             cbo:publisher wd:Q12103 ;
+             cbo:seriesOf :Tex ;
+             cbo:endDate 1952 ;
+             cbo:itemNumber 3 ;
+             cbo:seriesTitle "Serie terza"@it ;
+             cbo:seriesYear 1951 .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Sfida_al_pericolo
+:Sfida_al_pericolo rdf:type owl:NamedIndividual ,
+                            cbo:Issue ;
+                   cbo:series :Serie_prima ;
+                   cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
+                   :issueStoryType :Mainline ;
+                   cbo:issueNumber 32 ;
+                   cbo:publicationDate "1949-05-05"^^xsd:date ;
+                   <http://purl.org/dc/terms/title> "Sfida al pericolo" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Showdown_a_El_Paso
+:Showdown_a_El_Paso rdf:type owl:NamedIndividual ,
+                             cbo:Issue ;
+                    cbo:series :Serie_prima ;
+                    cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
+                    :issueStoryType :Mainline ;
+                    cbo:issueNumber 42 ;
+                    cbo:publicationDate "1949-07-14"^^xsd:date ;
+                    <http://purl.org/dc/terms/title> "Showdown a El Paso" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Situazione_pericolosa
+:Situazione_pericolosa rdf:type owl:NamedIndividual ,
+                                cbo:Issue ;
+                       cbo:series :Serie_seconda ;
+                       cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
+                       :issueStoryType :Mainline ;
+                       cbo:issueNumber 17 ;
+                       cbo:publicationDate "1950-03-31"^^xsd:date ;
+                       <http://purl.org/dc/terms/title> "Situazione pericolosa" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Solo_contro_tutti
+:Solo_contro_tutti rdf:type owl:NamedIndividual ,
+                            cbo:Issue ;
+                   cbo:series :Serie_seconda ;
+                   cbo:story :Storia_Avventura_sul_Rio_Grande ;
+                   :issueStoryType :Mainline ;
+                   cbo:issueNumber 74 ;
+                   cbo:publicationDate "1951-05-08"^^xsd:date ;
+                   <http://purl.org/dc/terms/title> "Solo contro tutti" .
 
 
 ###  https://github.com/asperan/comic-book-extension-ontology#SpinOff
@@ -877,6 +2244,1366 @@ comic-book-extension-ontology:nel_50_ac rdf:type owl:NamedIndividual .
 ###  https://github.com/asperan/comic-book-extension-ontology#obeliscio
 comic-book-extension-ontology:obeliscio rdf:type owl:NamedIndividual .
 
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_Avventura_sul_Rio_Grande
+:Storia_Avventura_sul_Rio_Grande rdf:type owl:NamedIndividual ,
+                                          cbo:Story ;
+                                 cbo:storyTitle "Avventura sul Rio Grande"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_El_Diablo
+:Storia_El_Diablo rdf:type owl:NamedIndividual ,
+                           cbo:Story ;
+                  cbo:storyTitle "El Diablo"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_Il_dio_Puma
+:Storia_Il_dio_Puma rdf:type owl:NamedIndividual ,
+                             cbo:Story ;
+                    cbo:storyTitle "Il dio Puma"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_Il_figlio_di_Tex
+:Storia_Il_figlio_di_Tex rdf:type owl:NamedIndividual ,
+                                  cbo:Story ;
+                         cbo:storyTitle "Il figlio di Tex"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_Il_patto_di_sangue
+:Storia_Il_patto_di_sangue rdf:type owl:NamedIndividual ,
+                                    cbo:Story ;
+                           cbo:storyTitle "Il patto di sangue"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_Il_totem_misterioso
+:Storia_Il_totem_misterioso rdf:type owl:NamedIndividual ,
+                                     cbo:Story ;
+                            cbo:storyTitle "Il totem misterioso"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_Il_tranello
+:Storia_Il_tranello rdf:type owl:NamedIndividual ,
+                             cbo:Story ;
+                    cbo:storyTitle "Il tranello"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_La_Banda_degli_Orsi
+:Storia_La_Banda_degli_Orsi rdf:type owl:NamedIndividual ,
+                                     cbo:Story ;
+                            cbo:storyTitle "La Banda degli Orsi"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_La_Mano_Rossa
+:Storia_La_Mano_Rossa rdf:type owl:NamedIndividual ,
+                               cbo:Story ;
+                      cbo:storyTitle "La Mano Rossa"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_La_banda_dei_Dalton
+:Storia_La_banda_dei_Dalton rdf:type owl:NamedIndividual ,
+                                     cbo:Story ;
+                            cbo:storyTitle "La banda dei Dalton"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_La_banda_del_Rosso
+:Storia_La_banda_del_Rosso rdf:type owl:NamedIndividual ,
+                                    cbo:Story ;
+                           cbo:storyTitle "La banda del Rosso"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_La_banda_di_Kid_Billy
+:Storia_La_banda_di_Kid_Billy rdf:type owl:NamedIndividual ,
+                                       cbo:Story ;
+                              cbo:storyTitle "La banda di Kid Billy"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_Satania
+:Storia_Satania rdf:type owl:NamedIndividual ,
+                         cbo:Story ;
+                cbo:storyTitle "Satania"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_Uno_contro_venti
+:Storia_Uno_contro_venti rdf:type owl:NamedIndividual ,
+                                  cbo:Story ;
+                         cbo:storyTitle "Uno contro venti"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Sul_sentiero_della_morte
+:Sul_sentiero_della_morte rdf:type owl:NamedIndividual ,
+                                   cbo:Issue ;
+                          cbo:series :Serie_prima ;
+                          cbo:story :Storia_El_Diablo ;
+                          :issueStoryType :Mainline ;
+                          cbo:issueNumber 9 ;
+                          cbo:publicationDate "1948-11-25"^^xsd:date ;
+                          <http://purl.org/dc/terms/title> "Sul sentiero della morte" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Sul_sentiero_di_guerra
+:Sul_sentiero_di_guerra rdf:type owl:NamedIndividual ,
+                                 cbo:Issue ;
+                        cbo:series :Serie_prima ,
+                                   :Serie_seconda ;
+                        cbo:story :Storia_La_banda_dei_Dalton ,
+                                  :Storia_La_banda_di_Kid_Billy ;
+                        :issueStoryType :Mainline ;
+                        cbo:issueNumber 22 ,
+                                        58 ;
+                        cbo:publicationDate "1949-02-24"^^xsd:date ,
+                                            "1951-01-16"^^xsd:date ;
+                        <http://purl.org/dc/terms/title> "Sul sentiero di guerra" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Sulle_soglie_della_morte
+:Sulle_soglie_della_morte rdf:type owl:NamedIndividual ,
+                                   cbo:Issue ;
+                          cbo:series :Serie_prima ;
+                          cbo:story :Storia_La_banda_del_Rosso ;
+                          :issueStoryType :Mainline ;
+                          cbo:issueNumber 54 ;
+                          cbo:publicationDate "1949-10-20"^^xsd:date ;
+                          <http://purl.org/dc/terms/title> "Sulle soglie della morte" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Terrore_a_Culver_City
+:Terrore_a_Culver_City rdf:type owl:NamedIndividual ,
+                                cbo:Issue ;
+                       cbo:series :Serie_prima ;
+                       cbo:story :Storia_Il_totem_misterioso ;
+                       :issueStoryType :Mainline ;
+                       cbo:issueNumber 3 ;
+                       cbo:publicationDate "1948-10-14"^^xsd:date ;
+                       <http://purl.org/dc/terms/title> "Terrore a Culver City" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Terrore_a_El_Paso
+:Terrore_a_El_Paso rdf:type owl:NamedIndividual ,
+                            cbo:Issue ;
+                   cbo:series :Serie_prima ;
+                   cbo:story :Storia_El_Diablo ;
+                   :issueStoryType :Mainline ;
+                   cbo:issueNumber 10 ;
+                   cbo:publicationDate "1948-12-02"^^xsd:date ;
+                   <http://purl.org/dc/terms/title> "Terrore a El Paso" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Tex
+:Tex rdf:type owl:NamedIndividual ,
+              cbo:Comic ;
+     cbo:penciller wd:Q12092 ;
+     cbo:publisher wd:Q12103 ;
+     cbo:startDate 1948 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Tex ;
+   owl:annotatedProperty cbo:penciller ;
+   owl:annotatedTarget wd:Q12092 ;
+   rdfs:comment "From 30th September 1948 to February 1994"
+ ] .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Tex_alla_riscossa
+:Tex_alla_riscossa rdf:type owl:NamedIndividual ,
+                            cbo:Issue ;
+                   cbo:series :Serie_seconda ;
+                   cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
+                   :issueStoryType :Mainline ;
+                   cbo:issueNumber 32 ;
+                   cbo:publicationDate "1950-07-14"^^xsd:date ;
+                   <http://purl.org/dc/terms/title> "Tex alla riscossa" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Tex_non_perde_tempo
+:Tex_non_perde_tempo rdf:type owl:NamedIndividual ,
+                              cbo:Issue ;
+                     cbo:series :Serie_seconda ;
+                     cbo:story :Storia_Il_patto_di_sangue ;
+                     :issueStoryType :Mainline ;
+                     cbo:issueNumber 56 ;
+                     cbo:publicationDate "1951-01-02"^^xsd:date ;
+                     <http://purl.org/dc/terms/title> "Tex non perde tempo" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Traccia_di_sangue
+:Traccia_di_sangue rdf:type owl:NamedIndividual ,
+                            cbo:Issue ;
+                   cbo:series :Serie_seconda ;
+                   cbo:story :Storia_Il_patto_di_sangue ;
+                   :issueStoryType :Mainline ;
+                   cbo:issueNumber 47 ;
+                   cbo:publicationDate "1950-10-27"^^xsd:date ;
+                   <http://purl.org/dc/terms/title> "Traccia di sangue" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Tragedia_sul_mare
+:Tragedia_sul_mare rdf:type owl:NamedIndividual ,
+                            cbo:Issue ;
+                   cbo:series :Serie_terza ;
+                   cbo:story :Storia_La_Banda_degli_Orsi ;
+                   :issueStoryType :Mainline ;
+                   cbo:issueNumber 33 ;
+                   cbo:publicationDate "1952-01-01"^^xsd:date ;
+                   <http://purl.org/dc/terms/title> "Tragedia sul mare" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Tragico_assedio
+:Tragico_assedio rdf:type owl:NamedIndividual ,
+                          cbo:Issue ;
+                 cbo:series :Serie_quarta ;
+                 cbo:story :Storia_Il_figlio_di_Tex ;
+                 :issueStoryType :Mainline ;
+                 cbo:issueNumber 22 ;
+                 cbo:publicationDate "1952-06-03"^^xsd:date ;
+                 <http://purl.org/dc/terms/title> "Tragico assedio" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Troppo_tardi
+:Troppo_tardi rdf:type owl:NamedIndividual ,
+                       cbo:Issue ;
+              cbo:series :Serie_terza ;
+              cbo:story :Storia_La_Banda_degli_Orsi ;
+              :issueStoryType :Mainline ;
+              cbo:issueNumber 29 ;
+              cbo:publicationDate "1951-12-04"^^xsd:date ;
+              <http://purl.org/dc/terms/title> "Troppo tardi" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Un_colpo_da_maestro
+:Un_colpo_da_maestro rdf:type owl:NamedIndividual ,
+                              cbo:Issue ;
+                     cbo:series :Serie_quarta ;
+                     cbo:story :Storia_Il_figlio_di_Tex ;
+                     :issueStoryType :Mainline ;
+                     cbo:issueNumber 8 ;
+                     cbo:publicationDate "1952-02-26"^^xsd:date ;
+                     <http://purl.org/dc/terms/title> "Un colpo da maestro" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Un_turpe_contratto
+:Un_turpe_contratto rdf:type owl:NamedIndividual ,
+                             cbo:Issue ;
+                    cbo:series :Serie_prima ;
+                    cbo:story :Storia_La_banda_del_Rosso ;
+                    :issueStoryType :Mainline ;
+                    cbo:issueNumber 56 ;
+                    cbo:publicationDate "1949-11-03"^^xsd:date ;
+                    <http://purl.org/dc/terms/title> "Un turpe contratto" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Un_turpe_mercato
+:Un_turpe_mercato rdf:type owl:NamedIndividual ,
+                           cbo:Issue ;
+                  cbo:series :Serie_seconda ;
+                  cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
+                  :issueStoryType :Mainline ;
+                  cbo:issueNumber 34 ;
+                  cbo:publicationDate "1950-07-28"^^xsd:date ;
+                  <http://purl.org/dc/terms/title> "Un turpe mercato" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Una_fuga_rocambolesca
+:Una_fuga_rocambolesca rdf:type owl:NamedIndividual ,
+                                cbo:Issue ;
+                       cbo:series :Serie_seconda ;
+                       cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
+                       :issueStoryType :Mainline ;
+                       cbo:issueNumber 36 ;
+                       cbo:publicationDate "1950-08-11"^^xsd:date ;
+                       <http://purl.org/dc/terms/title> "Una fuga rocambolesca" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Una_notte_movimentata
+:Una_notte_movimentata rdf:type owl:NamedIndividual ,
+                                cbo:Issue ;
+                       cbo:series :Serie_seconda ;
+                       cbo:story :Storia_Il_patto_di_sangue ;
+                       :issueStoryType :Mainline ;
+                       cbo:issueNumber 45 ;
+                       cbo:publicationDate "1950-10-13"^^xsd:date ;
+                       <http://purl.org/dc/terms/title> "Una notte movimentata" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Una_trama_infernale
+:Una_trama_infernale rdf:type owl:NamedIndividual ,
+                              cbo:Issue ;
+                     cbo:series :Serie_prima ;
+                     cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
+                     :issueStoryType :Mainline ;
+                     cbo:issueNumber 38 ;
+                     cbo:publicationDate "1949-06-16"^^xsd:date ;
+                     <http://purl.org/dc/terms/title> "Una trama infernale" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Uno_contro_cinque
+:Uno_contro_cinque rdf:type owl:NamedIndividual ,
+                            cbo:Issue ;
+                   cbo:series :Serie_prima ;
+                   cbo:story :Storia_Uno_contro_venti ;
+                   :issueStoryType :Mainline ;
+                   cbo:issueNumber 15 ;
+                   cbo:publicationDate "1949-01-06"^^xsd:date ;
+                   <http://purl.org/dc/terms/title> "Uno contro cinque" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Uno_contro_venti
+:Uno_contro_venti rdf:type owl:NamedIndividual ,
+                           cbo:Issue ;
+                  cbo:series :Serie_prima ;
+                  cbo:story :Storia_Uno_contro_venti ;
+                  :issueStoryType :Mainline ;
+                  cbo:issueNumber 19 ;
+                  cbo:publicationDate "1949-02-03"^^xsd:date ;
+                  <http://purl.org/dc/terms/title> "Uno contro venti" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Volume_Doppio_gioco
+:Volume_Doppio_gioco rdf:type owl:NamedIndividual ,
+                              cbo:Volume ;
+                     cbo:issue :Ai_ferri_corti ,
+                               :Attacco_nella_notte ,
+                               :Avventura_a_Piedras_Negras ,
+                               :Battaglia_sul_tempio ,
+                               :Doppio_gioco ,
+                               :Il_covo_sulla_Sierra ,
+                               :Il_guado_dei_Piute ,
+                               :Il_tradimento_di_El_Fierro ,
+                               :La_corsa_infernale ,
+                               :La_valle_degli_spettri ,
+                               :Lotta_senza_quartiere ,
+                               :Nelle_mani_degli_Outlaws ,
+                               :Situazione_pericolosa ,
+                               :Tex_alla_riscossa ,
+                               :Un_turpe_mercato ,
+                               :Una_fuga_rocambolesca ,
+                               <https://github.com/asperan/comic-book-extension-ontology#Ken_Logan,_il_duellista> ,
+                               <https://github.com/asperan/comic-book-extension-ontology#L'agguato_sul_Rio_Mayo> ,
+                               <https://github.com/asperan/comic-book-extension-ontology#L'ultima_carta_dei_fratelli_Benton> ,
+                               <https://github.com/asperan/comic-book-extension-ontology#Lo_sceriffo_di_Devil's_Hole> ,
+                               <https://github.com/asperan/comic-book-extension-ontology#Lupe,_la_messicana> ,
+                               <https://github.com/asperan/comic-book-extension-ontology#Missione_a_Devil's_Hole> ;
+                     cbo:seriesOf :Tex ;
+                     cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
+                     cbo:pageCount 160 ;
+                     cbo:publicationDate "1959-09-01"^^xsd:date ;
+                     cbo:volumeNumber 6 ;
+                     <http://purl.org/dc/terms/title> "Doppio gioco"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Volume_Due_contro_cento
+:Volume_Due_contro_cento rdf:type owl:NamedIndividual ,
+                                  cbo:Volume ;
+                         cbo:issue :Due_contro_cento ,
+                                   :Duello_sul_treno ,
+                                   :Il_colpo_di_Fulton_Creek ,
+                                   :Il_deserto_di_Gila ,
+                                   :Il_rapimento_di_Lilyth ,
+                                   :Il_terrore_sul_Durango ,
+                                   :La_banda_dei_Dalton ,
+                                   :La_battaglia_di_Testa_di_Pietra ,
+                                   :La_legge_del_coltello ,
+                                   :La_legge_del_giudice_Colt ,
+                                   :La_tragica_corsa ,
+                                   :La_vendetta_dei_Dalton ,
+                                   :Nel_covo_dei_Dalton ,
+                                   :Sangue_su_Danville ,
+                                   :Sul_sentiero_di_guerra ,
+                                   :Tex_non_perde_tempo ,
+                                   :Traccia_di_sangue ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'agguato_di_Volpe_Rossa> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Un'orribile_fine> ;
+                         cbo:seriesOf :Tex ;
+                         cbo:story :Storia_La_banda_dei_Dalton ;
+                         cbo:pageCount 161 ;
+                         cbo:publicationDate "1960-03-01"^^xsd:date ;
+                         cbo:volumeNumber 8 ;
+                         <http://purl.org/dc/terms/title> "Due contro cento"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Volume_Fuorilegge
+:Volume_Fuorilegge rdf:type owl:NamedIndividual ,
+                            cbo:Volume ;
+                   cbo:issue :Attacco_a_Santa_Fe ,
+                             :Condanna_a_morte ,
+                             :Gioco_pericoloso ,
+                             :Il_fantasma_di_Villa-Rica ,
+                             :Il_rapimento_di_Tesah ,
+                             :Il_tempio_tragico ,
+                             :La_Mesa_del_Diablo ,
+                             :La_barriera_di_fuoco ,
+                             :La_fine_di_Mefisto ,
+                             :Sangue_sulla_frontiera ,
+                             :Showdown_a_El_Paso ,
+                             :Una_trama_infernale ,
+                             <https://github.com/asperan/comic-book-extension-ontology#Fuorilegge!> ,
+                             <https://github.com/asperan/comic-book-extension-ontology#Il_mistero_dell'idolo_d'oro> ,
+                             <https://github.com/asperan/comic-book-extension-ontology#Il_segreto_dell'idolo> ,
+                             <https://github.com/asperan/comic-book-extension-ontology#L'Estrella_del_Rio> ,
+                             <https://github.com/asperan/comic-book-extension-ontology#L'assedio_di_Forte_Wellington> ,
+                             <https://github.com/asperan/comic-book-extension-ontology#L'impresa_di_Hermadina> ,
+                             <https://github.com/asperan/comic-book-extension-ontology#La_morte_nell'ombra> ,
+                             <https://github.com/asperan/comic-book-extension-ontology#Mefisto,_la_spia> ,
+                             <https://github.com/asperan/comic-book-extension-ontology#Montales,_el_desperado> ,
+                             <https://github.com/asperan/comic-book-extension-ontology#Tex,_l'uomo-ciclone> ;
+                   cbo:seriesOf :Tex ;
+                   cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
+                   cbo:pageCount 161 ;
+                   cbo:publicationDate "1959-02-01"^^xsd:date ;
+                   cbo:volumeNumber 3 ;
+                   <http://purl.org/dc/terms/title> "Fuorilegge"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Volume_Il_figlio_di_Tex
+:Volume_Il_figlio_di_Tex rdf:type owl:NamedIndividual ,
+                                  cbo:Volume ;
+                         cbo:issue :Ala_di_Morte ,
+                                   :Fra_due_fuochi ,
+                                   :Fuoco_ad_Angel_City ,
+                                   :Il_battesimo_del_fuoco_di_Kit_Willer ,
+                                   :Il_campo_dei_desperados ,
+                                   :Il_campo_della_morte ,
+                                   :Il_figlio_di_Tex ,
+                                   :Il_ranch_abbandonato ,
+                                   :Il_rogo ,
+                                   :Intrighi_nella_notte ,
+                                   :Kit_Willer_si_fa_onore ,
+                                   :Kit_segue_una_traccia ,
+                                   :La_Banda_degli_Orsi ,
+                                   :La_banda_degli_incappucciati ,
+                                   :La_battaglia_di_Holbrok ,
+                                   :La_capanna_sul_fiume ,
+                                   :La_cattura_di_Gros-Jean ,
+                                   :La_mano_del_morto ,
+                                   :La_tragica_notte ,
+                                   :Sangue_sulla_neve ,
+                                   :Senza_scampo ,
+                                   :Tragedia_sul_mare ,
+                                   :Tragico_assedio ,
+                                   :Troppo_tardi ,
+                                   :Un_colpo_da_maestro ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Apaches!> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'agguato_nella_boscaglia> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'attacco_di_Eldorado> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'impronta_misteriosa> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'ultima_impresa_di_Brad> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'ultimo_colpo_di_Black_Sam> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'uomo_dagli_speroni_d'argento> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#La_fine_dell'Eldorado> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Sulle_soglie_dell'inferno> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Tex,_l'intrepido> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Un'impresa_disperata> ;
+                         cbo:seriesOf :Tex ;
+                         cbo:story :Storia_Il_figlio_di_Tex ;
+                         cbo:pageCount 160 ;
+                         cbo:publicationDate "1960-11-01"^^xsd:date ;
+                         cbo:volumeNumber 12 ;
+                         <http://purl.org/dc/terms/title> "Il figlio di Tex"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Volume_Il_patto_di_sangue
+:Volume_Il_patto_di_sangue rdf:type owl:NamedIndividual ,
+                                    cbo:Volume ;
+                           cbo:issue :A_carte_scoperte ,
+                                     :Agguato_al_passo_di_Tula ,
+                                     :Battaglia_sul_tempio ,
+                                     :Il_cavaliere_nero ,
+                                     :Il_covo_sulla_Sierra ,
+                                     :Il_guado_dei_Piute ,
+                                     :Il_patto_di_sangue ,
+                                     :Il_salto_del_diavolo ,
+                                     :Il_tradimento_di_El_Fierro ,
+                                     :La_corsa_infernale ,
+                                     :La_legge_del_taglione ,
+                                     :La_morte_in_agguato ,
+                                     :Tex_alla_riscossa ,
+                                     :Un_turpe_mercato ,
+                                     :Una_fuga_rocambolesca ,
+                                     :Una_notte_movimentata ,
+                                     <https://github.com/asperan/comic-book-extension-ontology#Ken_Logan,_il_duellista> ,
+                                     <https://github.com/asperan/comic-book-extension-ontology#L'agguato_sul_Rio_Mayo> ,
+                                     <https://github.com/asperan/comic-book-extension-ontology#L'aquila_della_notte> ,
+                                     <https://github.com/asperan/comic-book-extension-ontology#Lupe,_la_messicana> ;
+                           cbo:seriesOf :Tex ;
+                           cbo:story :Storia_Il_patto_di_sangue ;
+                           cbo:pageCount 160 ;
+                           cbo:publicationDate "1960-01-01"^^xsd:date ;
+                           cbo:volumeNumber 7 ;
+                           <http://purl.org/dc/terms/title> "Il patto di sangue"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Volume_Il_segno_indiano
+:Volume_Il_segno_indiano rdf:type owl:NamedIndividual ,
+                                  cbo:Volume ;
+                         cbo:issue :Agguato_nella_palude ,
+                                   :Al_palo_della_tortura ,
+                                   :Ala_di_Morte ,
+                                   :Cerchio_di_morte ,
+                                   :Dinamite ,
+                                   :Duello_nella_foresta ,
+                                   :Fra_due_fuochi ,
+                                   :Gli_eroi_di_Forte_Kinder ,
+                                   :Il_sacrificio_di_Jim ,
+                                   :Il_segno_indiano ,
+                                   :Il_tranello ,
+                                   :Il_villaggio_fantasma ,
+                                   :Intrighi_nella_notte ,
+                                   :La_Banda_degli_Orsi ,
+                                   :La_capanna_sul_fiume ,
+                                   :La_cattura_di_Gros-Jean ,
+                                   :La_droga_indiana ,
+                                   :La_mano_scarlatta ,
+                                   :La_spia ,
+                                   :La_vendetta_di_Gros-Jean ,
+                                   :Sangue_sugli_spalti ,
+                                   :Sangue_sulla_neve ,
+                                   :Tragedia_sul_mare ,
+                                   :Troppo_tardi ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Gros-Jean,_il_meticcio> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'impronta_misteriosa> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'orma_della_paura> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'orrenda_notte> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'orribile_ricatto> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'ultima_carta_di_Tex> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'ultima_impresa_di_Brad> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'ultimatum> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#La_fine_dell'Eldorado> ;
+                         cbo:seriesOf :Tex ;
+                         cbo:story :Storia_La_Banda_degli_Orsi ;
+                         cbo:pageCount 160 ;
+                         cbo:publicationDate "1960-09-01"^^xsd:date ;
+                         cbo:volumeNumber 11 ;
+                         <http://purl.org/dc/terms/title> "Il segno indiano"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Volume_Il_tranello
+:Volume_Il_tranello rdf:type owl:NamedIndividual ,
+                             cbo:Volume ;
+                    cbo:issue :Agguato_nella_palude ,
+                              :Al_palo_della_tortura ,
+                              :Cerchio_di_morte ,
+                              :Dinamite ,
+                              :Duello_nella_foresta ,
+                              :Gli_eroi_di_Forte_Kinder ,
+                              :Il_sacrificio_di_Jim ,
+                              :Il_segno_indiano ,
+                              :Il_tranello ,
+                              :Il_villaggio_fantasma ,
+                              :La_droga_indiana ,
+                              :La_mano_scarlatta ,
+                              :La_spia ,
+                              :La_vendetta_di_Gros-Jean ,
+                              :Sangue_sugli_spalti ,
+                              <https://github.com/asperan/comic-book-extension-ontology#Gros-Jean,_il_meticcio> ,
+                              <https://github.com/asperan/comic-book-extension-ontology#L'orma_della_paura> ,
+                              <https://github.com/asperan/comic-book-extension-ontology#L'orrenda_notte> ,
+                              <https://github.com/asperan/comic-book-extension-ontology#L'orribile_ricatto> ,
+                              <https://github.com/asperan/comic-book-extension-ontology#L'ultima_carta_di_Tex> ,
+                              <https://github.com/asperan/comic-book-extension-ontology#L'ultimatum> ;
+                    cbo:seriesOf :Tex ;
+                    cbo:story :Storia_Il_tranello ;
+                    cbo:pageCount 160 ;
+                    cbo:publicationDate "1960-07-01"^^xsd:date ;
+                    cbo:volumeNumber 10 ;
+                    <http://purl.org/dc/terms/title> "Il tranello" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Volume_La_Mano_Rossa
+:Volume_La_Mano_Rossa rdf:type owl:NamedIndividual ,
+                               cbo:Volume ;
+                      cbo:issue :El_Diablo ,
+                                :Fuoco_nella_notte ,
+                                :Il_totem_misterioso ,
+                                :La_Mano_Rossa ,
+                                :La_figlia_del_desperado ,
+                                :La_freccia_della_morte ,
+                                :La_mano_fantasma ,
+                                :La_roccia_parlante ,
+                                :Nel_covo_di_El_Diablo ,
+                                :Pista_insanguinata ,
+                                :Sul_sentiero_della_morte ,
+                                :Terrore_a_Culver_City ,
+                                :Terrore_a_El_Paso ,
+                                :Uno_contro_cinque ,
+                                :Uno_contro_venti ,
+                                <https://github.com/asperan/comic-book-extension-ontology#Bill_Mohican,_il_rapitore_di_fanciulle> ,
+                                <https://github.com/asperan/comic-book-extension-ontology#Caccia_all'uomo> ,
+                                <https://github.com/asperan/comic-book-extension-ontology#Il_capitano_della_River's_Queen> ,
+                                <https://github.com/asperan/comic-book-extension-ontology#Sull'orlo_dell'abisso> ;
+                      cbo:seriesOf :Tex ;
+                      cbo:story :Storia_El_Diablo ,
+                                :Storia_Il_totem_misterioso ,
+                                :Storia_La_Mano_Rossa ;
+                      cbo:pageCount 160 ;
+                      cbo:publicationDate "1958-10-01"^^xsd:date ;
+                      cbo:volumeNumber 1 ;
+                      <http://purl.org/dc/terms/title> "La Mano Rossa"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Volume_Uno_contro_venti
+:Volume_Uno_contro_venti rdf:type owl:NamedIndividual ,
+                                  cbo:Volume ;
+                         cbo:issue :Attacco_a_Santa_Fe ,
+                                   :El_Diablo ,
+                                   :Fuoco_nella_notte ,
+                                   :Il_rapimento_di_Tesah ,
+                                   :Il_tempio_tragico ,
+                                   :La_Mano_Rossa ,
+                                   :La_banda_di_Kid_Billy ,
+                                   :La_barriera_di_fuoco ,
+                                   :La_figlia_del_desperado ,
+                                   :La_freccia_della_morte ,
+                                   :La_mano_fantasma ,
+                                   :Nel_covo_di_El_Diablo ,
+                                   :Pista_insanguinata ,
+                                   :Sangue_sulla_frontiera ,
+                                   :Sfida_al_pericolo ,
+                                   :Sul_sentiero_della_morte ,
+                                   :Sul_sentiero_di_guerra ,
+                                   :Terrore_a_El_Paso ,
+                                   :Uno_contro_cinque ,
+                                   :Uno_contro_venti ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Bill_Mohican,_il_rapitore_di_fanciulle> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Caccia_all'uomo> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Il_capitano_della_River's_Queen> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Il_mistero_dell'idolo_d'oro> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Il_segreto_dell'idolo> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'Estrella_del_Rio> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'agguato_nel_canyon> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'assedio_di_Forte_Wellington> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#L'audace_impresa> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#La_morte_nell'ombra> ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Sull'orlo_dell'abisso> ;
+                         cbo:seriesOf :Tex ;
+                         cbo:story :Storia_La_banda_di_Kid_Billy ,
+                                   :Storia_Uno_contro_venti ,
+                                   <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
+                         cbo:pageCount 161 ;
+                         cbo:publicationDate "1958-12-01"^^xsd:date ;
+                         cbo:volumeNumber 2 ;
+                         <http://purl.org/dc/terms/title> "Uno contro venti"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Al_Corno_d'Oro
+<https://github.com/asperan/comic-book-extension-ontology#Al_Corno_d'Oro> rdf:type owl:NamedIndividual ,
+                                                                                   cbo:Issue ;
+                                                                          cbo:series :Serie_seconda ;
+                                                                          cbo:story :Storia_Satania ;
+                                                                          :issueStoryType :Mainline ;
+                                                                          cbo:issueNumber 7 ;
+                                                                          cbo:publicationDate "1950-01-19"^^xsd:date ;
+                                                                          <http://purl.org/dc/terms/title> "Al Corno d'Oro" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Apaches!
+<https://github.com/asperan/comic-book-extension-ontology#Apaches!> rdf:type owl:NamedIndividual ,
+                                                                             cbo:Issue ;
+                                                                    cbo:series :Serie_quarta ;
+                                                                    cbo:story :Storia_Il_figlio_di_Tex ;
+                                                                    :issueStoryType :Mainline ;
+                                                                    cbo:issueNumber 21 ;
+                                                                    cbo:publicationDate "1952-05-27"^^xsd:date ;
+                                                                    <http://purl.org/dc/terms/title> "Apaches!" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Bill_Mohican,_il_rapitore_di_fanciulle
+<https://github.com/asperan/comic-book-extension-ontology#Bill_Mohican,_il_rapitore_di_fanciulle> rdf:type owl:NamedIndividual ,
+                                                                                                           cbo:Issue ;
+                                                                                                  cbo:series :Serie_prima ;
+                                                                                                  cbo:story :Storia_El_Diablo ;
+                                                                                                  :issueStoryType :Mainline ;
+                                                                                                  cbo:issueNumber 13 ;
+                                                                                                  cbo:publicationDate "1948-12-23"^^xsd:date ;
+                                                                                                  <http://purl.org/dc/terms/title> "Bill Mohican, il rapitore di fanciulle" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Caccia_all'uomo
+<https://github.com/asperan/comic-book-extension-ontology#Caccia_all'uomo> rdf:type owl:NamedIndividual ,
+                                                                                    cbo:Issue ;
+                                                                           cbo:series :Serie_prima ;
+                                                                           cbo:story :Storia_Uno_contro_venti ;
+                                                                           :issueStoryType :Mainline ;
+                                                                           cbo:issueNumber 18 ;
+                                                                           cbo:publicationDate "1949-01-27"^^xsd:date ;
+                                                                           <http://purl.org/dc/terms/title> "Caccia all'uomo" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Complotti_nell'ombra
+<https://github.com/asperan/comic-book-extension-ontology#Complotti_nell'ombra> rdf:type owl:NamedIndividual ,
+                                                                                         cbo:Issue ;
+                                                                                cbo:series :Serie_prima ;
+                                                                                cbo:story :Storia_La_banda_del_Rosso ;
+                                                                                :issueStoryType :Mainline ;
+                                                                                cbo:issueNumber 53 ;
+                                                                                cbo:publicationDate "1949-10-13"^^xsd:date ;
+                                                                                <http://purl.org/dc/terms/title> "Complotti nell'ombra" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Fuorilegge!
+<https://github.com/asperan/comic-book-extension-ontology#Fuorilegge!> rdf:type owl:NamedIndividual ,
+                                                                                cbo:Issue ;
+                                                                       cbo:series :Serie_prima ;
+                                                                       cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
+                                                                       :issueStoryType :Mainline ;
+                                                                       cbo:issueNumber 40 ;
+                                                                       cbo:publicationDate "1949-06-30"^^xsd:date ;
+                                                                       <http://purl.org/dc/terms/title> "Fuorilegge!" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Gros-Jean,_il_meticcio
+<https://github.com/asperan/comic-book-extension-ontology#Gros-Jean,_il_meticcio> rdf:type owl:NamedIndividual ,
+                                                                                           cbo:Issue ;
+                                                                                  cbo:series :Serie_terza ;
+                                                                                  cbo:story :Storia_Il_tranello ;
+                                                                                  :issueStoryType :Mainline ;
+                                                                                  cbo:issueNumber 4 ;
+                                                                                  cbo:publicationDate "1951-06-12"^^xsd:date ;
+                                                                                  <http://purl.org/dc/terms/title> "Gros-Jean, il meticcio" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_capitano_della_River's_Queen
+<https://github.com/asperan/comic-book-extension-ontology#Il_capitano_della_River's_Queen> rdf:type owl:NamedIndividual ,
+                                                                                                    cbo:Issue ;
+                                                                                           cbo:series :Serie_prima ;
+                                                                                           cbo:story :Storia_Uno_contro_venti ;
+                                                                                           :issueStoryType :Mainline ;
+                                                                                           cbo:issueNumber 16 ;
+                                                                                           cbo:publicationDate "1949-01-13"^^xsd:date ;
+                                                                                           <http://purl.org/dc/terms/title> "Il capitano della River's Queen" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_mistero_dell'idolo_d'oro
+<https://github.com/asperan/comic-book-extension-ontology#Il_mistero_dell'idolo_d'oro> rdf:type owl:NamedIndividual ,
+                                                                                                cbo:Issue ;
+                                                                                       cbo:series :Serie_prima ;
+                                                                                       cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
+                                                                                       :issueStoryType :Mainline ;
+                                                                                       cbo:issueNumber 24 ;
+                                                                                       cbo:publicationDate "1949-03-10"^^xsd:date ;
+                                                                                       <http://purl.org/dc/terms/title> "Il mistero dell'idolo d'oro" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_segreto_dell'idolo
+<https://github.com/asperan/comic-book-extension-ontology#Il_segreto_dell'idolo> rdf:type owl:NamedIndividual ,
+                                                                                          cbo:Issue ;
+                                                                                 cbo:series :Serie_prima ;
+                                                                                 cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
+                                                                                 :issueStoryType :Mainline ;
+                                                                                 cbo:issueNumber 29 ;
+                                                                                 cbo:publicationDate "1949-04-14"^^xsd:date ;
+                                                                                 <http://purl.org/dc/terms/title> "Il segreto dell'idolo" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_sindacato_dell'oppio
+<https://github.com/asperan/comic-book-extension-ontology#Il_sindacato_dell'oppio> rdf:type owl:NamedIndividual ,
+                                                                                            cbo:Issue ;
+                                                                                   cbo:series :Serie_prima ;
+                                                                                   cbo:story :Storia_La_banda_del_Rosso ;
+                                                                                   :issueStoryType :Mainline ;
+                                                                                   cbo:issueNumber 59 ;
+                                                                                   cbo:publicationDate "1949-11-24"^^xsd:date ;
+                                                                                   <http://purl.org/dc/terms/title> "Il sindacato dell'oppio" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Il_volo_nell'abisso
+<https://github.com/asperan/comic-book-extension-ontology#Il_volo_nell'abisso> rdf:type owl:NamedIndividual ,
+                                                                                        cbo:Issue ;
+                                                                               cbo:series :Serie_prima ;
+                                                                               cbo:story :Storia_La_banda_del_Rosso ;
+                                                                               :issueStoryType :Mainline ;
+                                                                               cbo:issueNumber 55 ;
+                                                                               cbo:publicationDate "1949-10-27"^^xsd:date ;
+                                                                               <http://purl.org/dc/terms/title> "Il volo nell'abisso" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Ken_Logan,_il_duellista
+<https://github.com/asperan/comic-book-extension-ontology#Ken_Logan,_il_duellista> rdf:type owl:NamedIndividual ,
+                                                                                            cbo:Issue ;
+                                                                                   cbo:series :Serie_seconda ;
+                                                                                   cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
+                                                                                   :issueStoryType :Mainline ;
+                                                                                   cbo:issueNumber 26 ;
+                                                                                   cbo:publicationDate "1950-06-02"^^xsd:date ;
+                                                                                   <http://purl.org/dc/terms/title> "Ken Logan, il duellista" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'Estrella_del_Rio
+<https://github.com/asperan/comic-book-extension-ontology#L'Estrella_del_Rio> rdf:type owl:NamedIndividual ,
+                                                                                       cbo:Issue ;
+                                                                              cbo:series :Serie_prima ;
+                                                                              cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
+                                                                              :issueStoryType :Mainline ;
+                                                                              cbo:issueNumber 25 ;
+                                                                              cbo:publicationDate "1949-03-17"^^xsd:date ;
+                                                                              <http://purl.org/dc/terms/title> "L'Estrella del Rio" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'agguato
+<https://github.com/asperan/comic-book-extension-ontology#L'agguato> rdf:type owl:NamedIndividual ,
+                                                                              cbo:Issue ;
+                                                                     cbo:series :Serie_seconda ;
+                                                                     cbo:story :Storia_Satania ;
+                                                                     :issueStoryType :Mainline ;
+                                                                     cbo:issueNumber 8 ;
+                                                                     cbo:publicationDate "1950-01-26"^^xsd:date ;
+                                                                     <http://purl.org/dc/terms/title> "L'agguato" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'agguato_di_Volpe_Rossa
+<https://github.com/asperan/comic-book-extension-ontology#L'agguato_di_Volpe_Rossa> rdf:type owl:NamedIndividual ,
+                                                                                             cbo:Issue ;
+                                                                                    cbo:series :Serie_seconda ;
+                                                                                    cbo:story :Storia_Il_patto_di_sangue ;
+                                                                                    :issueStoryType :Mainline ;
+                                                                                    cbo:issueNumber 48 ;
+                                                                                    cbo:publicationDate "1950-11-03"^^xsd:date ;
+                                                                                    <http://purl.org/dc/terms/title> "L'agguato di Volpe Rossa" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'agguato_nel_canyon
+<https://github.com/asperan/comic-book-extension-ontology#L'agguato_nel_canyon> rdf:type owl:NamedIndividual ,
+                                                                                         cbo:Issue ;
+                                                                                cbo:series :Serie_prima ;
+                                                                                cbo:story :Storia_La_banda_di_Kid_Billy ;
+                                                                                :issueStoryType :Mainline ;
+                                                                                cbo:issueNumber 21 ;
+                                                                                cbo:publicationDate "1949-02-17"^^xsd:date ;
+                                                                                <http://purl.org/dc/terms/title> "L'agguato nel canyon" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'agguato_nella_boscaglia
+<https://github.com/asperan/comic-book-extension-ontology#L'agguato_nella_boscaglia> rdf:type owl:NamedIndividual ,
+                                                                                              cbo:Issue ;
+                                                                                     cbo:series :Serie_quarta ;
+                                                                                     cbo:story :Storia_Il_figlio_di_Tex ;
+                                                                                     :issueStoryType :Mainline ;
+                                                                                     cbo:issueNumber 7 ;
+                                                                                     cbo:publicationDate "1952-02-19"^^xsd:date ;
+                                                                                     <http://purl.org/dc/terms/title> "L'agguato nella boscaglia" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'agguato_sul_Rio_Mayo
+<https://github.com/asperan/comic-book-extension-ontology#L'agguato_sul_Rio_Mayo> rdf:type owl:NamedIndividual ,
+                                                                                           cbo:Issue ;
+                                                                                  cbo:series :Serie_seconda ;
+                                                                                  cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
+                                                                                  :issueStoryType :Mainline ;
+                                                                                  cbo:issueNumber 31 ;
+                                                                                  cbo:publicationDate "1950-07-07"^^xsd:date ;
+                                                                                  <http://purl.org/dc/terms/title> "L'agguato sul Rio Mayo" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'aquila_della_notte
+<https://github.com/asperan/comic-book-extension-ontology#L'aquila_della_notte> rdf:type owl:NamedIndividual ,
+                                                                                         cbo:Issue ;
+                                                                                cbo:series :Serie_seconda ;
+                                                                                cbo:story :Storia_Il_patto_di_sangue ;
+                                                                                :issueStoryType :Mainline ;
+                                                                                cbo:issueNumber 44 ;
+                                                                                cbo:publicationDate "1950-10-06"^^xsd:date ;
+                                                                                <http://purl.org/dc/terms/title> "L'aquila della notte" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'assedio_di_Forte_Wellington
+<https://github.com/asperan/comic-book-extension-ontology#L'assedio_di_Forte_Wellington> rdf:type owl:NamedIndividual ,
+                                                                                                  cbo:Issue ;
+                                                                                         cbo:series :Serie_prima ;
+                                                                                         cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
+                                                                                         :issueStoryType :Mainline ;
+                                                                                         cbo:issueNumber 33 ;
+                                                                                         cbo:publicationDate "1949-05-12"^^xsd:date ;
+                                                                                         <http://purl.org/dc/terms/title> "L'assedio di Forte Wellington" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'attacco_di_Eldorado
+<https://github.com/asperan/comic-book-extension-ontology#L'attacco_di_Eldorado> rdf:type owl:NamedIndividual ,
+                                                                                          cbo:Issue ;
+                                                                                 cbo:series :Serie_quarta ;
+                                                                                 cbo:story :Storia_Il_figlio_di_Tex ;
+                                                                                 :issueStoryType :Mainline ;
+                                                                                 cbo:issueNumber 18 ;
+                                                                                 cbo:publicationDate "1952-05-06"^^xsd:date ;
+                                                                                 <http://purl.org/dc/terms/title> "L'attacco di Eldorado" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'audace_impresa
+<https://github.com/asperan/comic-book-extension-ontology#L'audace_impresa> rdf:type owl:NamedIndividual ,
+                                                                                     cbo:Issue ;
+                                                                            cbo:series :Serie_prima ;
+                                                                            cbo:story :Storia_La_banda_di_Kid_Billy ;
+                                                                            :issueStoryType :Mainline ;
+                                                                            cbo:issueNumber 23 ;
+                                                                            cbo:publicationDate "1949-03-03"^^xsd:date ;
+                                                                            <http://purl.org/dc/terms/title> "L'audace impresa" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'eroe_del_Messico
+<https://github.com/asperan/comic-book-extension-ontology#L'eroe_del_Messico> rdf:type owl:NamedIndividual ,
+                                                                                       cbo:Issue ;
+                                                                              cbo:series :Serie_prima ;
+                                                                              cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_L'eroe_del_Messico> ;
+                                                                              :issueStoryType :Mainline ;
+                                                                              cbo:issueNumber 50 ;
+                                                                              cbo:publicationDate "1949-09-22"^^xsd:date ;
+                                                                              <http://purl.org/dc/terms/title> "L'eroe del Messico" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'impresa_di_Hermadina
+<https://github.com/asperan/comic-book-extension-ontology#L'impresa_di_Hermadina> rdf:type owl:NamedIndividual ,
+                                                                                           cbo:Issue ;
+                                                                                  cbo:series :Serie_prima ;
+                                                                                  cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
+                                                                                  :issueStoryType :Mainline ;
+                                                                                  cbo:issueNumber 44 ;
+                                                                                  cbo:publicationDate "1949-07-28"^^xsd:date ;
+                                                                                  <http://purl.org/dc/terms/title> "L'impresa di Hermadina" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'impronta_misteriosa
+<https://github.com/asperan/comic-book-extension-ontology#L'impronta_misteriosa> rdf:type owl:NamedIndividual ,
+                                                                                          cbo:Issue ;
+                                                                                 cbo:series :Serie_terza ;
+                                                                                 cbo:story :Storia_La_Banda_degli_Orsi ;
+                                                                                 :issueStoryType :Mainline ;
+                                                                                 cbo:issueNumber 22 ;
+                                                                                 cbo:publicationDate "1951-10-16"^^xsd:date ;
+                                                                                 <http://purl.org/dc/terms/title> "L'impronta misteriosa" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'infernale_battaglia
+<https://github.com/asperan/comic-book-extension-ontology#L'infernale_battaglia> rdf:type owl:NamedIndividual ,
+                                                                                          cbo:Issue ;
+                                                                                 cbo:series :Serie_seconda ;
+                                                                                 cbo:story :Storia_La_banda_del_Rosso ;
+                                                                                 :issueStoryType :Mainline ;
+                                                                                 cbo:issueNumber 5 ;
+                                                                                 cbo:publicationDate "1950-01-05"^^xsd:date ;
+                                                                                 <http://purl.org/dc/terms/title> "L'infernale battaglia" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'orma_della_paura
+<https://github.com/asperan/comic-book-extension-ontology#L'orma_della_paura> rdf:type owl:NamedIndividual ,
+                                                                                       cbo:Issue ;
+                                                                              cbo:series :Serie_terza ;
+                                                                              cbo:story :Storia_Il_tranello ;
+                                                                              :issueStoryType :Mainline ;
+                                                                              cbo:issueNumber 1 ;
+                                                                              cbo:publicationDate "1951-05-22"^^xsd:date ;
+                                                                              <http://purl.org/dc/terms/title> "L'orma della paura" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'orrenda_notte
+<https://github.com/asperan/comic-book-extension-ontology#L'orrenda_notte> rdf:type owl:NamedIndividual ,
+                                                                                    cbo:Issue ;
+                                                                           cbo:series :Serie_terza ;
+                                                                           cbo:story :Storia_Il_tranello ;
+                                                                           :issueStoryType :Mainline ;
+                                                                           cbo:issueNumber 11 ;
+                                                                           cbo:publicationDate "1951-07-31"^^xsd:date ;
+                                                                           <http://purl.org/dc/terms/title> "L'orrenda notte" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'orribile_ricatto
+<https://github.com/asperan/comic-book-extension-ontology#L'orribile_ricatto> rdf:type owl:NamedIndividual ,
+                                                                                       cbo:Issue ;
+                                                                              cbo:series :Serie_terza ;
+                                                                              cbo:story :Storia_Il_tranello ;
+                                                                              :issueStoryType :Mainline ;
+                                                                              cbo:issueNumber 18 ;
+                                                                              cbo:publicationDate "1951-09-18"^^xsd:date ;
+                                                                              <http://purl.org/dc/terms/title> "L'orribile ricatto" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'ultima_battaglia
+<https://github.com/asperan/comic-book-extension-ontology#L'ultima_battaglia> rdf:type owl:NamedIndividual ,
+                                                                                       cbo:Issue ;
+                                                                              cbo:series :Serie_seconda ;
+                                                                              cbo:story :Storia_Avventura_sul_Rio_Grande ;
+                                                                              :issueStoryType :Mainline ;
+                                                                              cbo:issueNumber 75 ;
+                                                                              cbo:publicationDate "1951-05-15"^^xsd:date ;
+                                                                              <http://purl.org/dc/terms/title> "L'ultima battaglia" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'ultima_carta_dei_fratelli_Benton
+<https://github.com/asperan/comic-book-extension-ontology#L'ultima_carta_dei_fratelli_Benton> rdf:type owl:NamedIndividual ,
+                                                                                                       cbo:Issue ;
+                                                                                              cbo:series :Serie_seconda ;
+                                                                                              cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
+                                                                                              :issueStoryType :Mainline ;
+                                                                                              cbo:issueNumber 25 ;
+                                                                                              cbo:publicationDate "1950-05-26"^^xsd:date ;
+                                                                                              <http://purl.org/dc/terms/title> "L'ultima carta dei fratelli Benton" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'ultima_carta_di_Tex
+<https://github.com/asperan/comic-book-extension-ontology#L'ultima_carta_di_Tex> rdf:type owl:NamedIndividual ,
+                                                                                          cbo:Issue ;
+                                                                                 cbo:series :Serie_terza ;
+                                                                                 cbo:story :Storia_Il_tranello ;
+                                                                                 :issueStoryType :Mainline ;
+                                                                                 cbo:issueNumber 12 ;
+                                                                                 cbo:publicationDate "1951-08-07"^^xsd:date ;
+                                                                                 <http://purl.org/dc/terms/title> "L'ultima carta di Tex" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'ultima_impresa_di_Brad
+<https://github.com/asperan/comic-book-extension-ontology#L'ultima_impresa_di_Brad> rdf:type owl:NamedIndividual ,
+                                                                                             cbo:Issue ;
+                                                                                    cbo:series :Serie_terza ;
+                                                                                    cbo:story :Storia_La_Banda_degli_Orsi ;
+                                                                                    :issueStoryType :Mainline ;
+                                                                                    cbo:issueNumber 32 ;
+                                                                                    cbo:publicationDate "1951-12-25"^^xsd:date ;
+                                                                                    <http://purl.org/dc/terms/title> "L'ultima impresa di Brad" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'ultimatum
+<https://github.com/asperan/comic-book-extension-ontology#L'ultimatum> rdf:type owl:NamedIndividual ,
+                                                                                cbo:Issue ;
+                                                                       cbo:series :Serie_terza ;
+                                                                       cbo:story :Storia_Il_tranello ;
+                                                                       :issueStoryType :Mainline ;
+                                                                       cbo:issueNumber 9 ;
+                                                                       cbo:publicationDate "1951-07-17"^^xsd:date ;
+                                                                       <http://purl.org/dc/terms/title> "L'ultimatum" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'ultimo_colpo_di_Black_Sam
+<https://github.com/asperan/comic-book-extension-ontology#L'ultimo_colpo_di_Black_Sam> rdf:type owl:NamedIndividual ,
+                                                                                                cbo:Issue ;
+                                                                                       cbo:series :Serie_quarta ;
+                                                                                       cbo:story :Storia_Il_figlio_di_Tex ;
+                                                                                       :issueStoryType :Mainline ;
+                                                                                       cbo:issueNumber 13 ;
+                                                                                       cbo:publicationDate "1952-04-01"^^xsd:date ;
+                                                                                       <http://purl.org/dc/terms/title> "L'ultimo colpo di Black Sam" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#L'uomo_dagli_speroni_d'argento
+<https://github.com/asperan/comic-book-extension-ontology#L'uomo_dagli_speroni_d'argento> rdf:type owl:NamedIndividual ,
+                                                                                                   cbo:Issue ;
+                                                                                          cbo:series :Serie_quarta ;
+                                                                                          cbo:story :Storia_Il_figlio_di_Tex ;
+                                                                                          :issueStoryType :Mainline ;
+                                                                                          cbo:issueNumber 2 ;
+                                                                                          cbo:publicationDate "1952-01-15"^^xsd:date ;
+                                                                                          <http://purl.org/dc/terms/title> "L'uomo dagli speroni d'argento" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_fine_dell'Eldorado
+<https://github.com/asperan/comic-book-extension-ontology#La_fine_dell'Eldorado> rdf:type owl:NamedIndividual ,
+                                                                                          cbo:Issue ;
+                                                                                 cbo:series :Serie_terza ;
+                                                                                 cbo:story :Storia_La_Banda_degli_Orsi ;
+                                                                                 :issueStoryType :Mainline ;
+                                                                                 cbo:issueNumber 31 ;
+                                                                                 cbo:publicationDate "1951-12-18"^^xsd:date ;
+                                                                                 <http://purl.org/dc/terms/title> "La fine dell'Eldorado" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#La_morte_nell'ombra
+<https://github.com/asperan/comic-book-extension-ontology#La_morte_nell'ombra> rdf:type owl:NamedIndividual ,
+                                                                                        cbo:Issue ;
+                                                                               cbo:series :Serie_prima ;
+                                                                               cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> ;
+                                                                               :issueStoryType :Mainline ;
+                                                                               cbo:issueNumber 26 ;
+                                                                               cbo:publicationDate "1949-03-24"^^xsd:date ;
+                                                                               <http://purl.org/dc/terms/title> "La morte nell'ombra" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Lo_sceriffo_di_Devil's_Hole
+<https://github.com/asperan/comic-book-extension-ontology#Lo_sceriffo_di_Devil's_Hole> rdf:type owl:NamedIndividual ,
+                                                                                                cbo:Issue ;
+                                                                                       cbo:series :Serie_seconda ;
+                                                                                       cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
+                                                                                       :issueStoryType :Mainline ;
+                                                                                       cbo:issueNumber 18 ;
+                                                                                       cbo:publicationDate "1950-04-07"^^xsd:date ;
+                                                                                       <http://purl.org/dc/terms/title> "Lo sceriffo di Devil's Hole" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Lupe,_la_messicana
+<https://github.com/asperan/comic-book-extension-ontology#Lupe,_la_messicana> rdf:type owl:NamedIndividual ,
+                                                                                       cbo:Issue ;
+                                                                              cbo:series :Serie_seconda ;
+                                                                              cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> ;
+                                                                              :issueStoryType :Mainline ;
+                                                                              cbo:issueNumber 28 ;
+                                                                              cbo:publicationDate "1950-06-16"^^xsd:date ;
+                                                                              <http://purl.org/dc/terms/title> "Lupe, la messicana" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Mefisto,_la_spia
+<https://github.com/asperan/comic-book-extension-ontology#Mefisto,_la_spia> rdf:type owl:NamedIndividual ,
+                                                                                     cbo:Issue ;
+                                                                            cbo:series :Serie_prima ;
+                                                                            cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
+                                                                            :issueStoryType :Mainline ;
+                                                                            cbo:issueNumber 35 ;
+                                                                            cbo:publicationDate "1949-05-26"^^xsd:date ;
+                                                                            <http://purl.org/dc/terms/title> "Mefisto, la spia" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Missione_a_Devil's_Hole
+<https://github.com/asperan/comic-book-extension-ontology#Missione_a_Devil's_Hole> rdf:type owl:NamedIndividual ,
+                                                                                            cbo:Issue ;
+                                                                                   cbo:series :Serie_seconda ;
+                                                                                   cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
+                                                                                   :issueStoryType :Mainline ;
+                                                                                   cbo:issueNumber 15 ;
+                                                                                   cbo:publicationDate "1950-03-17"^^xsd:date ;
+                                                                                   <http://purl.org/dc/terms/title> "Missione a Devil's Hole" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Montales,_el_desperado
+<https://github.com/asperan/comic-book-extension-ontology#Montales,_el_desperado> rdf:type owl:NamedIndividual ,
+                                                                                           cbo:Issue ;
+                                                                                  cbo:series :Serie_prima ;
+                                                                                  cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
+                                                                                  :issueStoryType :Mainline ;
+                                                                                  cbo:issueNumber 43 ;
+                                                                                  cbo:publicationDate "1949-07-21"^^xsd:date ;
+                                                                                  <http://purl.org/dc/terms/title> "Montales, el desperado" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Notte_d'orrore
+<https://github.com/asperan/comic-book-extension-ontology#Notte_d'orrore> rdf:type owl:NamedIndividual ,
+                                                                                   cbo:Issue ;
+                                                                          cbo:series :Serie_seconda ;
+                                                                          cbo:story :Storia_Satania ;
+                                                                          :issueStoryType :Mainline ;
+                                                                          cbo:issueNumber 13 ;
+                                                                          cbo:publicationDate "1950-03-03"^^xsd:date ;
+                                                                          <http://purl.org/dc/terms/title> "Notte d'orrore" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro
+<https://github.com/asperan/comic-book-extension-ontology#Storia_Il_mistero_dell'idolo_d'oro> rdf:type owl:NamedIndividual ,
+                                                                                                       cbo:Story ;
+                                                                                              cbo:storyTitle "Il mistero dell'idolo d'oro"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_L'eroe_del_Messico
+<https://github.com/asperan/comic-book-extension-ontology#Storia_L'eroe_del_Messico> rdf:type owl:NamedIndividual ,
+                                                                                              cbo:Story ;
+                                                                                     cbo:storyTitle "L'eroe del Messico"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana
+<https://github.com/asperan/comic-book-extension-ontology#Storia_Lupe,_la_messicana> rdf:type owl:NamedIndividual ,
+                                                                                              cbo:Story ;
+                                                                                     cbo:storyTitle "Lupe, la messicana"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia
+<https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> rdf:type owl:NamedIndividual ,
+                                                                                            cbo:Story ;
+                                                                                   cbo:storyTitle "Mefisto, la spia"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole
+<https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> rdf:type owl:NamedIndividual ,
+                                                                                                   cbo:Story ;
+                                                                                          cbo:storyTitle "Missione a Devil's Hole"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Sull'orlo_dell'abisso
+<https://github.com/asperan/comic-book-extension-ontology#Sull'orlo_dell'abisso> rdf:type owl:NamedIndividual ,
+                                                                                          cbo:Issue ;
+                                                                                 cbo:series :Serie_prima ;
+                                                                                 cbo:story :Storia_El_Diablo ;
+                                                                                 :issueStoryType :Mainline ;
+                                                                                 cbo:issueNumber 14 ;
+                                                                                 cbo:publicationDate "1948-12-30"^^xsd:date ;
+                                                                                 <http://purl.org/dc/terms/title> "Sull'orlo dell'abisso" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Sulle_soglie_dell'inferno
+<https://github.com/asperan/comic-book-extension-ontology#Sulle_soglie_dell'inferno> rdf:type owl:NamedIndividual ,
+                                                                                              cbo:Issue ;
+                                                                                     cbo:series :Serie_quarta ;
+                                                                                     cbo:story :Storia_Il_figlio_di_Tex ;
+                                                                                     :issueStoryType :Mainline ;
+                                                                                     cbo:issueNumber 12 ;
+                                                                                     cbo:publicationDate "1952-03-25"^^xsd:date ;
+                                                                                     <http://purl.org/dc/terms/title> "Sulle soglie dell'inferno" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Tex,_l'intrepido
+<https://github.com/asperan/comic-book-extension-ontology#Tex,_l'intrepido> rdf:type owl:NamedIndividual ,
+                                                                                     cbo:Issue ;
+                                                                            cbo:series :Serie_quarta ;
+                                                                            cbo:story :Storia_Il_figlio_di_Tex ;
+                                                                            :issueStoryType :Mainline ;
+                                                                            cbo:issueNumber 19 ;
+                                                                            cbo:publicationDate "1952-05-13"^^xsd:date ;
+                                                                            <http://purl.org/dc/terms/title> "Tex, l'intrepido" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Tex,_l'uomo-ciclone
+<https://github.com/asperan/comic-book-extension-ontology#Tex,_l'uomo-ciclone> rdf:type owl:NamedIndividual ,
+                                                                                        cbo:Issue ;
+                                                                               cbo:series :Serie_prima ;
+                                                                               cbo:story <https://github.com/asperan/comic-book-extension-ontology#Storia_Mefisto,_la_spia> ;
+                                                                               :issueStoryType :Mainline ;
+                                                                               cbo:issueNumber 41 ;
+                                                                               cbo:publicationDate "1949-07-07"^^xsd:date ;
+                                                                               <http://purl.org/dc/terms/title> "Tex, l'uomo-ciclone" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Tiger_Jack_all'opera
+<https://github.com/asperan/comic-book-extension-ontology#Tiger_Jack_all'opera> rdf:type owl:NamedIndividual ,
+                                                                                         cbo:Issue ;
+                                                                                cbo:series :Serie_seconda ;
+                                                                                cbo:story :Storia_Avventura_sul_Rio_Grande ;
+                                                                                :issueStoryType :Mainline ;
+                                                                                cbo:issueNumber 72 ;
+                                                                                cbo:publicationDate "1951-04-24"^^xsd:date ;
+                                                                                <http://purl.org/dc/terms/title> "Tiger Jack all'opera" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Un'impresa_disperata
+<https://github.com/asperan/comic-book-extension-ontology#Un'impresa_disperata> rdf:type owl:NamedIndividual ,
+                                                                                         cbo:Issue ;
+                                                                                cbo:series :Serie_quarta ;
+                                                                                cbo:story :Storia_Il_figlio_di_Tex ;
+                                                                                :issueStoryType :Mainline ;
+                                                                                cbo:issueNumber 11 ;
+                                                                                cbo:publicationDate "1952-03-18"^^xsd:date ;
+                                                                                <http://purl.org/dc/terms/title> "Un'impresa disperata" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Un'orribile_fine
+<https://github.com/asperan/comic-book-extension-ontology#Un'orribile_fine> rdf:type owl:NamedIndividual ,
+                                                                                     cbo:Issue ;
+                                                                            cbo:series :Serie_seconda ;
+                                                                            cbo:story :Storia_Il_patto_di_sangue ;
+                                                                            :issueStoryType :Mainline ;
+                                                                            cbo:issueNumber 55 ;
+                                                                            cbo:publicationDate "1950-12-26"^^xsd:date ;
+                                                                            <http://purl.org/dc/terms/title> "Un'orribile fine" .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Volume_L'eroe_del_Messico
+<https://github.com/asperan/comic-book-extension-ontology#Volume_L'eroe_del_Messico> rdf:type owl:NamedIndividual ,
+                                                                                              cbo:Volume ;
+                                                                                     cbo:issue :Allarme_a_Buenavista ,
+                                                                                               :Condanna_a_morte ,
+                                                                                               :Duello_a_Lineville ,
+                                                                                               :Gioco_pericoloso ,
+                                                                                               :I_sicari_del_Drago ,
+                                                                                               :Il_fantasma_di_Villa-Rica ,
+                                                                                               :Il_traditore ,
+                                                                                               :La_Mesa_del_Diablo ,
+                                                                                               :La_banda_del_Rosso ,
+                                                                                               :La_bisca_di_Hackett ,
+                                                                                               :La_cattura_di_Montales ,
+                                                                                               :La_fine_di_Mefisto ,
+                                                                                               :La_morte_nel_pugno ,
+                                                                                               :La_tragica_notte ,
+                                                                                               :La_trappola ,
+                                                                                               :Nelle_mani_del_carnefice ,
+                                                                                               :Notte_di_sangue ,
+                                                                                               :Showdown_a_El_Paso ,
+                                                                                               :Sulle_soglie_della_morte ,
+                                                                                               :Un_turpe_contratto ,
+                                                                                               :Una_trama_infernale ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#Complotti_nell'ombra> ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#Fuorilegge!> ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#Il_sindacato_dell'oppio> ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#Il_volo_nell'abisso> ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#L'eroe_del_Messico> ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#L'impresa_di_Hermadina> ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#L'infernale_battaglia> ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#Mefisto,_la_spia> ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#Montales,_el_desperado> ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#Tex,_l'uomo-ciclone> ;
+                                                                                     cbo:seriesOf :Tex ;
+                                                                                     cbo:story :Storia_La_banda_del_Rosso ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#Storia_L'eroe_del_Messico> ;
+                                                                                     cbo:pageCount 152 ;
+                                                                                     cbo:publicationDate "1959-04-01"^^xsd:date ;
+                                                                                     cbo:volumeNumber 4 ;
+                                                                                     <http://purl.org/dc/terms/title> "L'eroe del Messico"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Volume_L'ultima_battaglia
+<https://github.com/asperan/comic-book-extension-ontology#Volume_L'ultima_battaglia> rdf:type owl:NamedIndividual ,
+                                                                                              cbo:Volume ;
+                                                                                     cbo:issue :Avventura_sul_Rio_Grande ,
+                                                                                               :Il_colpo_di_Fulton_Creek ,
+                                                                                               :Il_deserto_di_Gila ,
+                                                                                               :Il_dio_Puma ,
+                                                                                               :Il_re_dei_tiratori ,
+                                                                                               :Il_sepolcro_indiano ,
+                                                                                               :La_banda_dei_Dalton ,
+                                                                                               :La_freccia_della_morte ,
+                                                                                               :La_legge_del_giudice_Colt ,
+                                                                                               :La_montagna_tragica ,
+                                                                                               :La_morte_nel_villaggio ,
+                                                                                               :La_rivincita_di_Toba ,
+                                                                                               :La_vendetta_dei_Dalton ,
+                                                                                               :Nel_covo_dei_Dalton ,
+                                                                                               :Sangue_su_Danville ,
+                                                                                               :Solo_contro_tutti ,
+                                                                                               :Sul_sentiero_di_guerra ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#L'ultima_battaglia> ,
+                                                                                               <https://github.com/asperan/comic-book-extension-ontology#Tiger_Jack_all'opera> ;
+                                                                                     cbo:seriesOf :Tex ;
+                                                                                     cbo:story :Storia_Avventura_sul_Rio_Grande ,
+                                                                                               :Storia_Il_dio_Puma ;
+                                                                                     cbo:pageCount 161 ;
+                                                                                     cbo:publicationDate "1960-05-01"^^xsd:date ;
+                                                                                     cbo:volumeNumber 9 ;
+                                                                                     <http://purl.org/dc/terms/title> "L'ultima battaglia"@it .
+
+
+###  https://github.com/asperan/comic-book-extension-ontology#Volume_Satania!
+<https://github.com/asperan/comic-book-extension-ontology#Volume_Satania!> rdf:type owl:NamedIndividual ,
+                                                                                    cbo:Volume ;
+                                                                           cbo:issue :Agguato_a_Yuma ,
+                                                                                     :Ai_ferri_corti ,
+                                                                                     :Attacco_alla_miniera ,
+                                                                                     :Attacco_nella_notte ,
+                                                                                     :Avventura_a_Piedras_Negras ,
+                                                                                     :Doppio_gioco ,
+                                                                                     :Duello_a_Lineville ,
+                                                                                     :I_sicari_del_Drago ,
+                                                                                     :Il_mostro_di_Satania ,
+                                                                                     :La_banda_del_Rosso ,
+                                                                                     :La_bisca_di_Hackett ,
+                                                                                     :La_fine_di_Satania ,
+                                                                                     :La_morte_nel_pugno ,
+                                                                                     :La_tragica_notte ,
+                                                                                     :La_trappola ,
+                                                                                     :La_valle_degli_spettri ,
+                                                                                     :Lotta_senza_quartiere ,
+                                                                                     :Nel_covo_di_Satania ,
+                                                                                     :Nelle_mani_degli_Outlaws ,
+                                                                                     :Nelle_mani_del_carnefice ,
+                                                                                     :Notte_di_sangue ,
+                                                                                     :Satania ,
+                                                                                     :Situazione_pericolosa ,
+                                                                                     :Sulle_soglie_della_morte ,
+                                                                                     :Un_turpe_contratto ,
+                                                                                     <https://github.com/asperan/comic-book-extension-ontology#Al_Corno_d'Oro> ,
+                                                                                     <https://github.com/asperan/comic-book-extension-ontology#Complotti_nell'ombra> ,
+                                                                                     <https://github.com/asperan/comic-book-extension-ontology#Il_sindacato_dell'oppio> ,
+                                                                                     <https://github.com/asperan/comic-book-extension-ontology#Il_volo_nell'abisso> ,
+                                                                                     <https://github.com/asperan/comic-book-extension-ontology#L'agguato> ,
+                                                                                     <https://github.com/asperan/comic-book-extension-ontology#L'infernale_battaglia> ,
+                                                                                     <https://github.com/asperan/comic-book-extension-ontology#L'ultima_carta_dei_fratelli_Benton> ,
+                                                                                     <https://github.com/asperan/comic-book-extension-ontology#Lo_sceriffo_di_Devil's_Hole> ,
+                                                                                     <https://github.com/asperan/comic-book-extension-ontology#Missione_a_Devil's_Hole> ,
+                                                                                     <https://github.com/asperan/comic-book-extension-ontology#Notte_d'orrore> ;
+                                                                           cbo:seriesOf :Tex ;
+                                                                           cbo:story :Storia_Satania ,
+                                                                                     <https://github.com/asperan/comic-book-extension-ontology#Storia_Missione_a_Devil's_Hole> ;
+                                                                           cbo:pageCount 162 ;
+                                                                           cbo:publicationDate "1959-06-01"^^xsd:date ;
+                                                                           cbo:volumeNumber 5 ;
+                                                                           <http://purl.org/dc/terms/title> "Satania!"@it .
+
 
 #################################################################
 #    Rules
@@ -918,6 +3645,93 @@ comic-book-extension-ontology:c rdf:type swrl:Variable .
                          ] ;
                rdf:rest rdf:nil
              ]
+] .
+
+:i rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:s rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:n rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Il prezzo delle strisce della prima serie era 15 lire" ;
+   rdfs:label "Tex2" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> cbo:Issue ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :i
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#SameIndividualAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :s ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :Serie_prima
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> cbo:series ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :i ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :s
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> cbo:salePrice ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :i ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "15 lire"
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Pagine delle issue prima della serie Nebraska" ;
+   rdfs:label "Tex1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> cbo:series ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :i ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :s
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> cbo:Issue ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :i
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> cbo:itemNumber ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :s ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :n
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first :n ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 33 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> cbo:pageCount ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :i ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> 32
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
  ] .
 
 ###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
